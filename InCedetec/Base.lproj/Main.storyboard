@@ -33,7 +33,7 @@
                                 <rect key="frame" x="40" y="329" width="146" height="136"/>
                                 <state key="normal" image="Proyectos.png"/>
                                 <connections>
-                                    <segue destination="VLo-0v-M3f" kind="show" id="xxG-g9-eer"/>
+                                    <segue destination="06f-ZP-aI9" kind="show" id="0MT-28-uR7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF5-8R-uYa" userLabel="AboutButton">
@@ -131,33 +131,182 @@
             </objects>
             <point key="canvasLocation" x="1157.5999999999999" y="54.422788605697157"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="rot-t7-8a4">
+        <!--View Controller-->
+        <scene sceneID="M65-DY-mkQ">
             <objects>
-                <tableViewController id="VLo-0v-M3f" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lAS-xO-A8N">
+                <viewController id="06f-ZP-aI9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c7J-ik-3YU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ListaProyectos.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dxb-A2-pbc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK0-Le-ou5">
+                                <rect key="frame" x="301" y="596" width="58" height="51"/>
+                                <state key="normal" title="Button" image="Contact Add.png"/>
+                                <connections>
+                                    <segue destination="Jge-gP-BzF" kind="show" id="wly-3c-k5f"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="6HW-BO-7be">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6HW-BO-7be" id="vc1-dn-XrZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="VLo-0v-M3f" id="tzp-wL-xMR"/>
-                            <outlet property="delegate" destination="VLo-0v-M3f" id="JEK-yG-c9u"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vDp-hU-Wvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="CK0-Le-ou5" firstAttribute="leading" secondItem="Wvc-cG-5p1" secondAttribute="leading" constant="301" id="4Fs-Re-9N4"/>
+                            <constraint firstItem="Dxb-A2-pbc" firstAttribute="centerY" secondItem="c7J-ik-3YU" secondAttribute="centerY" id="6Ef-VK-Phh"/>
+                            <constraint firstItem="Dxb-A2-pbc" firstAttribute="centerX" secondItem="c7J-ik-3YU" secondAttribute="centerX" id="Us0-rY-EnR"/>
+                            <constraint firstItem="CK0-Le-ou5" firstAttribute="trailing" secondItem="c7J-ik-3YU" secondAttribute="trailingMargin" id="lfz-Yf-rGH"/>
+                            <constraint firstAttribute="bottom" secondItem="CK0-Le-ou5" secondAttribute="bottom" constant="20" symbolic="YES" id="nTP-oE-WDh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wvc-cG-5p1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g9l-tq-22W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882" y="770"/>
+            <point key="canvasLocation" x="936.79999999999995" y="899.10044977511257"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CbI-S7-kZd">
+            <objects>
+                <viewController id="Jge-gP-BzF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VaJ-ny-aXO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGs-uV-fGR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="AgregarProyectoNuevo.png"/>
+                                <connections>
+                                    <segue destination="kfJ-IH-haz" kind="show" id="VKv-qk-XfO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Q9p-eq-Rn4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BXm-QR-1eM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1730.4000000000001" y="1387.5562218890557"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dbN-BG-jdx">
+            <objects>
+                <viewController id="kfJ-IH-haz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OGN-R0-etS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ListaProyecto2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xy9-HC-cMN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcY-IL-0Sg">
+                                <rect key="frame" x="307" y="595" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Contact Add.png"/>
+                                <connections>
+                                    <segue destination="Jge-gP-BzF" kind="show" id="nh8-9O-3QA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he7-GG-tpO">
+                                <rect key="frame" x="0.0" y="63" width="375" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="FvQ-Ib-RyE" kind="show" id="5OW-EW-BiK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="S9d-Kk-C2A"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q9t-mY-S74" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600.8000000000002" y="1409.1454272863568"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zpz-Mq-W8p">
+            <objects>
+                <viewController id="FvQ-Ib-RyE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vLs-Xe-VX5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Proyecto.png" translatesAutoresizingMaskIntoConstraints="NO" id="ndy-Fe-yZB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lny-W8-Zgz">
+                                <rect key="frame" x="301" y="596" width="58" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Contact Add.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="srI-kx-UPs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kSc-mL-pCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3580" y="1428.9355322338831"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BSo-B0-57Q">
+            <objects>
+                <viewController id="TnF-2R-UUu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ncs-KF-fLg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AgregarSalon.png" translatesAutoresizingMaskIntoConstraints="NO" id="etq-c2-rh0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMr-OY-6Gr">
+                                <rect key="frame" x="16" y="600" width="162" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="FvQ-Ib-RyE" kind="show" id="eoK-x8-4iP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uks-Mh-uC2">
+                                <rect key="frame" x="221" y="600" width="138" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="mTe-3s-jYI" kind="show" id="ICe-YU-78P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="PfL-pe-jZT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIU-yv-E4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4400.8000000000002" y="1408.2458770614694"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hfc-PZ-bvl">
+            <objects>
+                <viewController id="mTe-3s-jYI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OLi-WN-kE4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Proyecto2.png" translatesAutoresizingMaskIntoConstraints="NO" id="iUv-ht-fD4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8cA-CK-0tu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYo-fK-Uu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5224.8000000000002" y="1408.2458770614694"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="a8h-RG-TEQ">
@@ -296,7 +445,7 @@ Abraham Armando Silva Apanco
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmJ-nN-FUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1158" y="-708"/>
+            <point key="canvasLocation" x="876" y="-757"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wqa-gZ-ioc">
@@ -319,9 +468,16 @@ Abraham Armando Silva Apanco
     </scenes>
     <resources>
         <image name="About.png" width="146" height="136"/>
+        <image name="AgregarProyectoNuevo.png" width="375" height="667"/>
+        <image name="AgregarSalon.png" width="375" height="667"/>
         <image name="Cedetec.png" width="146" height="136"/>
+        <image name="Contact Add.png" width="51" height="51"/>
         <image name="Image" width="719" height="1280"/>
+        <image name="ListaProyecto2.png" width="375" height="667"/>
+        <image name="ListaProyectos.png" width="375" height="667"/>
         <image name="MapaGeneral.png" width="373" height="602"/>
+        <image name="Proyecto.png" width="375" height="667"/>
+        <image name="Proyecto2.png" width="375" height="667"/>
         <image name="Proyectos.png" width="146" height="136"/>
         <image name="Salones.png" width="146" height="136"/>
         <image name="facebook.png" width="40" height="40"/>
@@ -329,4 +485,9 @@ Abraham Armando Silva Apanco
         <image name="logotec.png" width="4084" height="1082"/>
         <image name="twitter.png" width="40" height="40"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="VKv-qk-XfO"/>
+        <segue reference="eoK-x8-4iP"/>
+        <segue reference="nh8-9O-3QA"/>
+    </inferredMetricsTieBreakers>
 </document>

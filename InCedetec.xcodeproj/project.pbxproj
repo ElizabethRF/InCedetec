@@ -25,6 +25,13 @@
 		554C03EF203A9FA700A5DF1A /* logotec.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03EE203A9FA600A5DF1A /* logotec.png */; };
 		554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */; };
 		554C03F3203AB14C00A5DF1A /* MapaGeneral.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03F2203AB14C00A5DF1A /* MapaGeneral.png */; };
+		CA3255F6203AB8CC004624A4 /* ListaProyectos@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255F5203AB8CB004624A4 /* ListaProyectos@3x.png */; };
+		CA3255F8203AB9A3004624A4 /* Contact Add.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255F7203AB9A2004624A4 /* Contact Add.png */; };
+		CA3255FA203ABA65004624A4 /* AgregarProyectoNuevo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255F9203ABA64004624A4 /* AgregarProyectoNuevo@3x.png */; };
+		CA3255FE203ABC18004624A4 /* ListaProyecto2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255FD203ABC17004624A4 /* ListaProyecto2@3x.png */; };
+		CA325600203ABCB3004624A4 /* Proyecto@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */; };
+		CA325602203ABD6B004624A4 /* AgregarSalon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */; };
+		CA325604203ABD80004624A4 /* Proyecto2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA325603203ABD7F004624A4 /* Proyecto2@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,13 @@
 		554C03EE203A9FA600A5DF1A /* logotec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logotec.png; sourceTree = "<group>"; };
 		554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectosTableViewController.swift; sourceTree = "<group>"; };
 		554C03F2203AB14C00A5DF1A /* MapaGeneral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapaGeneral.png; sourceTree = "<group>"; };
+		CA3255F5203AB8CB004624A4 /* ListaProyectos@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListaProyectos@3x.png"; sourceTree = "<group>"; };
+		CA3255F7203AB9A2004624A4 /* Contact Add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contact Add.png"; sourceTree = "<group>"; };
+		CA3255F9203ABA64004624A4 /* AgregarProyectoNuevo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarProyectoNuevo@3x.png"; sourceTree = "<group>"; };
+		CA3255FD203ABC17004624A4 /* ListaProyecto2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ListaProyecto2@3x.png"; path = "../../../TEC/6toSemestre/iOS/Assets/ListaProyecto2@3x.png"; sourceTree = "<group>"; };
+		CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proyecto@3x.png"; sourceTree = "<group>"; };
+		CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarSalon@3x.png"; sourceTree = "<group>"; };
+		CA325603203ABD7F004624A4 /* Proyecto2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proyecto2@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +166,13 @@
 		554C03D7203A96D400A5DF1A /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */,
+				CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */,
+				CA325603203ABD7F004624A4 /* Proyecto2@3x.png */,
+				CA3255FD203ABC17004624A4 /* ListaProyecto2@3x.png */,
+				CA3255F9203ABA64004624A4 /* AgregarProyectoNuevo@3x.png */,
+				CA3255F7203AB9A2004624A4 /* Contact Add.png */,
+				CA3255F5203AB8CB004624A4 /* ListaProyectos@3x.png */,
 				554C03F2203AB14C00A5DF1A /* MapaGeneral.png */,
 				554C03EE203A9FA600A5DF1A /* logotec.png */,
 				554C03EA203A9D3F00A5DF1A /* facebook.png */,
@@ -273,8 +294,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3255FE203ABC18004624A4 /* ListaProyecto2@3x.png in Resources */,
+				CA325604203ABD80004624A4 /* Proyecto2@3x.png in Resources */,
 				554C03E6203A9C7400A5DF1A /* Salones.png in Resources */,
+				CA325600203ABCB3004624A4 /* Proyecto@3x.png in Resources */,
 				554C03E1203A9C0500A5DF1A /* About.png in Resources */,
+				CA3255F6203AB8CC004624A4 /* ListaProyectos@3x.png in Resources */,
+				CA3255F8203AB9A3004624A4 /* Contact Add.png in Resources */,
+				CA3255FA203ABA65004624A4 /* AgregarProyectoNuevo@3x.png in Resources */,
 				554C03E5203A9C7400A5DF1A /* Proyectos.png in Resources */,
 				554C03EF203A9FA700A5DF1A /* logotec.png in Resources */,
 				554C03ED203A9D3F00A5DF1A /* facebook.png in Resources */,
@@ -284,6 +311,7 @@
 				554C03EB203A9D3F00A5DF1A /* twitter.png in Resources */,
 				554C03D6203A96CE00A5DF1A /* SplashScreen.png in Resources */,
 				554C03EC203A9D3F00A5DF1A /* instagram.png in Resources */,
+				CA325602203ABD6B004624A4 /* AgregarSalon@3x.png in Resources */,
 				554C03AC203A954100A5DF1A /* Main.storyboard in Resources */,
 				554C03F3203AB14C00A5DF1A /* MapaGeneral.png in Resources */,
 			);

@@ -19,7 +19,25 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func SalonesButton(_ sender: UIButton) {
+    }
+    @IBAction func CEDETECButton(_ sender: UIButton) {
+    }
+    @IBAction func ProyectosButton(_ sender: UIButton) {
+    }
+    @IBAction func About(_ sender: UIButton) {
+    }
+    
+    @IBAction func fbButton(_ sender: UIButton) {
+    }
+    @IBAction func ttButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func IGButton(_ sender: UIButton) {
+    }
+    
+    
+    
 }
 

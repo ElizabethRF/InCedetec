@@ -14,6 +14,15 @@
 		554C03B1203A954100A5DF1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554C03AF203A954100A5DF1A /* LaunchScreen.storyboard */; };
 		554C03BC203A954100A5DF1A /* InCedetecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03BB203A954100A5DF1A /* InCedetecTests.swift */; };
 		554C03C7203A954100A5DF1A /* InCedetecUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03C6203A954100A5DF1A /* InCedetecUITests.swift */; };
+		554C03D6203A96CE00A5DF1A /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03D5203A96CE00A5DF1A /* SplashScreen.png */; };
+		554C03E1203A9C0500A5DF1A /* About.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03E0203A9C0500A5DF1A /* About.png */; };
+		554C03E5203A9C7400A5DF1A /* Proyectos.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03E2203A9C7400A5DF1A /* Proyectos.png */; };
+		554C03E6203A9C7400A5DF1A /* Salones.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03E3203A9C7400A5DF1A /* Salones.png */; };
+		554C03E7203A9C7400A5DF1A /* Cedetec.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03E4203A9C7400A5DF1A /* Cedetec.png */; };
+		554C03EB203A9D3F00A5DF1A /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03E8203A9D3E00A5DF1A /* twitter.png */; };
+		554C03EC203A9D3F00A5DF1A /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03E9203A9D3F00A5DF1A /* instagram.png */; };
+		554C03ED203A9D3F00A5DF1A /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03EA203A9D3F00A5DF1A /* facebook.png */; };
+		554C03EF203A9FA700A5DF1A /* logotec.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03EE203A9FA600A5DF1A /* logotec.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,15 @@
 		554C03C2203A954100A5DF1A /* InCedetecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InCedetecUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		554C03C6203A954100A5DF1A /* InCedetecUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InCedetecUITests.swift; sourceTree = "<group>"; };
 		554C03C8203A954100A5DF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554C03D5203A96CE00A5DF1A /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
+		554C03E0203A9C0500A5DF1A /* About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = About.png; sourceTree = "<group>"; };
+		554C03E2203A9C7400A5DF1A /* Proyectos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Proyectos.png; sourceTree = "<group>"; };
+		554C03E3203A9C7400A5DF1A /* Salones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salones.png; sourceTree = "<group>"; };
+		554C03E4203A9C7400A5DF1A /* Cedetec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cedetec.png; sourceTree = "<group>"; };
+		554C03E8203A9D3E00A5DF1A /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		554C03E9203A9D3F00A5DF1A /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
+		554C03EA203A9D3F00A5DF1A /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		554C03EE203A9FA600A5DF1A /* logotec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logotec.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +115,7 @@
 		554C03A5203A954100A5DF1A /* InCedetec */ = {
 			isa = PBXGroup;
 			children = (
+				554C03D7203A96D400A5DF1A /* Imagenes */,
 				554C03A6203A954100A5DF1A /* AppDelegate.swift */,
 				554C03A8203A954100A5DF1A /* ViewController.swift */,
 				554C03AA203A954100A5DF1A /* Main.storyboard */,
@@ -123,6 +142,22 @@
 				554C03C8203A954100A5DF1A /* Info.plist */,
 			);
 			path = InCedetecUITests;
+			sourceTree = "<group>";
+		};
+		554C03D7203A96D400A5DF1A /* Imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				554C03EE203A9FA600A5DF1A /* logotec.png */,
+				554C03EA203A9D3F00A5DF1A /* facebook.png */,
+				554C03E9203A9D3F00A5DF1A /* instagram.png */,
+				554C03E8203A9D3E00A5DF1A /* twitter.png */,
+				554C03E4203A9C7400A5DF1A /* Cedetec.png */,
+				554C03E3203A9C7400A5DF1A /* Salones.png */,
+				554C03E2203A9C7400A5DF1A /* Proyectos.png */,
+				554C03E0203A9C0500A5DF1A /* About.png */,
+				554C03D5203A96CE00A5DF1A /* SplashScreen.png */,
+			);
+			path = Imagenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +267,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554C03E6203A9C7400A5DF1A /* Salones.png in Resources */,
+				554C03E1203A9C0500A5DF1A /* About.png in Resources */,
+				554C03E5203A9C7400A5DF1A /* Proyectos.png in Resources */,
+				554C03EF203A9FA700A5DF1A /* logotec.png in Resources */,
+				554C03ED203A9D3F00A5DF1A /* facebook.png in Resources */,
 				554C03B1203A954100A5DF1A /* LaunchScreen.storyboard in Resources */,
 				554C03AE203A954100A5DF1A /* Assets.xcassets in Resources */,
+				554C03E7203A9C7400A5DF1A /* Cedetec.png in Resources */,
+				554C03EB203A9D3F00A5DF1A /* twitter.png in Resources */,
+				554C03D6203A96CE00A5DF1A /* SplashScreen.png in Resources */,
+				554C03EC203A9D3F00A5DF1A /* instagram.png in Resources */,
 				554C03AC203A954100A5DF1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

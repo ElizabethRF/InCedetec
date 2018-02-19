@@ -471,7 +471,11 @@ Abraham Armando Silva Apanco
                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="iXt-92-oaC" firstAttribute="leading" secondItem="5RU-FM-UgE" secondAttribute="leading" id="C8g-tZ-ekd"/>
+                            <constraint firstItem="iXt-92-oaC" firstAttribute="trailing" secondItem="da4-up-TJL" secondAttribute="trailing" id="K92-zl-CQR"/>
                             <constraint firstItem="iXt-92-oaC" firstAttribute="bottom" secondItem="da4-up-TJL" secondAttribute="bottom" id="atQ-wv-8fg"/>
+                            <constraint firstItem="iXt-92-oaC" firstAttribute="bottom" secondItem="da4-up-TJL" secondAttribute="bottom" id="eLq-7k-7rA"/>
+                            <constraint firstItem="iXt-92-oaC" firstAttribute="top" secondItem="5RU-FM-UgE" secondAttribute="top" id="jOP-jb-krU"/>
+                            <constraint firstItem="iXt-92-oaC" firstAttribute="leading" secondItem="da4-up-TJL" secondAttribute="leading" id="q4z-f9-uW3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="da4-up-TJL"/>
                     </view>
@@ -494,8 +498,12 @@ Abraham Armando Silva Apanco
                         </subviews>
                         <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="eV7-zg-hzZ" firstAttribute="top" secondItem="zPB-s0-Lez" secondAttribute="top" id="5I0-oM-cjC"/>
+                            <constraint firstItem="eV7-zg-hzZ" firstAttribute="bottom" secondItem="0Nl-z0-8JU" secondAttribute="bottom" id="FvR-FC-UKp"/>
+                            <constraint firstItem="eV7-zg-hzZ" firstAttribute="trailing" secondItem="0Nl-z0-8JU" secondAttribute="trailing" id="Urh-Py-E64"/>
                             <constraint firstItem="eV7-zg-hzZ" firstAttribute="leading" secondItem="zPB-s0-Lez" secondAttribute="leading" id="bIx-aA-sZz"/>
                             <constraint firstItem="eV7-zg-hzZ" firstAttribute="bottom" secondItem="0Nl-z0-8JU" secondAttribute="bottom" id="g6i-Lc-PjW"/>
+                            <constraint firstItem="eV7-zg-hzZ" firstAttribute="leading" secondItem="0Nl-z0-8JU" secondAttribute="leading" id="nUz-ez-aD5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Nl-z0-8JU"/>
                     </view>
@@ -518,7 +526,11 @@ Abraham Armando Silva Apanco
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Odv-aO-RnD" firstAttribute="trailing" secondItem="dbD-Oe-t1p" secondAttribute="trailing" id="5p4-ry-LPw"/>
+                            <constraint firstItem="Odv-aO-RnD" firstAttribute="leading" secondItem="dbD-Oe-t1p" secondAttribute="leading" id="Jzt-DE-6mp"/>
+                            <constraint firstItem="Odv-aO-RnD" firstAttribute="bottom" secondItem="dbD-Oe-t1p" secondAttribute="bottom" id="T5P-KH-cZC"/>
                             <constraint firstItem="Odv-aO-RnD" firstAttribute="leading" secondItem="o5n-Mc-3bK" secondAttribute="leading" id="bDT-1S-n1r"/>
+                            <constraint firstItem="Odv-aO-RnD" firstAttribute="top" secondItem="o5n-Mc-3bK" secondAttribute="top" id="bxK-fA-ozK"/>
                             <constraint firstItem="Odv-aO-RnD" firstAttribute="bottom" secondItem="dbD-Oe-t1p" secondAttribute="bottom" id="pBd-9J-3Qq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dbD-Oe-t1p"/>

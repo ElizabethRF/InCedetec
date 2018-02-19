@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		552BF8F6203B26F00056FF50 /* AgregarSalon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */; };
 		552BF8F8203B27120056FF50 /* ListaProyecto2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */; };
+		552DEE7D203B6FD100019134 /* Salon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 552DEE7A203B6FCA00019134 /* Salon1.png */; };
+		552DEE7E203B6FD100019134 /* Salon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 552DEE7B203B6FCD00019134 /* Salon2.png */; };
+		552DEE7F203B6FD100019134 /* Salon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 552DEE7C203B6FD000019134 /* Salon3.png */; };
 		554C03A7203A954100A5DF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03A6203A954100A5DF1A /* AppDelegate.swift */; };
 		554C03A9203A954100A5DF1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03A8203A954100A5DF1A /* ViewController.swift */; };
 		554C03AC203A954100A5DF1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554C03AA203A954100A5DF1A /* Main.storyboard */; };
@@ -56,6 +59,9 @@
 /* Begin PBXFileReference section */
 		552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarSalon@3x.png"; sourceTree = "<group>"; };
 		552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListaProyecto2@3x.png"; sourceTree = "<group>"; };
+		552DEE7A203B6FCA00019134 /* Salon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon1.png; sourceTree = "<group>"; };
+		552DEE7B203B6FCD00019134 /* Salon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon2.png; sourceTree = "<group>"; };
+		552DEE7C203B6FD000019134 /* Salon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon3.png; sourceTree = "<group>"; };
 		554C03A3203A954100A5DF1A /* InCedetec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InCedetec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		554C03A6203A954100A5DF1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		554C03A8203A954100A5DF1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +177,9 @@
 		554C03D7203A96D400A5DF1A /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				552DEE7A203B6FCA00019134 /* Salon1.png */,
+				552DEE7B203B6FCD00019134 /* Salon2.png */,
+				552DEE7C203B6FD000019134 /* Salon3.png */,
 				552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */,
 				552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */,
 				CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */,
@@ -311,12 +320,15 @@
 				554C03E5203A9C7400A5DF1A /* Proyectos.png in Resources */,
 				554C03EF203A9FA700A5DF1A /* logotec.png in Resources */,
 				554C03ED203A9D3F00A5DF1A /* facebook.png in Resources */,
+				552DEE7F203B6FD100019134 /* Salon3.png in Resources */,
 				552BF8F8203B27120056FF50 /* ListaProyecto2@3x.png in Resources */,
 				554C03B1203A954100A5DF1A /* LaunchScreen.storyboard in Resources */,
 				554C03AE203A954100A5DF1A /* Assets.xcassets in Resources */,
 				554C03E7203A9C7400A5DF1A /* Cedetec.png in Resources */,
+				552DEE7D203B6FD100019134 /* Salon1.png in Resources */,
 				554C03EB203A9D3F00A5DF1A /* twitter.png in Resources */,
 				554C03D6203A96CE00A5DF1A /* SplashScreen.png in Resources */,
+				552DEE7E203B6FD100019134 /* Salon2.png in Resources */,
 				554C03EC203A9D3F00A5DF1A /* instagram.png in Resources */,
 				CA325602203ABD6B004624A4 /* AgregarSalon@3x.png in Resources */,
 				554C03AC203A954100A5DF1A /* Main.storyboard in Resources */,
@@ -517,6 +529,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87AY468PL6;
 				INFOPLIST_FILE = InCedetec/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.InCedetec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +545,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87AY468PL6;
 				INFOPLIST_FILE = InCedetec/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.InCedetec;
 				PRODUCT_NAME = "$(TARGET_NAME)";

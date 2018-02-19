@@ -42,7 +42,7 @@
                                 <state key="normal" image="About.png"/>
                                 <connections>
                                     <action selector="About:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bro-Hv-L3R"/>
-                                    <segue destination="0tK-Bx-tww" kind="show" id="NkE-xV-lsT"/>
+                                    <segue destination="0tK-Bx-tww" kind="show" id="toD-TZ-dEY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHk-n9-4gn" userLabel="IGButton">
@@ -117,13 +117,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MapaGeneral.png" highlightedImage="MapaGeneral.png" translatesAutoresizingMaskIntoConstraints="NO" id="zCs-ou-DCT">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Buscar salón" translatesAutoresizingMaskIntoConstraints="NO" id="SE1-PN-Qdk">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATH-7j-Fdw">
+                                <rect key="frame" x="208" y="403" width="103" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="kb0-EY-pvV" kind="show" id="5LV-dP-Yxx"/>
+                                </connections>
+                            </button>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kOM-qK-ylS">
                                 <rect key="frame" x="0.0" y="64" width="375" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="mUE-D2-NNF" id="g9j-R7-vPZ"/>
-                                </connections>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -143,7 +147,6 @@
                 <searchDisplayController id="Trc-2v-aou">
                     <connections>
                         <outlet property="delegate" destination="mUE-D2-NNF" id="Rkc-La-s2u"/>
-                        <outlet property="searchBar" destination="SE1-PN-Qdk" id="fw0-W6-TQN"/>
                         <outlet property="searchContentsController" destination="mUE-D2-NNF" id="5ah-qm-jPC"/>
                         <outlet property="searchResultsDataSource" destination="mUE-D2-NNF" id="CeA-RZ-rQY"/>
                         <outlet property="searchResultsDelegate" destination="mUE-D2-NNF" id="Uyy-aI-DeU"/>
@@ -168,6 +171,13 @@
                                 <state key="normal" title="Button" image="Contact Add.png"/>
                                 <connections>
                                     <segue destination="Jge-gP-BzF" kind="show" id="wly-3c-k5f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdc-gg-hGa">
+                                <rect key="frame" x="16" y="64" width="343" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="FvQ-Ib-RyE" kind="show" id="Euu-qr-cnj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -623,4 +633,7 @@ Abraham Armando Silva Apanco
         <image name="logotec.png" width="4084" height="1082"/>
         <image name="twitter.png" width="40" height="40"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Euu-qr-cnj"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -242,6 +242,9 @@
                                 <rect key="frame" x="301" y="596" width="58" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Contact Add.png"/>
+                                <connections>
+                                    <segue destination="TnF-2R-UUu" kind="show" id="rAY-s6-DXZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -270,9 +273,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMr-OY-6Gr">
                                 <rect key="frame" x="16" y="600" width="162" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="FvQ-Ib-RyE" kind="show" id="eoK-x8-4iP"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uks-Mh-uC2">
                                 <rect key="frame" x="221" y="600" width="138" height="54"/>
@@ -495,7 +495,4 @@ Abraham Armando Silva Apanco
         <image name="logotec.png" width="4084" height="1082"/>
         <image name="twitter.png" width="40" height="40"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="eoK-x8-4iP"/>
-    </inferredMetricsTieBreakers>
 </document>

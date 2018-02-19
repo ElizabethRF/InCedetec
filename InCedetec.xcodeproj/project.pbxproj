@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		552BF8F6203B26F00056FF50 /* AgregarSalon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */; };
 		552BF8F8203B27120056FF50 /* ListaProyecto2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */; };
+		552BF8FC203B57580056FF50 /* Salon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F9203B57570056FF50 /* Salon3.png */; };
+		552BF8FD203B57580056FF50 /* Salon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8FA203B57570056FF50 /* Salon2.png */; };
+		552BF8FE203B57580056FF50 /* Salon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8FB203B57580056FF50 /* Salon1.png */; };
 		554C03A7203A954100A5DF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03A6203A954100A5DF1A /* AppDelegate.swift */; };
 		554C03A9203A954100A5DF1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03A8203A954100A5DF1A /* ViewController.swift */; };
 		554C03AC203A954100A5DF1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554C03AA203A954100A5DF1A /* Main.storyboard */; };
@@ -34,9 +37,6 @@
 		CA325602203ABD6B004624A4 /* AgregarSalon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */; };
 		CA325604203ABD80004624A4 /* Proyecto2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA325603203ABD7F004624A4 /* Proyecto2@3x.png */; };
 		CABAFA90203B3C3500B1446E /* SalonesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABAFA8F203B3C3500B1446E /* SalonesPageViewController.swift */; };
-		CABAFA94203B3E9C00B1446E /* Salon1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CABAFA91203B3E9700B1446E /* Salon1@3x.png */; };
-		CABAFA95203B3E9C00B1446E /* Salon2.png in Resources */ = {isa = PBXBuildFile; fileRef = CABAFA92203B3E9900B1446E /* Salon2.png */; };
-		CABAFA96203B3E9C00B1446E /* Salon3.png in Resources */ = {isa = PBXBuildFile; fileRef = CABAFA93203B3E9A00B1446E /* Salon3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +59,9 @@
 /* Begin PBXFileReference section */
 		552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarSalon@3x.png"; sourceTree = "<group>"; };
 		552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListaProyecto2@3x.png"; sourceTree = "<group>"; };
+		552BF8F9203B57570056FF50 /* Salon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon3.png; sourceTree = "<group>"; };
+		552BF8FA203B57570056FF50 /* Salon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon2.png; sourceTree = "<group>"; };
+		552BF8FB203B57580056FF50 /* Salon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon1.png; sourceTree = "<group>"; };
 		554C03A3203A954100A5DF1A /* InCedetec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InCedetec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		554C03A6203A954100A5DF1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		554C03A8203A954100A5DF1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,9 +93,6 @@
 		CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarSalon@3x.png"; sourceTree = "<group>"; };
 		CA325603203ABD7F004624A4 /* Proyecto2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proyecto2@3x.png"; sourceTree = "<group>"; };
 		CABAFA8F203B3C3500B1446E /* SalonesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonesPageViewController.swift; sourceTree = "<group>"; };
-		CABAFA91203B3E9700B1446E /* Salon1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Salon1@3x.png"; path = "../../../TEC/6toSemestre/iOS/Assets/Salon1@3x.png"; sourceTree = "<group>"; };
-		CABAFA92203B3E9900B1446E /* Salon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Salon2.png; path = ../../../TEC/6toSemestre/iOS/Assets/Salon2.png; sourceTree = "<group>"; };
-		CABAFA93203B3E9A00B1446E /* Salon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Salon3.png; path = ../../../TEC/6toSemestre/iOS/Assets/Salon3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,9 +177,9 @@
 		554C03D7203A96D400A5DF1A /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
-				CABAFA91203B3E9700B1446E /* Salon1@3x.png */,
-				CABAFA92203B3E9900B1446E /* Salon2.png */,
-				CABAFA93203B3E9A00B1446E /* Salon3.png */,
+				552BF8FB203B57580056FF50 /* Salon1.png */,
+				552BF8FA203B57570056FF50 /* Salon2.png */,
+				552BF8F9203B57570056FF50 /* Salon3.png */,
 				552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */,
 				552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */,
 				CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */,
@@ -310,9 +310,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA325604203ABD80004624A4 /* Proyecto2@3x.png in Resources */,
-				CABAFA95203B3E9C00B1446E /* Salon2.png in Resources */,
+				552BF8FD203B57580056FF50 /* Salon2.png in Resources */,
 				554C03E6203A9C7400A5DF1A /* Salones.png in Resources */,
+				552BF8FE203B57580056FF50 /* Salon1.png in Resources */,
 				CA325600203ABCB3004624A4 /* Proyecto@3x.png in Resources */,
+				552BF8FC203B57580056FF50 /* Salon3.png in Resources */,
 				552BF8F6203B26F00056FF50 /* AgregarSalon@3x.png in Resources */,
 				554C03E1203A9C0500A5DF1A /* About.png in Resources */,
 				CA3255F6203AB8CC004624A4 /* ListaProyectos@3x.png in Resources */,
@@ -322,11 +324,9 @@
 				554C03EF203A9FA700A5DF1A /* logotec.png in Resources */,
 				554C03ED203A9D3F00A5DF1A /* facebook.png in Resources */,
 				552BF8F8203B27120056FF50 /* ListaProyecto2@3x.png in Resources */,
-				CABAFA96203B3E9C00B1446E /* Salon3.png in Resources */,
 				554C03B1203A954100A5DF1A /* LaunchScreen.storyboard in Resources */,
 				554C03AE203A954100A5DF1A /* Assets.xcassets in Resources */,
 				554C03E7203A9C7400A5DF1A /* Cedetec.png in Resources */,
-				CABAFA94203B3E9C00B1446E /* Salon1@3x.png in Resources */,
 				554C03EB203A9D3F00A5DF1A /* twitter.png in Resources */,
 				554C03D6203A96CE00A5DF1A /* SplashScreen.png in Resources */,
 				554C03EC203A9D3F00A5DF1A /* instagram.png in Resources */,

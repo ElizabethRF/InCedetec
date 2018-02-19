@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -183,9 +184,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vGs-uV-fGR" firstAttribute="bottom" secondItem="Q9p-eq-Rn4" secondAttribute="bottom" id="Nc4-m5-oRO"/>
-                            <constraint firstAttribute="trailing" secondItem="vGs-uV-fGR" secondAttribute="trailing" id="hKo-Ve-eeS"/>
-                            <constraint firstItem="vGs-uV-fGR" firstAttribute="leading" secondItem="VaJ-ny-aXO" secondAttribute="leading" id="k8H-hC-JRu"/>
+                            <constraint firstItem="vGs-uV-fGR" firstAttribute="leading" secondItem="VaJ-ny-aXO" secondAttribute="leading" id="1UT-eP-5eA"/>
+                            <constraint firstAttribute="trailing" secondItem="vGs-uV-fGR" secondAttribute="trailing" id="RBy-XI-Sxi"/>
+                            <constraint firstItem="vGs-uV-fGR" firstAttribute="bottom" secondItem="Q9p-eq-Rn4" secondAttribute="bottom" id="p22-ja-Xaf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q9p-eq-Rn4"/>
                     </view>
@@ -202,7 +203,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ListaProyecto2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xy9-HC-cMN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ListaProyecto2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xy9-HC-cMN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he7-GG-tpO">
@@ -217,6 +218,7 @@
                             <constraint firstItem="he7-GG-tpO" firstAttribute="trailing" secondItem="Xy9-HC-cMN" secondAttribute="trailing" id="GdT-Ta-Fi4"/>
                             <constraint firstItem="he7-GG-tpO" firstAttribute="leading" secondItem="Xy9-HC-cMN" secondAttribute="leading" id="TFR-KF-fxt"/>
                             <constraint firstItem="he7-GG-tpO" firstAttribute="top" secondItem="OGN-R0-etS" secondAttribute="topMargin" constant="-1" id="bAO-za-ncy"/>
+                            <constraint firstItem="Xy9-HC-cMN" firstAttribute="bottom" secondItem="S9d-Kk-C2A" secondAttribute="bottom" id="fEL-G2-hDo"/>
                             <constraint firstItem="S9d-Kk-C2A" firstAttribute="bottom" secondItem="he7-GG-tpO" secondAttribute="bottom" constant="320" id="g06-j2-Fff"/>
                             <constraint firstItem="he7-GG-tpO" firstAttribute="leading" secondItem="OGN-R0-etS" secondAttribute="leading" id="r2j-gJ-WVW"/>
                         </constraints>
@@ -238,9 +240,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Proyecto.png" translatesAutoresizingMaskIntoConstraints="NO" id="ndy-Fe-yZB">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lny-W8-Zgz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lny-W8-Zgz">
                                 <rect key="frame" x="301" y="596" width="58" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Contact Add.png"/>
                                 <connections>
                                     <segue destination="TnF-2R-UUu" kind="show" id="rAY-s6-DXZ"/>
@@ -250,6 +251,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ndy-Fe-yZB" firstAttribute="bottom" secondItem="srI-kx-UPs" secondAttribute="bottom" id="HRD-w0-RzX"/>
+                            <constraint firstItem="Lny-W8-Zgz" firstAttribute="leading" secondItem="srI-kx-UPs" secondAttribute="leading" constant="301" id="R4X-lG-oBe"/>
+                            <constraint firstAttribute="bottom" secondItem="Lny-W8-Zgz" secondAttribute="bottom" constant="20" symbolic="YES" id="i0C-cr-Mc4"/>
+                            <constraint firstItem="Lny-W8-Zgz" firstAttribute="trailing" secondItem="vLs-Xe-VX5" secondAttribute="trailingMargin" id="kh6-gA-3bv"/>
                             <constraint firstItem="ndy-Fe-yZB" firstAttribute="leading" secondItem="vLs-Xe-VX5" secondAttribute="leading" id="ue2-5i-mas"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="srI-kx-UPs"/>
@@ -267,16 +271,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AgregarSalon.png" translatesAutoresizingMaskIntoConstraints="NO" id="etq-c2-rh0">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sV5-uW-bjJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMr-OY-6Gr">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AgregarSalon.png" translatesAutoresizingMaskIntoConstraints="NO" id="etq-c2-rh0">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMr-OY-6Gr">
                                 <rect key="frame" x="16" y="600" width="162" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uks-Mh-uC2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uks-Mh-uC2">
                                 <rect key="frame" x="221" y="600" width="138" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="5K4-g8-X5p"/>
+                                </constraints>
                                 <connections>
                                     <segue destination="mTe-3s-jYI" kind="show" id="ICe-YU-78P"/>
                                 </connections>
@@ -284,8 +294,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="etq-c2-rh0" firstAttribute="leading" secondItem="ncs-KF-fLg" secondAttribute="leading" id="lud-8Y-sz9"/>
-                            <constraint firstItem="etq-c2-rh0" firstAttribute="bottom" secondItem="PfL-pe-jZT" secondAttribute="bottom" id="ntA-Wr-7hY"/>
+                            <constraint firstItem="CMr-OY-6Gr" firstAttribute="baseline" secondItem="uks-Mh-uC2" secondAttribute="baseline" id="3to-gS-nxm"/>
+                            <constraint firstItem="CMr-OY-6Gr" firstAttribute="leading" secondItem="ncs-KF-fLg" secondAttribute="leadingMargin" id="66w-Sz-n0b"/>
+                            <constraint firstItem="CMr-OY-6Gr" firstAttribute="top" secondItem="PfL-pe-jZT" secondAttribute="top" constant="536" id="HOa-VM-fD0"/>
+                            <constraint firstItem="CMr-OY-6Gr" firstAttribute="top" secondItem="uks-Mh-uC2" secondAttribute="top" id="P4a-Js-tkc"/>
+                            <constraint firstItem="uks-Mh-uC2" firstAttribute="trailing" secondItem="ncs-KF-fLg" secondAttribute="trailingMargin" id="Rtg-Lr-1vZ"/>
+                            <constraint firstItem="sV5-uW-bjJ" firstAttribute="bottom" secondItem="PfL-pe-jZT" secondAttribute="bottom" id="aTE-oO-uaC"/>
+                            <constraint firstItem="PfL-pe-jZT" firstAttribute="bottom" secondItem="uks-Mh-uC2" secondAttribute="bottom" constant="13" id="boB-QX-ah7"/>
+                            <constraint firstItem="uks-Mh-uC2" firstAttribute="leading" secondItem="CMr-OY-6Gr" secondAttribute="trailing" constant="43" id="dUp-Ca-OPj"/>
+                            <constraint firstItem="sV5-uW-bjJ" firstAttribute="leading" secondItem="ncs-KF-fLg" secondAttribute="leading" id="gcu-Xb-aa3"/>
+                            <constraint firstItem="CMr-OY-6Gr" firstAttribute="firstBaseline" secondItem="uks-Mh-uC2" secondAttribute="firstBaseline" id="gvT-b8-Ae3"/>
+                            <constraint firstAttribute="bottom" secondItem="CMr-OY-6Gr" secondAttribute="bottom" constant="20" symbolic="YES" id="s28-kF-Clj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PfL-pe-jZT"/>
                     </view>
@@ -308,8 +327,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iUv-ht-fD4" firstAttribute="bottom" secondItem="8cA-CK-0tu" secondAttribute="bottom" id="ECd-Yv-MvO"/>
-                            <constraint firstItem="iUv-ht-fD4" firstAttribute="leading" secondItem="OLi-WN-kE4" secondAttribute="leading" id="Ug3-61-Y2n"/>
+                            <constraint firstItem="iUv-ht-fD4" firstAttribute="leading" secondItem="OLi-WN-kE4" secondAttribute="leading" id="1ad-aJ-ECE"/>
+                            <constraint firstItem="iUv-ht-fD4" firstAttribute="bottom" secondItem="8cA-CK-0tu" secondAttribute="bottom" id="eBD-eh-ha6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8cA-CK-0tu"/>
                     </view>
@@ -445,12 +464,15 @@ Abraham Armando Silva Apanco
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Salon1.png" translatesAutoresizingMaskIntoConstraints="NO" id="iXt-92-oaC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Salon1.png" translatesAutoresizingMaskIntoConstraints="NO" id="iXt-92-oaC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iXt-92-oaC" firstAttribute="leading" secondItem="5RU-FM-UgE" secondAttribute="leading" id="C8g-tZ-ekd"/>
+                            <constraint firstItem="iXt-92-oaC" firstAttribute="bottom" secondItem="da4-up-TJL" secondAttribute="bottom" id="atQ-wv-8fg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="da4-up-TJL"/>
                     </view>
                 </viewController>
@@ -466,12 +488,15 @@ Abraham Armando Silva Apanco
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Salon2.png" translatesAutoresizingMaskIntoConstraints="NO" id="eV7-zg-hzZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Salon2.png" translatesAutoresizingMaskIntoConstraints="NO" id="eV7-zg-hzZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eV7-zg-hzZ" firstAttribute="leading" secondItem="zPB-s0-Lez" secondAttribute="leading" id="bIx-aA-sZz"/>
+                            <constraint firstItem="eV7-zg-hzZ" firstAttribute="bottom" secondItem="0Nl-z0-8JU" secondAttribute="bottom" id="g6i-Lc-PjW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0Nl-z0-8JU"/>
                     </view>
                 </viewController>
@@ -487,12 +512,15 @@ Abraham Armando Silva Apanco
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Salon3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Odv-aO-RnD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Salon3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Odv-aO-RnD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Odv-aO-RnD" firstAttribute="leading" secondItem="o5n-Mc-3bK" secondAttribute="leading" id="bDT-1S-n1r"/>
+                            <constraint firstItem="Odv-aO-RnD" firstAttribute="bottom" secondItem="dbD-Oe-t1p" secondAttribute="bottom" id="pBd-9J-3Qq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dbD-Oe-t1p"/>
                     </view>
                 </viewController>
@@ -533,8 +561,8 @@ Abraham Armando Silva Apanco
         <image name="Proyecto2.png" width="375" height="667"/>
         <image name="Proyectos.png" width="146" height="136"/>
         <image name="Salon1.png" width="375" height="667"/>
-        <image name="Salon2.png" width="1125" height="2001"/>
-        <image name="Salon3.png" width="1125" height="2001"/>
+        <image name="Salon2.png" width="375" height="667"/>
+        <image name="Salon3.png" width="375" height="667"/>
         <image name="Salones.png" width="146" height="136"/>
         <image name="facebook.png" width="40" height="40"/>
         <image name="instagram.png" width="40" height="40"/>

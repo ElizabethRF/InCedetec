@@ -33,6 +33,10 @@
 		CA325600203ABCB3004624A4 /* Proyecto@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */; };
 		CA325602203ABD6B004624A4 /* AgregarSalon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */; };
 		CA325604203ABD80004624A4 /* Proyecto2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA325603203ABD7F004624A4 /* Proyecto2@3x.png */; };
+		CABAFA90203B3C3500B1446E /* SalonesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABAFA8F203B3C3500B1446E /* SalonesPageViewController.swift */; };
+		CABAFA94203B3E9C00B1446E /* Salon1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CABAFA91203B3E9700B1446E /* Salon1@3x.png */; };
+		CABAFA95203B3E9C00B1446E /* Salon2.png in Resources */ = {isa = PBXBuildFile; fileRef = CABAFA92203B3E9900B1446E /* Salon2.png */; };
+		CABAFA96203B3E9C00B1446E /* Salon3.png in Resources */ = {isa = PBXBuildFile; fileRef = CABAFA93203B3E9A00B1446E /* Salon3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,10 @@
 		CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proyecto@3x.png"; sourceTree = "<group>"; };
 		CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarSalon@3x.png"; sourceTree = "<group>"; };
 		CA325603203ABD7F004624A4 /* Proyecto2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proyecto2@3x.png"; sourceTree = "<group>"; };
+		CABAFA8F203B3C3500B1446E /* SalonesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonesPageViewController.swift; sourceTree = "<group>"; };
+		CABAFA91203B3E9700B1446E /* Salon1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Salon1@3x.png"; path = "../../../TEC/6toSemestre/iOS/Assets/Salon1@3x.png"; sourceTree = "<group>"; };
+		CABAFA92203B3E9900B1446E /* Salon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Salon2.png; path = ../../../TEC/6toSemestre/iOS/Assets/Salon2.png; sourceTree = "<group>"; };
+		CABAFA93203B3E9A00B1446E /* Salon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Salon3.png; path = ../../../TEC/6toSemestre/iOS/Assets/Salon3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +151,7 @@
 				554C03AF203A954100A5DF1A /* LaunchScreen.storyboard */,
 				554C03B2203A954100A5DF1A /* Info.plist */,
 				554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */,
+				CABAFA8F203B3C3500B1446E /* SalonesPageViewController.swift */,
 			);
 			path = InCedetec;
 			sourceTree = "<group>";
@@ -168,6 +177,9 @@
 		554C03D7203A96D400A5DF1A /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				CABAFA91203B3E9700B1446E /* Salon1@3x.png */,
+				CABAFA92203B3E9900B1446E /* Salon2.png */,
+				CABAFA93203B3E9A00B1446E /* Salon3.png */,
 				552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */,
 				552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */,
 				CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */,
@@ -298,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA325604203ABD80004624A4 /* Proyecto2@3x.png in Resources */,
+				CABAFA95203B3E9C00B1446E /* Salon2.png in Resources */,
 				554C03E6203A9C7400A5DF1A /* Salones.png in Resources */,
 				CA325600203ABCB3004624A4 /* Proyecto@3x.png in Resources */,
 				552BF8F6203B26F00056FF50 /* AgregarSalon@3x.png in Resources */,
@@ -309,9 +322,11 @@
 				554C03EF203A9FA700A5DF1A /* logotec.png in Resources */,
 				554C03ED203A9D3F00A5DF1A /* facebook.png in Resources */,
 				552BF8F8203B27120056FF50 /* ListaProyecto2@3x.png in Resources */,
+				CABAFA96203B3E9C00B1446E /* Salon3.png in Resources */,
 				554C03B1203A954100A5DF1A /* LaunchScreen.storyboard in Resources */,
 				554C03AE203A954100A5DF1A /* Assets.xcassets in Resources */,
 				554C03E7203A9C7400A5DF1A /* Cedetec.png in Resources */,
+				CABAFA94203B3E9C00B1446E /* Salon1@3x.png in Resources */,
 				554C03EB203A9D3F00A5DF1A /* twitter.png in Resources */,
 				554C03D6203A96CE00A5DF1A /* SplashScreen.png in Resources */,
 				554C03EC203A9D3F00A5DF1A /* instagram.png in Resources */,
@@ -345,6 +360,7 @@
 				554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */,
 				554C03A9203A954100A5DF1A /* ViewController.swift in Sources */,
 				554C03A7203A954100A5DF1A /* AppDelegate.swift in Sources */,
+				CABAFA90203B3C3500B1446E /* SalonesPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

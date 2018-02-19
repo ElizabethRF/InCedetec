@@ -26,7 +26,7 @@
                                 <rect key="frame" x="40" y="185" width="146" height="136"/>
                                 <state key="normal" image="Salones.png"/>
                                 <connections>
-                                    <segue destination="ABO-tO-88r" kind="show" id="g98-xm-wQZ"/>
+                                    <segue destination="bpm-dY-aJK" kind="show" id="RwT-sr-xAa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwP-Xk-u6s" userLabel="ProyectosButton">
@@ -429,33 +429,76 @@ Abraham Armando Silva Apanco
             </objects>
             <point key="canvasLocation" x="1940" y="626.53673163418296"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="S3R-Fj-Dqa">
+        <!--Salones Page View Controller-->
+        <scene sceneID="APA-ld-TCY">
             <objects>
-                <tableViewController id="ABO-tO-88r" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NEP-2l-Xgh">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="bpm-dY-aJK" customClass="SalonesPageViewController" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bd0-nM-Pmr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-43" y="-809"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9JJ-0M-qir">
+            <objects>
+                <viewController storyboardIdentifier="salon1" id="tDS-qS-l4X" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5RU-FM-UgE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rEU-4F-yeQ">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rEU-4F-yeQ" id="7U9-B6-gkr">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ABO-tO-88r" id="2qQ-W1-Hhf"/>
-                            <outlet property="delegate" destination="ABO-tO-88r" id="j4G-TN-72p"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dmJ-nN-FUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Salon1.png" translatesAutoresizingMaskIntoConstraints="NO" id="iXt-92-oaC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="da4-up-TJL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JiS-t1-UxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="876" y="-757"/>
+            <point key="canvasLocation" x="788" y="-826.23688155922048"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lJ9-gl-89B">
+            <objects>
+                <viewController storyboardIdentifier="salon2" id="CbT-7M-4PE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zPB-s0-Lez">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Salon2.png" translatesAutoresizingMaskIntoConstraints="NO" id="eV7-zg-hzZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="0Nl-z0-8JU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOS-tJ-uX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589.5999999999999" y="-809.14542728635683"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="X7F-Rt-svC">
+            <objects>
+                <viewController storyboardIdentifier="salon3" id="kb0-EY-pvV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o5n-Mc-3bK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Salon3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Odv-aO-RnD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dbD-Oe-t1p"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8i-qM-PjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2501.5999999999999" y="-826.23688155922048"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wqa-gZ-ioc">
@@ -489,6 +532,9 @@ Abraham Armando Silva Apanco
         <image name="Proyecto.png" width="375" height="667"/>
         <image name="Proyecto2.png" width="375" height="667"/>
         <image name="Proyectos.png" width="146" height="136"/>
+        <image name="Salon1.png" width="375" height="667"/>
+        <image name="Salon2.png" width="1125" height="2001"/>
+        <image name="Salon3.png" width="1125" height="2001"/>
         <image name="Salones.png" width="146" height="136"/>
         <image name="facebook.png" width="40" height="40"/>
         <image name="instagram.png" width="40" height="40"/>

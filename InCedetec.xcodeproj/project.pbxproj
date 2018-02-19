@@ -23,6 +23,8 @@
 		554C03EC203A9D3F00A5DF1A /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03E9203A9D3F00A5DF1A /* instagram.png */; };
 		554C03ED203A9D3F00A5DF1A /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03EA203A9D3F00A5DF1A /* facebook.png */; };
 		554C03EF203A9FA700A5DF1A /* logotec.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03EE203A9FA600A5DF1A /* logotec.png */; };
+		554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */; };
+		554C03F3203AB14C00A5DF1A /* MapaGeneral.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03F2203AB14C00A5DF1A /* MapaGeneral.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		554C03E9203A9D3F00A5DF1A /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
 		554C03EA203A9D3F00A5DF1A /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		554C03EE203A9FA600A5DF1A /* logotec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logotec.png; sourceTree = "<group>"; };
+		554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectosTableViewController.swift; sourceTree = "<group>"; };
+		554C03F2203AB14C00A5DF1A /* MapaGeneral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapaGeneral.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 				554C03AD203A954100A5DF1A /* Assets.xcassets */,
 				554C03AF203A954100A5DF1A /* LaunchScreen.storyboard */,
 				554C03B2203A954100A5DF1A /* Info.plist */,
+				554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */,
 			);
 			path = InCedetec;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 		554C03D7203A96D400A5DF1A /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				554C03F2203AB14C00A5DF1A /* MapaGeneral.png */,
 				554C03EE203A9FA600A5DF1A /* logotec.png */,
 				554C03EA203A9D3F00A5DF1A /* facebook.png */,
 				554C03E9203A9D3F00A5DF1A /* instagram.png */,
@@ -279,6 +285,7 @@
 				554C03D6203A96CE00A5DF1A /* SplashScreen.png in Resources */,
 				554C03EC203A9D3F00A5DF1A /* instagram.png in Resources */,
 				554C03AC203A954100A5DF1A /* Main.storyboard in Resources */,
+				554C03F3203AB14C00A5DF1A /* MapaGeneral.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */,
 				554C03A9203A954100A5DF1A /* ViewController.swift in Sources */,
 				554C03A7203A954100A5DF1A /* AppDelegate.swift in Sources */,
 			);

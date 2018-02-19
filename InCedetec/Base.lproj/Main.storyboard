@@ -173,9 +173,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGs-uV-fGR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGs-uV-fGR">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="AgregarProyectoNuevo.png"/>
                                 <connections>
                                     <segue destination="kfJ-IH-haz" kind="show" id="VKv-qk-XfO"/>
@@ -183,6 +182,11 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vGs-uV-fGR" firstAttribute="bottom" secondItem="Q9p-eq-Rn4" secondAttribute="bottom" id="Nc4-m5-oRO"/>
+                            <constraint firstAttribute="trailing" secondItem="vGs-uV-fGR" secondAttribute="trailing" id="hKo-Ve-eeS"/>
+                            <constraint firstItem="vGs-uV-fGR" firstAttribute="leading" secondItem="VaJ-ny-aXO" secondAttribute="leading" id="k8H-hC-JRu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Q9p-eq-Rn4"/>
                     </view>
                 </viewController>
@@ -198,27 +202,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ListaProyecto2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xy9-HC-cMN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ListaProyecto2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xy9-HC-cMN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcY-IL-0Sg">
-                                <rect key="frame" x="307" y="595" width="52" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Contact Add.png"/>
-                                <connections>
-                                    <segue destination="Jge-gP-BzF" kind="show" id="nh8-9O-3QA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he7-GG-tpO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he7-GG-tpO">
                                 <rect key="frame" x="0.0" y="63" width="375" height="284"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="FvQ-Ib-RyE" kind="show" id="5OW-EW-BiK"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="he7-GG-tpO" firstAttribute="trailing" secondItem="Xy9-HC-cMN" secondAttribute="trailing" id="GdT-Ta-Fi4"/>
+                            <constraint firstItem="he7-GG-tpO" firstAttribute="leading" secondItem="Xy9-HC-cMN" secondAttribute="leading" id="TFR-KF-fxt"/>
+                            <constraint firstItem="he7-GG-tpO" firstAttribute="top" secondItem="OGN-R0-etS" secondAttribute="topMargin" constant="-1" id="bAO-za-ncy"/>
+                            <constraint firstItem="S9d-Kk-C2A" firstAttribute="bottom" secondItem="he7-GG-tpO" secondAttribute="bottom" constant="320" id="g06-j2-Fff"/>
+                            <constraint firstItem="he7-GG-tpO" firstAttribute="leading" secondItem="OGN-R0-etS" secondAttribute="leading" id="r2j-gJ-WVW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="S9d-Kk-C2A"/>
                     </view>
                 </viewController>
@@ -234,9 +235,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Proyecto.png" translatesAutoresizingMaskIntoConstraints="NO" id="ndy-Fe-yZB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Proyecto.png" translatesAutoresizingMaskIntoConstraints="NO" id="ndy-Fe-yZB">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lny-W8-Zgz">
                                 <rect key="frame" x="301" y="596" width="58" height="51"/>
@@ -245,6 +245,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ndy-Fe-yZB" firstAttribute="bottom" secondItem="srI-kx-UPs" secondAttribute="bottom" id="HRD-w0-RzX"/>
+                            <constraint firstItem="ndy-Fe-yZB" firstAttribute="leading" secondItem="vLs-Xe-VX5" secondAttribute="leading" id="ue2-5i-mas"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="srI-kx-UPs"/>
                     </view>
                 </viewController>
@@ -260,9 +264,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AgregarSalon.png" translatesAutoresizingMaskIntoConstraints="NO" id="etq-c2-rh0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AgregarSalon.png" translatesAutoresizingMaskIntoConstraints="NO" id="etq-c2-rh0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMr-OY-6Gr">
                                 <rect key="frame" x="16" y="600" width="162" height="47"/>
@@ -280,6 +283,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="etq-c2-rh0" firstAttribute="leading" secondItem="ncs-KF-fLg" secondAttribute="leading" id="lud-8Y-sz9"/>
+                            <constraint firstItem="etq-c2-rh0" firstAttribute="bottom" secondItem="PfL-pe-jZT" secondAttribute="bottom" id="ntA-Wr-7hY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PfL-pe-jZT"/>
                     </view>
                 </viewController>
@@ -295,12 +302,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Proyecto2.png" translatesAutoresizingMaskIntoConstraints="NO" id="iUv-ht-fD4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Proyecto2.png" translatesAutoresizingMaskIntoConstraints="NO" id="iUv-ht-fD4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iUv-ht-fD4" firstAttribute="bottom" secondItem="8cA-CK-0tu" secondAttribute="bottom" id="ECd-Yv-MvO"/>
+                            <constraint firstItem="iUv-ht-fD4" firstAttribute="leading" secondItem="OLi-WN-kE4" secondAttribute="leading" id="Ug3-61-Y2n"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8cA-CK-0tu"/>
                     </view>
                 </viewController>
@@ -486,8 +496,6 @@ Abraham Armando Silva Apanco
         <image name="twitter.png" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VKv-qk-XfO"/>
         <segue reference="eoK-x8-4iP"/>
-        <segue reference="nh8-9O-3QA"/>
     </inferredMetricsTieBreakers>
 </document>

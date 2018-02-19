@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		552BF8F6203B26F00056FF50 /* AgregarSalon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */; };
 		552BF8F8203B27120056FF50 /* ListaProyecto2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */; };
-		552BF8FC203B57580056FF50 /* Salon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F9203B57570056FF50 /* Salon3.png */; };
-		552BF8FD203B57580056FF50 /* Salon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8FA203B57570056FF50 /* Salon2.png */; };
-		552BF8FE203B57580056FF50 /* Salon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8FB203B57580056FF50 /* Salon1.png */; };
 		554C03A7203A954100A5DF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03A6203A954100A5DF1A /* AppDelegate.swift */; };
 		554C03A9203A954100A5DF1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03A8203A954100A5DF1A /* ViewController.swift */; };
 		554C03AC203A954100A5DF1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554C03AA203A954100A5DF1A /* Main.storyboard */; };
@@ -59,9 +56,6 @@
 /* Begin PBXFileReference section */
 		552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarSalon@3x.png"; sourceTree = "<group>"; };
 		552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListaProyecto2@3x.png"; sourceTree = "<group>"; };
-		552BF8F9203B57570056FF50 /* Salon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon3.png; sourceTree = "<group>"; };
-		552BF8FA203B57570056FF50 /* Salon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon2.png; sourceTree = "<group>"; };
-		552BF8FB203B57580056FF50 /* Salon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon1.png; sourceTree = "<group>"; };
 		554C03A3203A954100A5DF1A /* InCedetec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InCedetec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		554C03A6203A954100A5DF1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		554C03A8203A954100A5DF1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -177,9 +171,6 @@
 		554C03D7203A96D400A5DF1A /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
-				552BF8FB203B57580056FF50 /* Salon1.png */,
-				552BF8FA203B57570056FF50 /* Salon2.png */,
-				552BF8F9203B57570056FF50 /* Salon3.png */,
 				552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */,
 				552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */,
 				CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */,
@@ -310,11 +301,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA325604203ABD80004624A4 /* Proyecto2@3x.png in Resources */,
-				552BF8FD203B57580056FF50 /* Salon2.png in Resources */,
 				554C03E6203A9C7400A5DF1A /* Salones.png in Resources */,
-				552BF8FE203B57580056FF50 /* Salon1.png in Resources */,
 				CA325600203ABCB3004624A4 /* Proyecto@3x.png in Resources */,
-				552BF8FC203B57580056FF50 /* Salon3.png in Resources */,
 				552BF8F6203B26F00056FF50 /* AgregarSalon@3x.png in Resources */,
 				554C03E1203A9C0500A5DF1A /* About.png in Resources */,
 				CA3255F6203AB8CC004624A4 /* ListaProyectos@3x.png in Resources */,

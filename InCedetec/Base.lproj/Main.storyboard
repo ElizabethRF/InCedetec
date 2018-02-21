@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="6dA-9f-8PH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FondoInicio" translatesAutoresizingMaskIntoConstraints="NO" id="6dA-9f-8PH">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twf-D0-wF9" userLabel="SalonesButton">
@@ -617,7 +617,7 @@ Abraham Armando Silva Apanco
         <image name="AgregarSalon.png" width="375" height="667"/>
         <image name="Cedetec.png" width="146" height="136"/>
         <image name="Contact Add.png" width="51" height="51"/>
-        <image name="Image" width="719" height="1280"/>
+        <image name="FondoInicio" width="375" height="667"/>
         <image name="ListaProyecto2.png" width="375" height="667"/>
         <image name="ListaProyectos.png" width="375" height="667"/>
         <image name="MapaGeneral.png" width="373" height="602"/>

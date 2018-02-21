@@ -25,21 +25,21 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twf-D0-wF9" userLabel="SalonesButton">
                                 <rect key="frame" x="40" y="185" width="146" height="136"/>
-                                <state key="normal" image="Salones.png"/>
+                                <state key="normal" image="SalonesIcono"/>
                                 <connections>
                                     <segue destination="bpm-dY-aJK" kind="show" id="RwT-sr-xAa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwP-Xk-u6s" userLabel="ProyectosButton">
                                 <rect key="frame" x="40" y="329" width="146" height="136"/>
-                                <state key="normal" image="Proyectos.png"/>
+                                <state key="normal" image="ProyectosIcono"/>
                                 <connections>
                                     <segue destination="06f-ZP-aI9" kind="show" id="0MT-28-uR7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF5-8R-uYa" userLabel="AboutButton">
                                 <rect key="frame" x="194" y="329" width="146" height="136"/>
-                                <state key="normal" image="About.png"/>
+                                <state key="normal" image="AcercadeIcono"/>
                                 <connections>
                                     <action selector="About:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bro-Hv-L3R"/>
                                     <segue destination="0tK-Bx-tww" kind="show" id="toD-TZ-dEY"/>
@@ -47,28 +47,28 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHk-n9-4gn" userLabel="IGButton">
                                 <rect key="frame" x="319" y="618" width="40" height="40"/>
-                                <state key="normal" image="instagram.png"/>
+                                <state key="normal" image="InstagramIcono"/>
                                 <connections>
                                     <action selector="IGButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="54c-GF-YU4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqF-bO-EME" userLabel="FacebookButton">
                                 <rect key="frame" x="271" y="618" width="40" height="40"/>
-                                <state key="normal" image="twitter.png"/>
+                                <state key="normal" image="TwitterIcono"/>
                                 <connections>
                                     <action selector="ttButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ujM-2z-J7E"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajE-E6-dRB" userLabel="TwitterButton">
                                 <rect key="frame" x="223" y="618" width="40" height="40"/>
-                                <state key="normal" image="facebook.png"/>
+                                <state key="normal" image="FacebookIcono"/>
                                 <connections>
                                     <action selector="fbButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jrZ-g9-M97"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIr-5Q-ws5" userLabel="CEDETECButton">
                                 <rect key="frame" x="194" y="185" width="146" height="136"/>
-                                <state key="normal" image="Cedetec.png"/>
+                                <state key="normal" image="CedetecIcono"/>
                                 <connections>
                                     <action selector="CEDETECButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p26-79-LbQ"/>
                                     <segue destination="mUE-D2-NNF" kind="show" id="8UQ-UQ-K0I"/>
@@ -168,7 +168,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK0-Le-ou5">
                                 <rect key="frame" x="301" y="596" width="58" height="51"/>
-                                <state key="normal" title="Button" image="Contact Add.png"/>
+                                <state key="normal" title="Button" image="AgregarIcono"/>
                                 <connections>
                                     <segue destination="Jge-gP-BzF" kind="show" id="wly-3c-k5f"/>
                                 </connections>
@@ -280,7 +280,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lny-W8-Zgz">
                                 <rect key="frame" x="301" y="596" width="58" height="51"/>
-                                <state key="normal" title="Button" image="Contact Add.png"/>
+                                <state key="normal" title="Button" image="AgregarIcono"/>
                                 <connections>
                                     <segue destination="TnF-2R-UUu" kind="show" id="rAY-s6-DXZ"/>
                                 </connections>
@@ -397,7 +397,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotec.png" translatesAutoresizingMaskIntoConstraints="NO" id="qu7-1d-G0H">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoTec" translatesAutoresizingMaskIntoConstraints="NO" id="qu7-1d-G0H">
                                 <rect key="frame" x="31" y="119" width="312" height="99"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99" id="Hwd-Kl-QRJ"/>
@@ -612,26 +612,26 @@ Abraham Armando Silva Apanco
         </scene>
     </scenes>
     <resources>
-        <image name="About.png" width="146" height="136"/>
+        <image name="AcercadeIcono" width="146" height="136"/>
+        <image name="AgregarIcono" width="51" height="51"/>
         <image name="AgregarProyectoNuevo.png" width="375" height="667"/>
         <image name="AgregarSalon.png" width="375" height="667"/>
-        <image name="Cedetec.png" width="146" height="136"/>
-        <image name="Contact Add.png" width="51" height="51"/>
+        <image name="CedetecIcono" width="146" height="136"/>
+        <image name="FacebookIcono" width="40" height="40"/>
         <image name="FondoInicio" width="375" height="667"/>
+        <image name="InstagramIcono" width="40" height="40"/>
         <image name="ListaProyecto2.png" width="375" height="667"/>
         <image name="ListaProyectos.png" width="375" height="667"/>
+        <image name="LogoTec" width="278" height="73"/>
         <image name="MapaGeneral.png" width="373" height="602"/>
         <image name="Proyecto.png" width="375" height="667"/>
         <image name="Proyecto2.png" width="375" height="667"/>
-        <image name="Proyectos.png" width="146" height="136"/>
+        <image name="ProyectosIcono" width="146" height="136"/>
         <image name="Salon1.png" width="1125" height="2001"/>
         <image name="Salon2.png" width="1125" height="2001"/>
         <image name="Salon3.png" width="1125" height="2001"/>
-        <image name="Salones.png" width="146" height="136"/>
-        <image name="facebook.png" width="40" height="40"/>
-        <image name="instagram.png" width="40" height="40"/>
-        <image name="logotec.png" width="4084" height="1082"/>
-        <image name="twitter.png" width="40" height="40"/>
+        <image name="SalonesIcono" width="146" height="136"/>
+        <image name="TwitterIcono" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Euu-qr-cnj"/>

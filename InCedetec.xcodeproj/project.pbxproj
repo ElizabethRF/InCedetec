@@ -19,19 +19,9 @@
 		554C03B1203A954100A5DF1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554C03AF203A954100A5DF1A /* LaunchScreen.storyboard */; };
 		554C03BC203A954100A5DF1A /* InCedetecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03BB203A954100A5DF1A /* InCedetecTests.swift */; };
 		554C03C7203A954100A5DF1A /* InCedetecUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03C6203A954100A5DF1A /* InCedetecUITests.swift */; };
-		554C03D6203A96CE00A5DF1A /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03D5203A96CE00A5DF1A /* SplashScreen.png */; };
-		554C03E1203A9C0500A5DF1A /* About.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03E0203A9C0500A5DF1A /* About.png */; };
-		554C03E5203A9C7400A5DF1A /* Proyectos.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03E2203A9C7400A5DF1A /* Proyectos.png */; };
-		554C03E6203A9C7400A5DF1A /* Salones.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03E3203A9C7400A5DF1A /* Salones.png */; };
-		554C03E7203A9C7400A5DF1A /* Cedetec.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03E4203A9C7400A5DF1A /* Cedetec.png */; };
-		554C03EB203A9D3F00A5DF1A /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03E8203A9D3E00A5DF1A /* twitter.png */; };
-		554C03EC203A9D3F00A5DF1A /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03E9203A9D3F00A5DF1A /* instagram.png */; };
-		554C03ED203A9D3F00A5DF1A /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03EA203A9D3F00A5DF1A /* facebook.png */; };
-		554C03EF203A9FA700A5DF1A /* logotec.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03EE203A9FA600A5DF1A /* logotec.png */; };
 		554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */; };
 		554C03F3203AB14C00A5DF1A /* MapaGeneral.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03F2203AB14C00A5DF1A /* MapaGeneral.png */; };
 		CA3255F6203AB8CC004624A4 /* ListaProyectos@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255F5203AB8CB004624A4 /* ListaProyectos@3x.png */; };
-		CA3255F8203AB9A3004624A4 /* Contact Add.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255F7203AB9A2004624A4 /* Contact Add.png */; };
 		CA3255FA203ABA65004624A4 /* AgregarProyectoNuevo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255F9203ABA64004624A4 /* AgregarProyectoNuevo@3x.png */; };
 		CA325600203ABCB3004624A4 /* Proyecto@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */; };
 		CA325602203ABD6B004624A4 /* AgregarSalon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */; };
@@ -75,19 +65,9 @@
 		554C03C2203A954100A5DF1A /* InCedetecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InCedetecUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		554C03C6203A954100A5DF1A /* InCedetecUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InCedetecUITests.swift; sourceTree = "<group>"; };
 		554C03C8203A954100A5DF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		554C03D5203A96CE00A5DF1A /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
-		554C03E0203A9C0500A5DF1A /* About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = About.png; sourceTree = "<group>"; };
-		554C03E2203A9C7400A5DF1A /* Proyectos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Proyectos.png; sourceTree = "<group>"; };
-		554C03E3203A9C7400A5DF1A /* Salones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salones.png; sourceTree = "<group>"; };
-		554C03E4203A9C7400A5DF1A /* Cedetec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cedetec.png; sourceTree = "<group>"; };
-		554C03E8203A9D3E00A5DF1A /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
-		554C03E9203A9D3F00A5DF1A /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
-		554C03EA203A9D3F00A5DF1A /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
-		554C03EE203A9FA600A5DF1A /* logotec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logotec.png; sourceTree = "<group>"; };
 		554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectosTableViewController.swift; sourceTree = "<group>"; };
 		554C03F2203AB14C00A5DF1A /* MapaGeneral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapaGeneral.png; sourceTree = "<group>"; };
 		CA3255F5203AB8CB004624A4 /* ListaProyectos@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListaProyectos@3x.png"; sourceTree = "<group>"; };
-		CA3255F7203AB9A2004624A4 /* Contact Add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contact Add.png"; sourceTree = "<group>"; };
 		CA3255F9203ABA64004624A4 /* AgregarProyectoNuevo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarProyectoNuevo@3x.png"; sourceTree = "<group>"; };
 		CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proyecto@3x.png"; sourceTree = "<group>"; };
 		CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarSalon@3x.png"; sourceTree = "<group>"; };
@@ -186,18 +166,8 @@
 				CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */,
 				CA325603203ABD7F004624A4 /* Proyecto2@3x.png */,
 				CA3255F9203ABA64004624A4 /* AgregarProyectoNuevo@3x.png */,
-				CA3255F7203AB9A2004624A4 /* Contact Add.png */,
 				CA3255F5203AB8CB004624A4 /* ListaProyectos@3x.png */,
 				554C03F2203AB14C00A5DF1A /* MapaGeneral.png */,
-				554C03EE203A9FA600A5DF1A /* logotec.png */,
-				554C03EA203A9D3F00A5DF1A /* facebook.png */,
-				554C03E9203A9D3F00A5DF1A /* instagram.png */,
-				554C03E8203A9D3E00A5DF1A /* twitter.png */,
-				554C03E4203A9C7400A5DF1A /* Cedetec.png */,
-				554C03E3203A9C7400A5DF1A /* Salones.png */,
-				554C03E2203A9C7400A5DF1A /* Proyectos.png */,
-				554C03E0203A9C0500A5DF1A /* About.png */,
-				554C03D5203A96CE00A5DF1A /* SplashScreen.png */,
 			);
 			path = Imagenes;
 			sourceTree = "<group>";
@@ -310,26 +280,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA325604203ABD80004624A4 /* Proyecto2@3x.png in Resources */,
-				554C03E6203A9C7400A5DF1A /* Salones.png in Resources */,
 				CA325600203ABCB3004624A4 /* Proyecto@3x.png in Resources */,
 				552BF8F6203B26F00056FF50 /* AgregarSalon@3x.png in Resources */,
-				554C03E1203A9C0500A5DF1A /* About.png in Resources */,
 				CA3255F6203AB8CC004624A4 /* ListaProyectos@3x.png in Resources */,
-				CA3255F8203AB9A3004624A4 /* Contact Add.png in Resources */,
 				CA3255FA203ABA65004624A4 /* AgregarProyectoNuevo@3x.png in Resources */,
-				554C03E5203A9C7400A5DF1A /* Proyectos.png in Resources */,
-				554C03EF203A9FA700A5DF1A /* logotec.png in Resources */,
-				554C03ED203A9D3F00A5DF1A /* facebook.png in Resources */,
 				552DEE7F203B6FD100019134 /* Salon3.png in Resources */,
 				552BF8F8203B27120056FF50 /* ListaProyecto2@3x.png in Resources */,
 				554C03B1203A954100A5DF1A /* LaunchScreen.storyboard in Resources */,
 				554C03AE203A954100A5DF1A /* Assets.xcassets in Resources */,
-				554C03E7203A9C7400A5DF1A /* Cedetec.png in Resources */,
 				552DEE7D203B6FD100019134 /* Salon1.png in Resources */,
-				554C03EB203A9D3F00A5DF1A /* twitter.png in Resources */,
-				554C03D6203A96CE00A5DF1A /* SplashScreen.png in Resources */,
 				552DEE7E203B6FD100019134 /* Salon2.png in Resources */,
-				554C03EC203A9D3F00A5DF1A /* instagram.png in Resources */,
 				CA325602203ABD6B004624A4 /* AgregarSalon@3x.png in Resources */,
 				554C03AC203A954100A5DF1A /* Main.storyboard in Resources */,
 				554C03F3203AB14C00A5DF1A /* MapaGeneral.png in Resources */,

@@ -45,27 +45,6 @@
                                     <segue destination="0tK-Bx-tww" kind="show" id="toD-TZ-dEY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHk-n9-4gn" userLabel="IGButton">
-                                <rect key="frame" x="319" y="618" width="40" height="40"/>
-                                <state key="normal" image="InstagramIcono"/>
-                                <connections>
-                                    <action selector="IGButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="54c-GF-YU4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqF-bO-EME" userLabel="FacebookButton">
-                                <rect key="frame" x="271" y="618" width="40" height="40"/>
-                                <state key="normal" image="TwitterIcono"/>
-                                <connections>
-                                    <action selector="ttButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ujM-2z-J7E"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajE-E6-dRB" userLabel="TwitterButton">
-                                <rect key="frame" x="223" y="618" width="40" height="40"/>
-                                <state key="normal" image="FacebookIcono"/>
-                                <connections>
-                                    <action selector="fbButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jrZ-g9-M97"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIr-5Q-ws5" userLabel="CEDETECButton">
                                 <rect key="frame" x="194" y="185" width="146" height="136"/>
                                 <state key="normal" image="CedetecIcono"/>
@@ -74,29 +53,31 @@
                                     <segue destination="mUE-D2-NNF" kind="show" id="8UQ-UQ-K0I"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajE-E6-dRB" userLabel="TwitterButton">
+                                <rect key="frame" x="241" y="620" width="136" height="40"/>
+                                <state key="normal" image="redessociales"/>
+                                <connections>
+                                    <action selector="fbButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jrZ-g9-M97"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YIr-5Q-ws5" firstAttribute="leading" secondItem="twf-D0-wF9" secondAttribute="trailing" constant="8" symbolic="YES" id="0Br-Nt-fz1"/>
                             <constraint firstItem="twf-D0-wF9" firstAttribute="top" secondItem="YIr-5Q-ws5" secondAttribute="top" id="22n-jQ-wak"/>
                             <constraint firstItem="6dA-9f-8PH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="31G-JK-CS0"/>
-                            <constraint firstItem="OHk-n9-4gn" firstAttribute="leading" secondItem="ajE-E6-dRB" secondAttribute="leading" constant="96" id="4Jb-OC-9it"/>
-                            <constraint firstItem="OHk-n9-4gn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5Wc-cS-UI6"/>
                             <constraint firstItem="6dA-9f-8PH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6Gt-rU-LFS"/>
                             <constraint firstItem="wwP-Xk-u6s" firstAttribute="top" secondItem="XF5-8R-uYa" secondAttribute="top" id="9RO-pp-CqB"/>
-                            <constraint firstItem="sqF-bO-EME" firstAttribute="leading" secondItem="ajE-E6-dRB" secondAttribute="leading" constant="48" id="G1b-dF-Fjk"/>
                             <constraint firstItem="YIr-5Q-ws5" firstAttribute="leading" secondItem="XF5-8R-uYa" secondAttribute="leading" id="LyC-19-tG8"/>
-                            <constraint firstItem="ajE-E6-dRB" firstAttribute="top" secondItem="sqF-bO-EME" secondAttribute="top" id="QBp-aW-H8b"/>
                             <constraint firstItem="twf-D0-wF9" firstAttribute="leading" secondItem="wwP-Xk-u6s" secondAttribute="leading" id="UaL-9y-bso"/>
                             <constraint firstItem="6dA-9f-8PH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VKg-JS-NDO"/>
                             <constraint firstAttribute="trailing" secondItem="6dA-9f-8PH" secondAttribute="trailing" id="WJD-cj-qPl"/>
                             <constraint firstItem="twf-D0-wF9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="121" id="XB8-hw-PMe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ajE-E6-dRB" secondAttribute="bottom" constant="9" id="b9x-g3-ewj"/>
-                            <constraint firstItem="sqF-bO-EME" firstAttribute="leading" secondItem="ajE-E6-dRB" secondAttribute="trailing" constant="8" symbolic="YES" id="jFL-Yf-YIt"/>
+                            <constraint firstItem="ajE-E6-dRB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="241" id="Xlx-M2-Wvg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ajE-E6-dRB" secondAttribute="bottom" constant="7" id="aTf-mE-9ms"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ajE-E6-dRB" secondAttribute="trailing" constant="-2" id="m0t-n7-WdL"/>
                             <constraint firstItem="YIr-5Q-ws5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="79.5" id="q1Q-qP-Krf"/>
-                            <constraint firstItem="sqF-bO-EME" firstAttribute="top" secondItem="OHk-n9-4gn" secondAttribute="top" id="qlj-jn-qmf"/>
                             <constraint firstItem="wwP-Xk-u6s" firstAttribute="top" secondItem="twf-D0-wF9" secondAttribute="bottom" constant="8" symbolic="YES" id="qtQ-OG-oIh"/>
-                            <constraint firstItem="OHk-n9-4gn" firstAttribute="leading" secondItem="sqF-bO-EME" secondAttribute="trailing" constant="8" symbolic="YES" id="rlw-CD-VZy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -578,9 +559,7 @@ Abraham Armando Silva Apanco
         <image name="AgregarProyectoNuevo.png" width="375" height="667"/>
         <image name="AgregarSalon.png" width="375" height="667"/>
         <image name="CedetecIcono" width="146" height="136"/>
-        <image name="FacebookIcono" width="40" height="40"/>
         <image name="FondoInicio" width="375" height="667"/>
-        <image name="InstagramIcono" width="40" height="40"/>
         <image name="ListaProyecto2.png" width="375" height="667"/>
         <image name="ListaProyectos.png" width="375" height="667"/>
         <image name="LogoTec" width="278" height="73"/>
@@ -590,7 +569,7 @@ Abraham Armando Silva Apanco
         <image name="ProyectosIcono" width="146" height="136"/>
         <image name="Salon3.png" width="1125" height="2001"/>
         <image name="SalonesIcono" width="146" height="136"/>
-        <image name="TwitterIcono" width="40" height="40"/>
+        <image name="redessociales" width="134" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Euu-qr-cnj"/>

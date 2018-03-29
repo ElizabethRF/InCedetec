@@ -31,6 +31,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func fbButton(_ sender: UIButton) {
+        let texto = "Estoy usando InCedetec"
+        let objetos:[AnyObject]=[texto as AnyObject]
+        let actividad = UIActivityViewController(activityItems: objetos,applicationActivities: nil)
+       // actividad.excludedActivityTypes=[UIActivityType.airDrop]
+        self.present(actividad,animated: true,completion: nil)
     }
     @IBAction func ttButton(_ sender: UIButton) {
     }

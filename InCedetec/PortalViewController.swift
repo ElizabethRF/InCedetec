@@ -51,6 +51,11 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
         self.sceneView.scene.rootNode.addChildNode(portalNode)
         self.addPlane(nodeName: "roof", portalNode: portalNode, imageName: "arriba")
         self.addPlane(nodeName: "floor", portalNode: portalNode, imageName: "abajo")
+        self.addWalls(nodeName: "backWall", portalNode: portalNode, imageName: "centro")
+        self.addWalls(nodeName: "sideWallA", portalNode: portalNode, imageName: "izquierda")
+        self.addWalls(nodeName: "sideWallB", portalNode: portalNode, imageName: "derecha")
+        self.addWalls(nodeName: "sideDoorA", portalNode: portalNode, imageName: "izquierda")
+        self.addWalls(nodeName: "sideDoorB", portalNode: portalNode, imageName: "derecha")
         
         
     }
@@ -68,6 +73,11 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now()+3) {
             self.planeDetected.isHidden = true
         }
+    }
+    
+    func addWalls(nodeName : String, portalNode: SCNNode, imageName: String){
+        let child = portalNode.childNode(withName: nodeName, recursively: true)
+        child?.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Portal.scnassets/\(imageName).png")
     }
     
     func addPlane(nodeName : String, portalNode: SCNNode, imageName: String){

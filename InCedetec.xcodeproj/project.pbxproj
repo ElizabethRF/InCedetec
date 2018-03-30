@@ -30,6 +30,7 @@
 		CAE4FC67206DDED400F79421 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC66206DDED400F79421 /* DetailsViewController.swift */; };
 		CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */; };
 		CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6C206DF60800F79421 /* PortalViewController.swift */; };
+		CAE4FC71206E0EEA00F79421 /* Portal.scncassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE4FC70206E0EEA00F79421 /* Portal.scncassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		CAE4FC66206DDED400F79421 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesSalon.swift; sourceTree = "<group>"; };
 		CAE4FC6C206DF60800F79421 /* PortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
+		CAE4FC70206E0EEA00F79421 /* Portal.scncassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Portal.scncassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				CAE4FC66206DDED400F79421 /* DetailsViewController.swift */,
 				CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */,
 				CAE4FC6C206DF60800F79421 /* PortalViewController.swift */,
+				CAE4FC70206E0EEA00F79421 /* Portal.scncassets */,
 			);
 			path = InCedetec;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				552DEE7E203B6FD100019134 /* Salon2.png in Resources */,
 				CA325602203ABD6B004624A4 /* AgregarSalon@3x.png in Resources */,
 				554C03AC203A954100A5DF1A /* Main.storyboard in Resources */,
+				CAE4FC71206E0EEA00F79421 /* Portal.scncassets in Resources */,
 				554C03F3203AB14C00A5DF1A /* MapaGeneral.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

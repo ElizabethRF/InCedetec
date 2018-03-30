@@ -489,22 +489,60 @@ Abraham Armando Silva Apanco
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ET2-0v-UcC">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ET2-0v-UcC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ET2-0v-UcC" firstAttribute="top" secondItem="oYM-xd-ysF" secondAttribute="top" id="bfz-36-r3D"/>
+                            <constraint firstItem="ET2-0v-UcC" firstAttribute="leading" secondItem="4BS-TG-K9T" secondAttribute="leading" id="tMN-hE-gDo"/>
+                            <constraint firstItem="ET2-0v-UcC" firstAttribute="trailing" secondItem="4BS-TG-K9T" secondAttribute="trailing" id="yiS-kE-2sl"/>
+                            <constraint firstItem="ET2-0v-UcC" firstAttribute="bottom" secondItem="4BS-TG-K9T" secondAttribute="bottom" id="zY1-GJ-X6D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4BS-TG-K9T"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="ET2-0v-UcC" id="5qw-Dd-OfT"/>
+                        <segue destination="ZF7-oH-qB3" kind="show" identifier="showDetails" id="gYe-MD-KXH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Po-R9-jbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="927.20000000000005" y="-583.3583208395803"/>
+            <point key="canvasLocation" x="743" y="-636"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="hb0-bT-2lw">
+            <objects>
+                <viewController id="ZF7-oH-qB3" customClass="DetailsViewController" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Hp-fM-Uja">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXw-7i-VoQ">
+                                <rect key="frame" x="42" y="235" width="292" height="159"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jBN-ab-VX1" firstAttribute="trailing" secondItem="GXw-7i-VoQ" secondAttribute="trailing" constant="41" id="Ejc-hD-wGf"/>
+                            <constraint firstItem="jBN-ab-VX1" firstAttribute="bottom" secondItem="GXw-7i-VoQ" secondAttribute="bottom" constant="-330" id="FKf-kq-Fhc"/>
+                            <constraint firstItem="GXw-7i-VoQ" firstAttribute="top" secondItem="jBN-ab-VX1" secondAttribute="top" constant="235" id="FS1-UN-7xG"/>
+                            <constraint firstItem="GXw-7i-VoQ" firstAttribute="leading" secondItem="jBN-ab-VX1" secondAttribute="leading" constant="42" id="vsX-DF-Jh7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jBN-ab-VX1"/>
+                    </view>
+                    <connections>
+                        <outlet property="link" destination="GXw-7i-VoQ" id="bh7-a3-3ek"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KjF-FW-1av" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1620" y="-691.304347826087"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="X7F-Rt-svC">

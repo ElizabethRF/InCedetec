@@ -42,13 +42,16 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
     
     func addPortal(hitTestResult:ARHitTestResult){
         let portalScene = SCNScene(named: "Portal.scncassets/Portal.scn")
-        let portalNode = portalScene?.rootNode.childNode(withName: "Portal", recursively: false)
+        let portalNode = portalScene!.rootNode.childNode(withName: "Portal", recursively: false)!
         let transform = hitTestResult.worldTransform
         let planeXposition = transform.columns.3.x
         let planeYposition = transform.columns.3.y
         let planeZposition = transform.columns.3.z
-        portalNode?.position = SCNVector3(planeXposition,planeYposition,planeZposition)
-        self.sceneView.scene.rootNode.addChildNode(portalNode!)
+        portalNode.position = SCNVector3(planeXposition,planeYposition,planeZposition)
+        self.sceneView.scene.rootNode.addChildNode(portalNode)
+        self.addPlane(nodeName: "roof", portalNode: portalNode, imageName: "arriba")
+        self.addPlane(nodeName: "floor", portalNode: portalNode, imageName: "abajo")
+        
         
     }
 
@@ -65,6 +68,11 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now()+3) {
             self.planeDetected.isHidden = true
         }
+    }
+    
+    func addPlane(nodeName : String, portalNode: SCNNode, imageName: String){
+        let child = portalNode.childNode(withName: nodeName, recursively: true)
+        child?.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Portal.scnassets/\(imageName).png")
     }
 
 }

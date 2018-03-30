@@ -42,7 +42,7 @@
                                 <state key="normal" image="AcercadeIcono"/>
                                 <connections>
                                     <action selector="About:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bro-Hv-L3R"/>
-                                    <segue destination="0tK-Bx-tww" kind="show" id="toD-TZ-dEY"/>
+                                    <segue destination="tzz-R5-sLI" kind="show" id="opn-TO-4V1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIr-5Q-ws5" userLabel="CEDETECButton">
@@ -379,25 +379,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoTec" translatesAutoresizingMaskIntoConstraints="NO" id="qu7-1d-G0H">
-                                <rect key="frame" x="31" y="119" width="312" height="99"/>
+                                <rect key="frame" x="31" y="75" width="312" height="99"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99" id="Hwd-Kl-QRJ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" José Martín Molina Espinosa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Uj-dB-uTl">
-                                <rect key="frame" x="76" y="504" width="223" height="21"/>
+                                <rect key="frame" x="76" y="460" width="223" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vj1-5W-rlD">
-                                <rect key="frame" x="156" y="318" width="60" height="21"/>
+                                <rect key="frame" x="156" y="274" width="60" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIT-hk-aju">
-                                <rect key="frame" x="52" y="347" width="269" height="102"/>
+                                <rect key="frame" x="52" y="303" width="269" height="102"/>
                                 <string key="text">Carlos Eduardo Muñoz González 
 Elizabeth Rodríguez Fallas              
 Brandon Reyes Minero                    
@@ -408,25 +408,25 @@ Abraham Armando Silva Apanco
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profesor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gn3-LW-wYi">
-                                <rect key="frame" x="154" y="475" width="65" height="21"/>
+                                <rect key="frame" x="154" y="431" width="65" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad de México, México" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eao-ll-bJ4">
-                                <rect key="frame" x="86" y="572" width="202" height="21"/>
+                                <rect key="frame" x="86" y="528" width="202" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfk-Fj-T6g">
-                                <rect key="frame" x="167" y="601" width="39" height="21"/>
+                                <rect key="frame" x="167" y="557" width="39" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proyectos de desarrollo para dispositivos móviles " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjg-qc-yoQ">
-                                <rect key="frame" x="38" y="226" width="296" height="64"/>
+                                <rect key="frame" x="38" y="182" width="296" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="HtU-hM-aPg"/>
                                 </constraints>
@@ -435,7 +435,7 @@ Abraham Armando Silva Apanco
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEd-5s-1IL">
-                                <rect key="frame" x="88" y="76" width="199" height="21"/>
+                                <rect key="frame" x="88" y="32" width="199" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="cVK-DG-Q8i"/>
                                 </constraints>
@@ -480,6 +480,44 @@ Abraham Armando Silva Apanco
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLY-vY-fdw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1940" y="626.53673163418296"/>
+        </scene>
+        <!--Portal View Controller-->
+        <scene sceneID="aWV-kb-H06">
+            <objects>
+                <viewController id="tzz-R5-sLI" customClass="PortalViewController" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="chH-gL-4nH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gkt-TV-Ucb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane detected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TD-16-zRo">
+                                <rect key="frame" x="106.5" y="104" width="162.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gkt-TV-Ucb" firstAttribute="bottom" secondItem="sk3-9m-CGq" secondAttribute="bottom" id="72f-fw-TKL"/>
+                            <constraint firstItem="Gkt-TV-Ucb" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" id="PUZ-ZR-MJs"/>
+                            <constraint firstItem="0TD-16-zRo" firstAttribute="centerX" secondItem="chH-gL-4nH" secondAttribute="centerX" id="hDy-d4-Dsd"/>
+                            <constraint firstItem="Gkt-TV-Ucb" firstAttribute="trailing" secondItem="sk3-9m-CGq" secondAttribute="trailing" id="kah-s0-MFF"/>
+                            <constraint firstItem="Gkt-TV-Ucb" firstAttribute="top" secondItem="chH-gL-4nH" secondAttribute="top" id="mVz-T3-Hdy"/>
+                            <constraint firstItem="0TD-16-zRo" firstAttribute="top" secondItem="sk3-9m-CGq" secondAttribute="top" constant="40" id="ryk-ma-sqP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sk3-9m-CGq"/>
+                    </view>
+                    <connections>
+                        <outlet property="planeDetected" destination="0TD-16-zRo" id="bbg-4v-H4c"/>
+                        <outlet property="sceneView" destination="Gkt-TV-Ucb" id="aa5-Br-fLR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6S-JA-tkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2441" y="-74"/>
         </scene>
         <!--Salones View Controller-->
         <scene sceneID="bqz-up-usT">

@@ -29,6 +29,7 @@
 		CA7E63E9206B612300EAC7CD /* SalonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E63E8206B612300EAC7CD /* SalonesViewController.swift */; };
 		CAE4FC67206DDED400F79421 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC66206DDED400F79421 /* DetailsViewController.swift */; };
 		CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */; };
+		CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6C206DF60800F79421 /* PortalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		CA7E63E8206B612300EAC7CD /* SalonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonesViewController.swift; sourceTree = "<group>"; };
 		CAE4FC66206DDED400F79421 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesSalon.swift; sourceTree = "<group>"; };
+		CAE4FC6C206DF60800F79421 /* PortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */,
 				CAE4FC66206DDED400F79421 /* DetailsViewController.swift */,
 				CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */,
+				CAE4FC6C206DF60800F79421 /* PortalViewController.swift */,
 			);
 			path = InCedetec;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA7E63E9206B612300EAC7CD /* SalonesViewController.swift in Sources */,
+				CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */,
 				554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */,
 				554C03A9203A954100A5DF1A /* ViewController.swift in Sources */,
 				CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */,

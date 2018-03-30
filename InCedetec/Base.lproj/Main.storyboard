@@ -42,7 +42,7 @@
                                 <state key="normal" image="AcercadeIcono"/>
                                 <connections>
                                     <action selector="About:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bro-Hv-L3R"/>
-                                    <segue destination="tzz-R5-sLI" kind="show" id="opn-TO-4V1"/>
+                                    <segue destination="0tK-Bx-tww" kind="show" id="Ozn-Eq-tCH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIr-5Q-ws5" userLabel="CEDETECButton">
@@ -379,25 +379,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoTec" translatesAutoresizingMaskIntoConstraints="NO" id="qu7-1d-G0H">
-                                <rect key="frame" x="31" y="75" width="312" height="99"/>
+                                <rect key="frame" x="31" y="119" width="312" height="99"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99" id="Hwd-Kl-QRJ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" José Martín Molina Espinosa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Uj-dB-uTl">
-                                <rect key="frame" x="76" y="460" width="223" height="21"/>
+                                <rect key="frame" x="76" y="504" width="223" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vj1-5W-rlD">
-                                <rect key="frame" x="156" y="274" width="60" height="21"/>
+                                <rect key="frame" x="156" y="318" width="60" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIT-hk-aju">
-                                <rect key="frame" x="52" y="303" width="269" height="102"/>
+                                <rect key="frame" x="52" y="347" width="269" height="102"/>
                                 <string key="text">Carlos Eduardo Muñoz González 
 Elizabeth Rodríguez Fallas              
 Brandon Reyes Minero                    
@@ -408,25 +408,25 @@ Abraham Armando Silva Apanco
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profesor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gn3-LW-wYi">
-                                <rect key="frame" x="154" y="431" width="65" height="21"/>
+                                <rect key="frame" x="154" y="475" width="65" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad de México, México" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eao-ll-bJ4">
-                                <rect key="frame" x="86" y="528" width="202" height="21"/>
+                                <rect key="frame" x="86" y="572" width="202" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfk-Fj-T6g">
-                                <rect key="frame" x="167" y="557" width="39" height="21"/>
+                                <rect key="frame" x="167" y="601" width="39" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proyectos de desarrollo para dispositivos móviles " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjg-qc-yoQ">
-                                <rect key="frame" x="38" y="182" width="296" height="64"/>
+                                <rect key="frame" x="38" y="226" width="296" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="HtU-hM-aPg"/>
                                 </constraints>
@@ -435,7 +435,7 @@ Abraham Armando Silva Apanco
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEd-5s-1IL">
-                                <rect key="frame" x="88" y="32" width="199" height="21"/>
+                                <rect key="frame" x="88" y="76" width="199" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="cVK-DG-Q8i"/>
                                 </constraints>
@@ -517,7 +517,7 @@ Abraham Armando Silva Apanco
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6S-JA-tkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2441" y="-74"/>
+            <point key="canvasLocation" x="1306" y="-1478"/>
         </scene>
         <!--Salones View Controller-->
         <scene sceneID="bqz-up-usT">
@@ -543,44 +543,12 @@ Abraham Armando Silva Apanco
                     </view>
                     <connections>
                         <outlet property="tableView" destination="ET2-0v-UcC" id="5qw-Dd-OfT"/>
-                        <segue destination="ZF7-oH-qB3" kind="show" identifier="showDetails" id="gYe-MD-KXH"/>
+                        <segue destination="tzz-R5-sLI" kind="show" identifier="showDetails" id="ERJ-nA-g2x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Po-R9-jbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="743" y="-636"/>
-        </scene>
-        <!--Details View Controller-->
-        <scene sceneID="hb0-bT-2lw">
-            <objects>
-                <viewController id="ZF7-oH-qB3" customClass="DetailsViewController" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Hp-fM-Uja">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXw-7i-VoQ">
-                                <rect key="frame" x="42" y="235" width="292" height="159"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="jBN-ab-VX1" firstAttribute="trailing" secondItem="GXw-7i-VoQ" secondAttribute="trailing" constant="41" id="Ejc-hD-wGf"/>
-                            <constraint firstItem="jBN-ab-VX1" firstAttribute="bottom" secondItem="GXw-7i-VoQ" secondAttribute="bottom" constant="-330" id="FKf-kq-Fhc"/>
-                            <constraint firstItem="GXw-7i-VoQ" firstAttribute="top" secondItem="jBN-ab-VX1" secondAttribute="top" constant="235" id="FS1-UN-7xG"/>
-                            <constraint firstItem="GXw-7i-VoQ" firstAttribute="leading" secondItem="jBN-ab-VX1" secondAttribute="leading" constant="42" id="vsX-DF-Jh7"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="jBN-ab-VX1"/>
-                    </view>
-                    <connections>
-                        <outlet property="link" destination="GXw-7i-VoQ" id="bh7-a3-3ek"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KjF-FW-1av" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1620" y="-691.304347826087"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="X7F-Rt-svC">

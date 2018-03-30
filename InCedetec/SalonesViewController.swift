@@ -171,10 +171,10 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? DetailsViewController{
+        if let destination = segue.destination as? PortalViewController{
             //destination.salon = sectionData[(tableView.indexPathForSelectedRow?.row)]
             
-            destination.salon = salones[(tableView.indexPathForSelectedRow?.row)!]
+            //destination.salon = salones[(tableView.indexPathForSelectedRow?.row)!]
         }
     }
     

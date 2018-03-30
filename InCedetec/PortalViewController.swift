@@ -17,8 +17,16 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
     
     let configuration = ARWorldTrackingConfiguration()
     
+    
+    //var salon:Salon?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //link.text = salon?.img
+        
+        
         self.sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
         self.configuration.planeDetection = .horizontal
         self.sceneView.session.run(configuration)

@@ -27,6 +27,7 @@
 		CA325602203ABD6B004624A4 /* AgregarSalon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */; };
 		CA325604203ABD80004624A4 /* Proyecto2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA325603203ABD7F004624A4 /* Proyecto2@3x.png */; };
 		CA7E63E9206B612300EAC7CD /* SalonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E63E8206B612300EAC7CD /* SalonesViewController.swift */; };
+		CA80076820734F9200FFB8EC /* CedetecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80076720734F9200FFB8EC /* CedetecViewController.swift */; };
 		CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */; };
 		CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6C206DF60800F79421 /* PortalViewController.swift */; };
 		CAE4FC71206E0EEA00F79421 /* Portal.scncassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE4FC70206E0EEA00F79421 /* Portal.scncassets */; };
@@ -76,6 +77,7 @@
 		CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarSalon@3x.png"; sourceTree = "<group>"; };
 		CA325603203ABD7F004624A4 /* Proyecto2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proyecto2@3x.png"; sourceTree = "<group>"; };
 		CA7E63E8206B612300EAC7CD /* SalonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonesViewController.swift; sourceTree = "<group>"; };
+		CA80076720734F9200FFB8EC /* CedetecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CedetecViewController.swift; sourceTree = "<group>"; };
 		CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesSalon.swift; sourceTree = "<group>"; };
 		CAE4FC6C206DF60800F79421 /* PortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
 		CAE4FC70206E0EEA00F79421 /* Portal.scncassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Portal.scncassets; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */,
 				CAE4FC6C206DF60800F79421 /* PortalViewController.swift */,
 				CAE4FC70206E0EEA00F79421 /* Portal.scncassets */,
+				CA80076720734F9200FFB8EC /* CedetecViewController.swift */,
 			);
 			path = InCedetec;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA7E63E9206B612300EAC7CD /* SalonesViewController.swift in Sources */,
+				CA80076820734F9200FFB8EC /* CedetecViewController.swift in Sources */,
 				CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */,
 				554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */,
 				554C03A9203A954100A5DF1A /* ViewController.swift in Sources */,

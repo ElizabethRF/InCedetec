@@ -13,3 +13,5 @@ struct Salon: Decodable{
     let img : String
     let piso : String
 }
+
+

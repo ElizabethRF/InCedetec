@@ -18,6 +18,8 @@ import UIKit
 
 class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating {
 
+    //Loading data
+
     
     var salones = [Salon]()
     
@@ -130,8 +132,9 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
         //print(self.salonesprimer)
         if tableView == resultController.tableView{
             return filteredArray.count
+            //return self.sectionData[filteredArray.count]!.count
         }else{
-            var s = Salon(nombre: "a", img: "a", piso: "a")
+            let s = Salon(nombre: "", img: "", piso: "")
             
             sectionData = [0 : [s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s], 1: [s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s], 2 : [s,s,s,s,s,s,s,s,s,s,s,s,s,s], 3 : [s,s,s,s,s,s,s,s]]
             
@@ -142,11 +145,21 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sections[section]
+        if tableView == resultController.tableView{
+            return "Resultados Busqueda"
+        }else{
+            return sections[section]
+        }
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return sections.count
+        if tableView == resultController.tableView{
+            return 1
+        }else{
+            return sections.count
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -155,9 +168,8 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         if tableView == resultController.tableView{
            cell.textLabel?.text = filteredArray[indexPath.row]
+        
         }else{
-        
-        
             cell.textLabel?.text = sectionData[indexPath.section]![indexPath.row].nombre.capitalized
             //cell.textLabel?.text = salones[indexPath.row].nombre.capitalized
             //var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
@@ -168,13 +180,15 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showDetails", sender: self)
+     
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
         if let destination = segue.destination as? PortalViewController{
             //destination.salon = sectionData[(tableView.indexPathForSelectedRow?.row)]
             
-            //destination.salon = salones[(tableView.indexPathForSelectedRow?.row)!]
+            destination.salon = salones[(tableView.indexPathForSelectedRow?.row)!]
         }
     }
     

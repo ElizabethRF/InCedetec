@@ -37,6 +37,20 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet weak var sceneView: ARSCNView!
     
+    
+    @IBAction func Add3dImage(_ sender: Any) {
+        self.addNode()
+    }
+    
+    func addNode(){
+        let droneScene = SCNScene(named: "art.scnassets/model.scn")
+        let droneNode = droneScene?.rootNode.childNode(withName: "Drone",recursively: false )
+        droneNode?.position = SCNVector3(0,0,-1 )
+        self.sceneView.scene.rootNode.addChildNode(droneNode!)
+    }
+    
+    
+    
     let configuration = ARWorldTrackingConfiguration()
    
     

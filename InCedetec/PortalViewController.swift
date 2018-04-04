@@ -117,20 +117,35 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
         droneNode.scale = SCNVector3(recognizer.scale, recognizer.scale, recognizer.scale)
     }
     
-    @IBAction func mostrarDescripcion(_ sender: UITapGestureRecognizer) {
+    @IBAction func mostrarDescripcion2(_ sender: UITapGestureRecognizer) {
+        let escena = sender.view as! SCNView
+        let location = sender.location(in: escena)
+        let hitResults  = escena.hitTest(location, options: [:])
+        if !hitResults.isEmpty{
+            let nodoTocado = hitResults[0].node
+            nodoTocado.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+            
+            //material.diffuse.contents = UIColor.grayColor()
+            
+        }
         
-        let alert = UIAlertController(title: "Hay un problema", message: "Brandon es gay", preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alert.addAction(action)
-        present(alert, animated: true)
+        
     }
+
     
     @objc func handleTap(sender : UITapGestureRecognizer){
         guard let sceneView = sender.view as? ARSCNView else{return}
         let touchLocation = sender.location(in: sceneView)
         let hitTestResult = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
+        //.existingPlaneUsingExtent
+        //let hitTestResult = sceneView.hitTest(touchLocation, options: [:])
         if !hitTestResult.isEmpty{
-            self.addPortal(hitTestResult: hitTestResult.first!)
+           // if(hitTestResult[0].node == droneNode){
+                
+             //   droneNode.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+            //}else{
+                self.addPortal(hitTestResult: hitTestResult.first!)
+            //}
         }else{
             
         }

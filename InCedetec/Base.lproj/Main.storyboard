@@ -523,7 +523,7 @@ Abraham Armando Silva Apanco
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6S-JA-tkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Tsf-ER-Cg5">
                     <connections>
-                        <action selector="mostrarDescripcionWith_sender:" destination="tzz-R5-sLI" id="lAQ-1L-pDh"/>
+                        <action selector="mostrarDescripcion2:" destination="tzz-R5-sLI" id="cOW-zt-aJt"/>
                     </connections>
                 </tapGestureRecognizer>
                 <rotationGestureRecognizer id="pS9-Hf-Q1g">

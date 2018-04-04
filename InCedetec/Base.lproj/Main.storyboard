@@ -34,7 +34,7 @@
                                 <rect key="frame" x="40" y="329" width="146" height="136"/>
                                 <state key="normal" image="ProyectosIcono"/>
                                 <connections>
-                                    <segue destination="06f-ZP-aI9" kind="show" id="0MT-28-uR7"/>
+                                    <segue destination="oCQ-Zp-XYq" kind="show" id="ksQ-68-xlf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF5-8R-uYa" userLabel="AboutButton">
@@ -87,6 +87,35 @@
             </objects>
             <point key="canvasLocation" x="260" y="131.78410794602701"/>
         </scene>
+        <!--Proyectos-->
+        <scene sceneID="sJg-fB-Gfh">
+            <objects>
+                <tableViewController id="oCQ-Zp-XYq" customClass="ProyectosTableViewController" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vwi-SS-cuz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="vIu-Hb-Lzc">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vIu-Hb-Lzc" id="fIu-PN-1KT">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oCQ-Zp-XYq" id="bpM-YR-KZk"/>
+                            <outlet property="delegate" destination="oCQ-Zp-XYq" id="LgP-Ub-nNJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Proyectos" id="XT6-qS-D9Z"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C5D-L0-vgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-50" y="869"/>
+        </scene>
         <!--Cedetec View Controller-->
         <scene sceneID="FTd-bo-Jbo">
             <objects>
@@ -133,51 +162,6 @@
             <point key="canvasLocation" x="1157.5999999999999" y="54.422788605697157"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="M65-DY-mkQ">
-            <objects>
-                <viewController id="06f-ZP-aI9" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="c7J-ik-3YU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ListaProyectos.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dxb-A2-pbc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK0-Le-ou5">
-                                <rect key="frame" x="301" y="596" width="58" height="51"/>
-                                <state key="normal" title="Button" image="AgregarIcono"/>
-                                <connections>
-                                    <segue destination="Jge-gP-BzF" kind="show" id="wly-3c-k5f"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdc-gg-hGa">
-                                <rect key="frame" x="16" y="64" width="343" height="197"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="FvQ-Ib-RyE" kind="show" id="Euu-qr-cnj"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="CK0-Le-ou5" firstAttribute="leading" secondItem="Wvc-cG-5p1" secondAttribute="leading" constant="301" id="4Fs-Re-9N4"/>
-                            <constraint firstItem="Dxb-A2-pbc" firstAttribute="centerY" secondItem="c7J-ik-3YU" secondAttribute="centerY" id="6Ef-VK-Phh"/>
-                            <constraint firstItem="Dxb-A2-pbc" firstAttribute="centerX" secondItem="c7J-ik-3YU" secondAttribute="centerX" id="Us0-rY-EnR"/>
-                            <constraint firstItem="Dxb-A2-pbc" firstAttribute="leading" secondItem="Wvc-cG-5p1" secondAttribute="leading" id="hrY-ZT-raH"/>
-                            <constraint firstItem="Dxb-A2-pbc" firstAttribute="top" secondItem="c7J-ik-3YU" secondAttribute="top" id="lCH-Nk-FQx"/>
-                            <constraint firstItem="CK0-Le-ou5" firstAttribute="trailing" secondItem="c7J-ik-3YU" secondAttribute="trailingMargin" id="lfz-Yf-rGH"/>
-                            <constraint firstAttribute="bottom" secondItem="CK0-Le-ou5" secondAttribute="bottom" constant="20" symbolic="YES" id="nTP-oE-WDh"/>
-                            <constraint firstItem="Dxb-A2-pbc" firstAttribute="trailing" secondItem="Wvc-cG-5p1" secondAttribute="trailing" id="tpa-lJ-tGC"/>
-                            <constraint firstItem="Dxb-A2-pbc" firstAttribute="bottom" secondItem="Wvc-cG-5p1" secondAttribute="bottom" id="zyC-hq-k23"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Wvc-cG-5p1"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g9l-tq-22W" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="936.79999999999995" y="899.10044977511257"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="CbI-S7-kZd">
             <objects>
                 <viewController id="Jge-gP-BzF" sceneMemberID="viewController">
@@ -218,7 +202,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he7-GG-tpO">
-                                <rect key="frame" x="0.0" y="63" width="375" height="284"/>
+                                <rect key="frame" x="0.0" y="19" width="375" height="328"/>
                                 <connections>
                                     <segue destination="FvQ-Ib-RyE" kind="show" id="5OW-EW-BiK"/>
                                 </connections>
@@ -305,10 +289,10 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMr-OY-6Gr">
-                                <rect key="frame" x="16" y="600" width="162" height="47"/>
+                                <rect key="frame" x="16" y="556" width="162" height="91"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uks-Mh-uC2">
-                                <rect key="frame" x="221" y="600" width="138" height="54"/>
+                                <rect key="frame" x="221" y="556" width="138" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="138" id="5K4-g8-X5p"/>
                                 </constraints>
@@ -555,7 +539,7 @@ Abraham Armando Silva Apanco
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Po-R9-jbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="743" y="-636"/>
+            <point key="canvasLocation" x="697" y="-722"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wqa-gZ-ioc">
@@ -584,7 +568,6 @@ Abraham Armando Silva Apanco
         <image name="CedetecIcono" width="146" height="136"/>
         <image name="FondoInicio" width="375" height="667"/>
         <image name="ListaProyecto2.png" width="375" height="667"/>
-        <image name="ListaProyectos.png" width="375" height="667"/>
         <image name="LogoTec" width="278" height="73"/>
         <image name="MapaGeneral.png" width="373" height="602"/>
         <image name="Proyecto.png" width="375" height="667"/>
@@ -594,7 +577,6 @@ Abraham Armando Silva Apanco
         <image name="redessociales" width="134" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KOz-zp-3QX"/>
-        <segue reference="Euu-qr-cnj"/>
+        <segue reference="ERJ-nA-g2x"/>
     </inferredMetricsTieBreakers>
 </document>

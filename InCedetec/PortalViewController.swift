@@ -182,5 +182,13 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
         child?.geometry?.firstMaterial?.diffuse.contents = UIImage(data: data)
         child?.renderingOrder = 200
     }
-
+    @IBAction func RedesSociales(_ sender: Any) {
+        let texto = "Estoy probando el drone en el salón :"  + (salon?.nombre)!
+        
+        let objetos:[AnyObject]=[texto as AnyObject]
+        let actividad = UIActivityViewController(activityItems: objetos,applicationActivities: nil)
+        // actividad.excludedActivityTypes=[UIActivityType.airDrop]
+        self.present(actividad,animated: true,completion: nil)
+    }
+    
 }

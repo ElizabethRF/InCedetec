@@ -473,30 +473,40 @@ Abraham Armando Silva Apanco
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane detected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TD-16-zRo">
-                                <rect key="frame" x="106.5" y="104" width="162.5" height="27.5"/>
+                                <rect key="frame" x="106" y="104" width="163" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ys9-5O-ucA">
-                                <rect key="frame" x="33" y="608" width="96" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ys9-5O-ucA">
+                                <rect key="frame" x="33" y="608" width="104" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Agregar Dron ">
+                                <state key="normal" title="Agregar Drone ">
                                     <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="Add3dImage:" destination="tzz-R5-sLI" eventType="touchUpInside" id="vxN-yH-NlX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ls-tJ-fhP">
+                                <rect key="frame" x="225" y="603" width="134" height="40"/>
+                                <state key="normal" backgroundImage="redessociales"/>
+                                <connections>
+                                    <action selector="RedesSociales:" destination="tzz-R5-sLI" eventType="touchUpInside" id="4YG-Dg-TlP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="bottom" secondItem="sk3-9m-CGq" secondAttribute="bottom" id="72f-fw-TKL"/>
+                            <constraint firstItem="1Ls-tJ-fhP" firstAttribute="centerY" secondItem="ys9-5O-ucA" secondAttribute="centerY" id="8Pf-St-IDj"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" id="PUZ-ZR-MJs"/>
+                            <constraint firstItem="ys9-5O-ucA" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" constant="33" id="g1f-HZ-bFy"/>
                             <constraint firstItem="0TD-16-zRo" firstAttribute="centerX" secondItem="chH-gL-4nH" secondAttribute="centerX" id="hDy-d4-Dsd"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="trailing" secondItem="sk3-9m-CGq" secondAttribute="trailing" id="kah-s0-MFF"/>
+                            <constraint firstItem="sk3-9m-CGq" firstAttribute="bottom" secondItem="ys9-5O-ucA" secondAttribute="bottom" constant="29" id="kte-7g-vXf"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="top" secondItem="chH-gL-4nH" secondAttribute="top" id="mVz-T3-Hdy"/>
+                            <constraint firstItem="1Ls-tJ-fhP" firstAttribute="trailing" secondItem="chH-gL-4nH" secondAttribute="trailingMargin" id="ohW-X5-MPc"/>
                             <constraint firstItem="0TD-16-zRo" firstAttribute="top" secondItem="sk3-9m-CGq" secondAttribute="top" constant="40" id="ryk-ma-sqP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sk3-9m-CGq"/>
@@ -577,6 +587,6 @@ Abraham Armando Silva Apanco
         <image name="redessociales" width="134" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ERJ-nA-g2x"/>
+        <segue reference="KOz-zp-3QX"/>
     </inferredMetricsTieBreakers>
 </document>

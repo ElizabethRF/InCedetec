@@ -172,7 +172,7 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
         }else{
             cell.textLabel?.text = sectionData[indexPath.section]![indexPath.row].nombre.capitalized
             //cell.textLabel?.text = salones[indexPath.row].nombre.capitalized
-            //var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+            //var cell = tableView.dequeueReusableCell(w2ithIdentifier: "cell")
         }
         return cell
             

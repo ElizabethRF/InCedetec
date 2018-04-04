@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38BBEF9920749D910048DEFC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38BBEF9720749D910048DEFC /* Model.xcdatamodeld */; };
 		552BF8F6203B26F00056FF50 /* AgregarSalon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */; };
 		552BF8F8203B27120056FF50 /* ListaProyecto2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */; };
 		552DEE7D203B6FD100019134 /* Salon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 552DEE7A203B6FCA00019134 /* Salon1.png */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38BBEF9820749D910048DEFC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarSalon@3x.png"; sourceTree = "<group>"; };
 		552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListaProyecto2@3x.png"; sourceTree = "<group>"; };
 		552DEE7A203B6FCA00019134 /* Salon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon1.png; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				CAE4FC70206E0EEA00F79421 /* Portal.scncassets */,
 				CA80076720734F9200FFB8EC /* CedetecViewController.swift */,
 				55A2D0F42073EFF0004FD74C /* art.scnassets */,
+				38BBEF9720749D910048DEFC /* Model.xcdatamodeld */,
 			);
 			path = InCedetec;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				CA7E63E9206B612300EAC7CD /* SalonesViewController.swift in Sources */,
 				CA80076820734F9200FFB8EC /* CedetecViewController.swift in Sources */,
 				CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */,
+				38BBEF9920749D910048DEFC /* Model.xcdatamodeld in Sources */,
 				554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */,
 				554C03A9203A954100A5DF1A /* ViewController.swift in Sources */,
 				CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */,
@@ -644,6 +648,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		38BBEF9720749D910048DEFC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				38BBEF9820749D910048DEFC /* Model.xcdatamodel */,
+			);
+			currentVersion = 38BBEF9820749D910048DEFC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 554C039B203A954100A5DF1A /* Project object */;
 }

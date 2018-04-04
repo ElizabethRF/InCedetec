@@ -471,6 +471,10 @@ Abraham Armando Silva Apanco
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gkt-TV-Ucb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="pS9-Hf-Q1g" appends="YES" id="7xI-oI-7iv"/>
+                                </connections>
                             </arscnView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane detected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TD-16-zRo">
                                 <rect key="frame" x="106" y="104" width="163" height="28"/>
@@ -517,6 +521,11 @@ Abraham Armando Silva Apanco
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6S-JA-tkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="pS9-Hf-Q1g">
+                    <connections>
+                        <action selector="rotar:" destination="tzz-R5-sLI" id="7eB-em-C3G"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1728.8" y="-826.23688155922048"/>
         </scene>

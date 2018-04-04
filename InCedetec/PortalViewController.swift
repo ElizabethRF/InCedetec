@@ -37,16 +37,18 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet weak var sceneView: ARSCNView!
     
-    
+    //  droneNode
     @IBAction func Add3dImage(_ sender: Any) {
         self.addNode()
     }
     
+    var droneNode = SCNNode()
+    
     func addNode(){
         let droneScene = SCNScene(named: "art.scnassets/model.scn")
-        let droneNode = droneScene?.rootNode.childNode(withName: "Drone",recursively: false )
-        droneNode?.position = SCNVector3(0,0,-1 )
-        self.sceneView.scene.rootNode.addChildNode(droneNode!)
+        droneNode = (droneScene?.rootNode.childNode(withName: "Drone",recursively: false ))!
+        droneNode.position = SCNVector3(0,0,-1 )
+        self.sceneView.scene.rootNode.addChildNode(droneNode)
     }
     
     
@@ -103,8 +105,16 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
         self.sceneView.delegate = self
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         self.sceneView.addGestureRecognizer(tapGestureRecognizer)
-
+        let pinchGestureRecognizer = UIPinchGestureRecognizer (target: self, action: #selector(escalado))
+        
+        self.sceneView.addGestureRecognizer(pinchGestureRecognizer)
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func escalado(recognizer:UIPinchGestureRecognizer)
+    {
+        
+        droneNode.scale = SCNVector3(recognizer.scale, recognizer.scale, recognizer.scale)
     }
     
     @objc func handleTap(sender : UITapGestureRecognizer){
@@ -153,20 +163,9 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
-    /*func addWalls(nodeName : String, portalNode: SCNNode, imageName: String){
-        let child = portalNode.childNode(withName: nodeName, recursively: true)
-        child?.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Portal.scncassets/\(imageName).png")
-        child?.renderingOrder = 200
-        if let mask = child?.childNode(withName: "mask", recursively: false){
-            mask.geometry?.firstMaterial?.transparency = 0.000001
-        }
+    @IBAction func rotar(_ sender: UIRotationGestureRecognizer) {
+        droneNode.eulerAngles = SCNVector3(0,sender.rotation,0)
     }
-    
-    func addPlane(nodeName : String, portalNode: SCNNode, imageName: String){
-        let child = portalNode.childNode(withName: nodeName, recursively: true)
-        child?.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Portal.scncassets/\(imageName).png")
-        child?.renderingOrder = 200 
-    }*/
     
     func addWalls(nodeName : String, portalNode: SCNNode, data: Data){
         let child = portalNode.childNode(withName: nodeName, recursively: true)
@@ -183,7 +182,7 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
         child?.renderingOrder = 200
     }
     @IBAction func RedesSociales(_ sender: Any) {
-        let texto = "Estoy probando el drone en el salón :"  + (salon?.nombre)!
+        let texto = "Estoy probando el drone en el salón" + (salon?.nombre)!
         
         let objetos:[AnyObject]=[texto as AnyObject]
         let actividad = UIActivityViewController(activityItems: objetos,applicationActivities: nil)

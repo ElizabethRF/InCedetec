@@ -499,23 +499,45 @@ Abraham Armando Silva Apanco
                                     <action selector="RedesSociales:" destination="tzz-R5-sLI" eventType="touchUpInside" id="4YG-Dg-TlP"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvY-5H-rLi">
+                                <rect key="frame" x="33" y="608" width="143" height="30"/>
+                                <state key="normal" backgroundImage="MostrarInformacion"/>
+                                <connections>
+                                    <action selector="MostrarInformacionMaterial:" destination="tzz-R5-sLI" eventType="touchUpInside" id="Bon-gG-WDA"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soy un drone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akS-Bo-mwe">
+                                <rect key="frame" x="137" y="104" width="101" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="bvY-5H-rLi" firstAttribute="leading" secondItem="ys9-5O-ucA" secondAttribute="leading" id="0fx-nf-EWi"/>
+                            <constraint firstItem="bvY-5H-rLi" firstAttribute="bottom" secondItem="ys9-5O-ucA" secondAttribute="bottom" id="4cR-hB-Ytw"/>
+                            <constraint firstItem="akS-Bo-mwe" firstAttribute="top" secondItem="0TD-16-zRo" secondAttribute="bottom" constant="-28" id="65x-HK-86Z"/>
+                            <constraint firstItem="1Ls-tJ-fhP" firstAttribute="centerY" secondItem="ys9-5O-ucA" secondAttribute="centerY" id="GwC-gE-SeM"/>
+                            <constraint firstItem="1Ls-tJ-fhP" firstAttribute="trailing" secondItem="chH-gL-4nH" secondAttribute="trailingMargin" id="Jvy-UE-Dgb"/>
+                            <constraint firstItem="bvY-5H-rLi" firstAttribute="centerY" secondItem="ys9-5O-ucA" secondAttribute="centerY" id="PdY-tj-RCM"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="bottom" secondItem="sk3-9m-CGq" secondAttribute="bottom" id="RRt-IW-QZN"/>
+                            <constraint firstItem="akS-Bo-mwe" firstAttribute="leading" secondItem="ys9-5O-ucA" secondAttribute="leading" constant="104" id="X0f-xD-4M9"/>
                             <constraint firstItem="0TD-16-zRo" firstAttribute="top" secondItem="sk3-9m-CGq" secondAttribute="top" constant="40" id="YPP-sc-Vj2"/>
+                            <constraint firstItem="sk3-9m-CGq" firstAttribute="bottom" secondItem="1Ls-tJ-fhP" secondAttribute="bottom" constant="23" id="YQK-RT-2eV"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="centerX" secondItem="0TD-16-zRo" secondAttribute="centerX" id="Zq3-le-0yg"/>
-                            <constraint firstItem="ys9-5O-ucA" firstAttribute="centerY" secondItem="1Ls-tJ-fhP" secondAttribute="centerY" id="b9H-vc-4E2"/>
-                            <constraint firstItem="1Ls-tJ-fhP" firstAttribute="trailing" secondItem="chH-gL-4nH" secondAttribute="trailingMargin" id="bEW-bM-uCI"/>
                             <constraint firstItem="ys9-5O-ucA" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" constant="33" id="cD7-KN-4Bs"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="leading" secondItem="chH-gL-4nH" secondAttribute="leading" id="cdU-6I-ThA"/>
-                            <constraint firstItem="sk3-9m-CGq" firstAttribute="bottom" secondItem="1Ls-tJ-fhP" secondAttribute="bottom" constant="23" id="lna-lo-MLp"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="top" secondItem="chH-gL-4nH" secondAttribute="top" id="mnC-tO-EAT"/>
                             <constraint firstAttribute="trailing" secondItem="Gkt-TV-Ucb" secondAttribute="trailing" id="qwa-Bi-Q4x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sk3-9m-CGq"/>
                     </view>
                     <connections>
+                        <outlet property="TextoInformativo" destination="akS-Bo-mwe" id="tWW-dS-cot"/>
+                        <outlet property="buttonMostrar" destination="ys9-5O-ucA" id="pYa-RZ-Dx8"/>
+                        <outlet property="buttonMostrarInfo" destination="bvY-5H-rLi" id="e6I-ms-P5a"/>
                         <outlet property="planeDetected" destination="0TD-16-zRo" id="bbg-4v-H4c"/>
                         <outlet property="sceneView" destination="Gkt-TV-Ucb" id="aa5-Br-fLR"/>
                     </connections>
@@ -595,6 +617,7 @@ Abraham Armando Silva Apanco
         <image name="ListaProyecto2.png" width="375" height="667"/>
         <image name="LogoTec" width="278" height="73"/>
         <image name="MapaGeneral.png" width="373" height="602"/>
+        <image name="MostrarInformacion" width="143" height="29"/>
         <image name="Proyecto.png" width="375" height="667"/>
         <image name="Proyecto2.png" width="375" height="667"/>
         <image name="ProyectosIcono" width="146" height="136"/>
@@ -602,6 +625,6 @@ Abraham Armando Silva Apanco
         <image name="redessociales" width="134" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KOz-zp-3QX"/>
+        <segue reference="ERJ-nA-g2x"/>
     </inferredMetricsTieBreakers>
 </document>

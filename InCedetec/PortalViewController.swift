@@ -37,9 +37,20 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet weak var sceneView: ARSCNView!
     
+    @IBOutlet weak var buttonMostrar: UIButton!
     //  droneNode
+    
+    
+    @IBOutlet weak var TextoInformativo: UILabel!
+    @IBAction func MostrarInformacionMaterial(_ sender: UIButton) {
+        TextoInformativo.isHidden = false
+    }
+    @IBOutlet weak var buttonMostrarInfo: UIButton!
     @IBAction func Add3dImage(_ sender: Any) {
         self.addNode()
+        buttonMostrar.isHidden = true
+        buttonMostrarInfo
+            .isHidden = false
     }
     
     var droneNode = SCNNode()

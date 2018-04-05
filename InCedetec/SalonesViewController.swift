@@ -184,12 +184,22 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    
-        if let destination = segue.destination as? PortalViewController{
-            //destination.salon = sectionData[(tableView.indexPathForSelectedRow?.row)]
-            
-            destination.salon = salones[(tableView.indexPathForSelectedRow?.row)!]
+        
+        if((salones[(tableView.indexPathForSelectedRow?.row)!].img == "cabinacontrol") || (salones[(tableView.indexPathForSelectedRow?.row)!].img == "estudiodetv")
+            ){
+            if let destination = segue.destination as? PortalViewController{
+                //destination.salon = sectionData[(tableView.indexPathForSelectedRow?.row)]
+                
+                destination.salon = salones[(tableView.indexPathForSelectedRow?.row)!]
+            }
+        }else{
+            let alert = UIAlertController(title: "Lo sentimos, salon en construcción", message: "", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true)
         }
+    
+      
     }
     
     

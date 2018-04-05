@@ -75,4 +75,11 @@ class ProyectosTableViewController: UITableViewController{
         cell.textLabel?.text = project.value(forKey: "projectName") as? String
         return cell
     }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "next", sender: self)
+    }
+    
+ 
 }

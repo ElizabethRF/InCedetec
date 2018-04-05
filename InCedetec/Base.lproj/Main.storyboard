@@ -111,10 +111,40 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Proyectos" id="XT6-qS-D9Z"/>
+                    <connections>
+                        <segue destination="wO3-Vd-t8B" kind="show" identifier="next" id="OeY-h3-ZSa"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5D-L0-vgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-50" y="869"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ldz-pc-GMX">
+            <objects>
+                <viewController id="wO3-Vd-t8B" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rJK-Ak-Oyx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sitio en construcción 🔨" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tDw-pA-fZw">
+                                <rect key="frame" x="57" y="317.5" width="261" height="32"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tDw-pA-fZw" firstAttribute="centerX" secondItem="rJK-Ak-Oyx" secondAttribute="centerX" id="DDg-oQ-kGU"/>
+                            <constraint firstItem="tDw-pA-fZw" firstAttribute="centerY" secondItem="rJK-Ak-Oyx" secondAttribute="centerY" id="kpe-Sr-wRE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fk7-Sm-Yqx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z9S-Bz-VqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="979"/>
         </scene>
         <!--Cedetec View Controller-->
         <scene sceneID="FTd-bo-Jbo">

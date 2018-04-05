@@ -1,666 +1,666 @@
 // !$*UTF8*$!
 {
-    archiveVersion = 1;
-    classes = {
-    };
-    objectVersion = 48;
-    objects = {
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
 
 /* Begin PBXBuildFile section */
-        38BBEF9920749D910048DEFC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38BBEF9720749D910048DEFC /* Model.xcdatamodeld */; };
-        552BF8F6203B26F00056FF50 /* AgregarSalon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */; };
-        552BF8F8203B27120056FF50 /* ListaProyecto2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */; };
-        552DEE7D203B6FD100019134 /* Salon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 552DEE7A203B6FCA00019134 /* Salon1.png */; };
-        552DEE7E203B6FD100019134 /* Salon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 552DEE7B203B6FCD00019134 /* Salon2.png */; };
-        552DEE7F203B6FD100019134 /* Salon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 552DEE7C203B6FD000019134 /* Salon3.png */; };
-        554C03A7203A954100A5DF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03A6203A954100A5DF1A /* AppDelegate.swift */; };
-        554C03A9203A954100A5DF1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03A8203A954100A5DF1A /* ViewController.swift */; };
-        554C03AC203A954100A5DF1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554C03AA203A954100A5DF1A /* Main.storyboard */; };
-        554C03AE203A954100A5DF1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554C03AD203A954100A5DF1A /* Assets.xcassets */; };
-        554C03B1203A954100A5DF1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554C03AF203A954100A5DF1A /* LaunchScreen.storyboard */; };
-        554C03BC203A954100A5DF1A /* InCedetecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03BB203A954100A5DF1A /* InCedetecTests.swift */; };
-        554C03C7203A954100A5DF1A /* InCedetecUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03C6203A954100A5DF1A /* InCedetecUITests.swift */; };
-        554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */; };
-        554C03F3203AB14C00A5DF1A /* MapaGeneral.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03F2203AB14C00A5DF1A /* MapaGeneral.png */; };
-        55A2D0F52073EFF0004FD74C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 55A2D0F42073EFF0004FD74C /* art.scnassets */; };
-        CA3255F6203AB8CC004624A4 /* ListaProyectos@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255F5203AB8CB004624A4 /* ListaProyectos@3x.png */; };
-        CA3255FA203ABA65004624A4 /* AgregarProyectoNuevo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255F9203ABA64004624A4 /* AgregarProyectoNuevo@3x.png */; };
-        CA325600203ABCB3004624A4 /* Proyecto@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */; };
-        CA325602203ABD6B004624A4 /* AgregarSalon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */; };
-        CA325604203ABD80004624A4 /* Proyecto2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA325603203ABD7F004624A4 /* Proyecto2@3x.png */; };
-        CA7E63E9206B612300EAC7CD /* SalonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E63E8206B612300EAC7CD /* SalonesViewController.swift */; };
-        CA80076820734F9200FFB8EC /* CedetecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80076720734F9200FFB8EC /* CedetecViewController.swift */; };
-        CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */; };
-        CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6C206DF60800F79421 /* PortalViewController.swift */; };
-        CAE4FC71206E0EEA00F79421 /* Portal.scncassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE4FC70206E0EEA00F79421 /* Portal.scncassets */; };
+		38BBEF9920749D910048DEFC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38BBEF9720749D910048DEFC /* Model.xcdatamodeld */; };
+		552BF8F6203B26F00056FF50 /* AgregarSalon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */; };
+		552BF8F8203B27120056FF50 /* ListaProyecto2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */; };
+		552DEE7D203B6FD100019134 /* Salon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 552DEE7A203B6FCA00019134 /* Salon1.png */; };
+		552DEE7E203B6FD100019134 /* Salon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 552DEE7B203B6FCD00019134 /* Salon2.png */; };
+		552DEE7F203B6FD100019134 /* Salon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 552DEE7C203B6FD000019134 /* Salon3.png */; };
+		554C03A7203A954100A5DF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03A6203A954100A5DF1A /* AppDelegate.swift */; };
+		554C03A9203A954100A5DF1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03A8203A954100A5DF1A /* ViewController.swift */; };
+		554C03AC203A954100A5DF1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554C03AA203A954100A5DF1A /* Main.storyboard */; };
+		554C03AE203A954100A5DF1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554C03AD203A954100A5DF1A /* Assets.xcassets */; };
+		554C03B1203A954100A5DF1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554C03AF203A954100A5DF1A /* LaunchScreen.storyboard */; };
+		554C03BC203A954100A5DF1A /* InCedetecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03BB203A954100A5DF1A /* InCedetecTests.swift */; };
+		554C03C7203A954100A5DF1A /* InCedetecUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03C6203A954100A5DF1A /* InCedetecUITests.swift */; };
+		554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */; };
+		554C03F3203AB14C00A5DF1A /* MapaGeneral.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C03F2203AB14C00A5DF1A /* MapaGeneral.png */; };
+		55A2D0F52073EFF0004FD74C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 55A2D0F42073EFF0004FD74C /* art.scnassets */; };
+		CA3255F6203AB8CC004624A4 /* ListaProyectos@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255F5203AB8CB004624A4 /* ListaProyectos@3x.png */; };
+		CA3255FA203ABA65004624A4 /* AgregarProyectoNuevo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255F9203ABA64004624A4 /* AgregarProyectoNuevo@3x.png */; };
+		CA325600203ABCB3004624A4 /* Proyecto@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */; };
+		CA325602203ABD6B004624A4 /* AgregarSalon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */; };
+		CA325604203ABD80004624A4 /* Proyecto2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA325603203ABD7F004624A4 /* Proyecto2@3x.png */; };
+		CA7E63E9206B612300EAC7CD /* SalonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E63E8206B612300EAC7CD /* SalonesViewController.swift */; };
+		CA80076820734F9200FFB8EC /* CedetecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80076720734F9200FFB8EC /* CedetecViewController.swift */; };
+		CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */; };
+		CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6C206DF60800F79421 /* PortalViewController.swift */; };
+		CAE4FC71206E0EEA00F79421 /* Portal.scncassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE4FC70206E0EEA00F79421 /* Portal.scncassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-        554C03B8203A954100A5DF1A /* PBXContainerItemProxy */ = {
-            isa = PBXContainerItemProxy;
-            containerPortal = 554C039B203A954100A5DF1A /* Project object */;
-            proxyType = 1;
-            remoteGlobalIDString = 554C03A2203A954100A5DF1A;
-            remoteInfo = InCedetec;
-        };
-        554C03C3203A954100A5DF1A /* PBXContainerItemProxy */ = {
-            isa = PBXContainerItemProxy;
-            containerPortal = 554C039B203A954100A5DF1A /* Project object */;
-            proxyType = 1;
-            remoteGlobalIDString = 554C03A2203A954100A5DF1A;
-            remoteInfo = InCedetec;
-        };
+		554C03B8203A954100A5DF1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 554C039B203A954100A5DF1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 554C03A2203A954100A5DF1A;
+			remoteInfo = InCedetec;
+		};
+		554C03C3203A954100A5DF1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 554C039B203A954100A5DF1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 554C03A2203A954100A5DF1A;
+			remoteInfo = InCedetec;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-        38BBEF9820749D910048DEFC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-        552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarSalon@3x.png"; sourceTree = "<group>"; };
-        552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListaProyecto2@3x.png"; sourceTree = "<group>"; };
-        552DEE7A203B6FCA00019134 /* Salon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon1.png; sourceTree = "<group>"; };
-        552DEE7B203B6FCD00019134 /* Salon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon2.png; sourceTree = "<group>"; };
-        552DEE7C203B6FD000019134 /* Salon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon3.png; sourceTree = "<group>"; };
-        554C03A3203A954100A5DF1A /* InCedetec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InCedetec.app; sourceTree = BUILT_PRODUCTS_DIR; };
-        554C03A6203A954100A5DF1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-        554C03A8203A954100A5DF1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-        554C03AB203A954100A5DF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-        554C03AD203A954100A5DF1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-        554C03B0203A954100A5DF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-        554C03B2203A954100A5DF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        554C03B7203A954100A5DF1A /* InCedetecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InCedetecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-        554C03BB203A954100A5DF1A /* InCedetecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InCedetecTests.swift; sourceTree = "<group>"; };
-        554C03BD203A954100A5DF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        554C03C2203A954100A5DF1A /* InCedetecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InCedetecUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-        554C03C6203A954100A5DF1A /* InCedetecUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InCedetecUITests.swift; sourceTree = "<group>"; };
-        554C03C8203A954100A5DF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectosTableViewController.swift; sourceTree = "<group>"; };
-        554C03F2203AB14C00A5DF1A /* MapaGeneral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapaGeneral.png; sourceTree = "<group>"; };
-        55A2D0F42073EFF0004FD74C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-        CA3255F5203AB8CB004624A4 /* ListaProyectos@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListaProyectos@3x.png"; sourceTree = "<group>"; };
-        CA3255F9203ABA64004624A4 /* AgregarProyectoNuevo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarProyectoNuevo@3x.png"; sourceTree = "<group>"; };
-        CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proyecto@3x.png"; sourceTree = "<group>"; };
-        CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarSalon@3x.png"; sourceTree = "<group>"; };
-        CA325603203ABD7F004624A4 /* Proyecto2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proyecto2@3x.png"; sourceTree = "<group>"; };
-        CA7E63E8206B612300EAC7CD /* SalonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonesViewController.swift; sourceTree = "<group>"; };
-        CA80076720734F9200FFB8EC /* CedetecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CedetecViewController.swift; sourceTree = "<group>"; };
-        CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesSalon.swift; sourceTree = "<group>"; };
-        CAE4FC6C206DF60800F79421 /* PortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
-        CAE4FC70206E0EEA00F79421 /* Portal.scncassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Portal.scncassets; sourceTree = "<group>"; };
+		38BBEF9820749D910048DEFC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarSalon@3x.png"; sourceTree = "<group>"; };
+		552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListaProyecto2@3x.png"; sourceTree = "<group>"; };
+		552DEE7A203B6FCA00019134 /* Salon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon1.png; sourceTree = "<group>"; };
+		552DEE7B203B6FCD00019134 /* Salon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon2.png; sourceTree = "<group>"; };
+		552DEE7C203B6FD000019134 /* Salon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon3.png; sourceTree = "<group>"; };
+		554C03A3203A954100A5DF1A /* InCedetec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InCedetec.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		554C03A6203A954100A5DF1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		554C03A8203A954100A5DF1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		554C03AB203A954100A5DF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		554C03AD203A954100A5DF1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		554C03B0203A954100A5DF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		554C03B2203A954100A5DF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554C03B7203A954100A5DF1A /* InCedetecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InCedetecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		554C03BB203A954100A5DF1A /* InCedetecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InCedetecTests.swift; sourceTree = "<group>"; };
+		554C03BD203A954100A5DF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554C03C2203A954100A5DF1A /* InCedetecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InCedetecUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		554C03C6203A954100A5DF1A /* InCedetecUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InCedetecUITests.swift; sourceTree = "<group>"; };
+		554C03C8203A954100A5DF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectosTableViewController.swift; sourceTree = "<group>"; };
+		554C03F2203AB14C00A5DF1A /* MapaGeneral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapaGeneral.png; sourceTree = "<group>"; };
+		55A2D0F42073EFF0004FD74C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		CA3255F5203AB8CB004624A4 /* ListaProyectos@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListaProyectos@3x.png"; sourceTree = "<group>"; };
+		CA3255F9203ABA64004624A4 /* AgregarProyectoNuevo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarProyectoNuevo@3x.png"; sourceTree = "<group>"; };
+		CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proyecto@3x.png"; sourceTree = "<group>"; };
+		CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarSalon@3x.png"; sourceTree = "<group>"; };
+		CA325603203ABD7F004624A4 /* Proyecto2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proyecto2@3x.png"; sourceTree = "<group>"; };
+		CA7E63E8206B612300EAC7CD /* SalonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonesViewController.swift; sourceTree = "<group>"; };
+		CA80076720734F9200FFB8EC /* CedetecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CedetecViewController.swift; sourceTree = "<group>"; };
+		CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesSalon.swift; sourceTree = "<group>"; };
+		CAE4FC6C206DF60800F79421 /* PortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
+		CAE4FC70206E0EEA00F79421 /* Portal.scncassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Portal.scncassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-        554C03A0203A954100A5DF1A /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        554C03B4203A954100A5DF1A /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        554C03BF203A954100A5DF1A /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		554C03A0203A954100A5DF1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554C03B4203A954100A5DF1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554C03BF203A954100A5DF1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-        554C039A203A954100A5DF1A = {
-            isa = PBXGroup;
-            children = (
-                554C03A5203A954100A5DF1A /* InCedetec */,
-                554C03BA203A954100A5DF1A /* InCedetecTests */,
-                554C03C5203A954100A5DF1A /* InCedetecUITests */,
-                554C03A4203A954100A5DF1A /* Products */,
-            );
-            sourceTree = "<group>";
-        };
-        554C03A4203A954100A5DF1A /* Products */ = {
-            isa = PBXGroup;
-            children = (
-                554C03A3203A954100A5DF1A /* InCedetec.app */,
-                554C03B7203A954100A5DF1A /* InCedetecTests.xctest */,
-                554C03C2203A954100A5DF1A /* InCedetecUITests.xctest */,
-            );
-            name = Products;
-            sourceTree = "<group>";
-        };
-        554C03A5203A954100A5DF1A /* InCedetec */ = {
-            isa = PBXGroup;
-            children = (
-                554C03D7203A96D400A5DF1A /* Imagenes */,
-                554C03A6203A954100A5DF1A /* AppDelegate.swift */,
-                554C03A8203A954100A5DF1A /* ViewController.swift */,
-                CA7E63E8206B612300EAC7CD /* SalonesViewController.swift */,
-                554C03AA203A954100A5DF1A /* Main.storyboard */,
-                554C03AD203A954100A5DF1A /* Assets.xcassets */,
-                554C03AF203A954100A5DF1A /* LaunchScreen.storyboard */,
-                554C03B2203A954100A5DF1A /* Info.plist */,
-                554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */,
-                CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */,
-                CAE4FC6C206DF60800F79421 /* PortalViewController.swift */,
-                CAE4FC70206E0EEA00F79421 /* Portal.scncassets */,
-                CA80076720734F9200FFB8EC /* CedetecViewController.swift */,
-                55A2D0F42073EFF0004FD74C /* art.scnassets */,
-                38BBEF9720749D910048DEFC /* Model.xcdatamodeld */,
-            );
-            path = InCedetec;
-            sourceTree = "<group>";
-        };
-        554C03BA203A954100A5DF1A /* InCedetecTests */ = {
-            isa = PBXGroup;
-            children = (
-                554C03BB203A954100A5DF1A /* InCedetecTests.swift */,
-                554C03BD203A954100A5DF1A /* Info.plist */,
-            );
-            path = InCedetecTests;
-            sourceTree = "<group>";
-        };
-        554C03C5203A954100A5DF1A /* InCedetecUITests */ = {
-            isa = PBXGroup;
-            children = (
-                554C03C6203A954100A5DF1A /* InCedetecUITests.swift */,
-                554C03C8203A954100A5DF1A /* Info.plist */,
-            );
-            path = InCedetecUITests;
-            sourceTree = "<group>";
-        };
-        554C03D7203A96D400A5DF1A /* Imagenes */ = {
-            isa = PBXGroup;
-            children = (
-                552DEE7A203B6FCA00019134 /* Salon1.png */,
-                552DEE7B203B6FCD00019134 /* Salon2.png */,
-                552DEE7C203B6FD000019134 /* Salon3.png */,
-                552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */,
-                552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */,
-                CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */,
-                CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */,
-                CA325603203ABD7F004624A4 /* Proyecto2@3x.png */,
-                CA3255F9203ABA64004624A4 /* AgregarProyectoNuevo@3x.png */,
-                CA3255F5203AB8CB004624A4 /* ListaProyectos@3x.png */,
-                554C03F2203AB14C00A5DF1A /* MapaGeneral.png */,
-            );
-            path = Imagenes;
-            sourceTree = "<group>";
-        };
+		554C039A203A954100A5DF1A = {
+			isa = PBXGroup;
+			children = (
+				554C03A5203A954100A5DF1A /* InCedetec */,
+				554C03BA203A954100A5DF1A /* InCedetecTests */,
+				554C03C5203A954100A5DF1A /* InCedetecUITests */,
+				554C03A4203A954100A5DF1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		554C03A4203A954100A5DF1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				554C03A3203A954100A5DF1A /* InCedetec.app */,
+				554C03B7203A954100A5DF1A /* InCedetecTests.xctest */,
+				554C03C2203A954100A5DF1A /* InCedetecUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		554C03A5203A954100A5DF1A /* InCedetec */ = {
+			isa = PBXGroup;
+			children = (
+				554C03D7203A96D400A5DF1A /* Imagenes */,
+				554C03A6203A954100A5DF1A /* AppDelegate.swift */,
+				554C03A8203A954100A5DF1A /* ViewController.swift */,
+				CA7E63E8206B612300EAC7CD /* SalonesViewController.swift */,
+				554C03AA203A954100A5DF1A /* Main.storyboard */,
+				554C03AD203A954100A5DF1A /* Assets.xcassets */,
+				554C03AF203A954100A5DF1A /* LaunchScreen.storyboard */,
+				554C03B2203A954100A5DF1A /* Info.plist */,
+				554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */,
+				CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */,
+				CAE4FC6C206DF60800F79421 /* PortalViewController.swift */,
+				CAE4FC70206E0EEA00F79421 /* Portal.scncassets */,
+				CA80076720734F9200FFB8EC /* CedetecViewController.swift */,
+				55A2D0F42073EFF0004FD74C /* art.scnassets */,
+				38BBEF9720749D910048DEFC /* Model.xcdatamodeld */,
+			);
+			path = InCedetec;
+			sourceTree = "<group>";
+		};
+		554C03BA203A954100A5DF1A /* InCedetecTests */ = {
+			isa = PBXGroup;
+			children = (
+				554C03BB203A954100A5DF1A /* InCedetecTests.swift */,
+				554C03BD203A954100A5DF1A /* Info.plist */,
+			);
+			path = InCedetecTests;
+			sourceTree = "<group>";
+		};
+		554C03C5203A954100A5DF1A /* InCedetecUITests */ = {
+			isa = PBXGroup;
+			children = (
+				554C03C6203A954100A5DF1A /* InCedetecUITests.swift */,
+				554C03C8203A954100A5DF1A /* Info.plist */,
+			);
+			path = InCedetecUITests;
+			sourceTree = "<group>";
+		};
+		554C03D7203A96D400A5DF1A /* Imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				552DEE7A203B6FCA00019134 /* Salon1.png */,
+				552DEE7B203B6FCD00019134 /* Salon2.png */,
+				552DEE7C203B6FD000019134 /* Salon3.png */,
+				552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */,
+				552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */,
+				CA3255FF203ABCB2004624A4 /* Proyecto@3x.png */,
+				CA325601203ABD6A004624A4 /* AgregarSalon@3x.png */,
+				CA325603203ABD7F004624A4 /* Proyecto2@3x.png */,
+				CA3255F9203ABA64004624A4 /* AgregarProyectoNuevo@3x.png */,
+				CA3255F5203AB8CB004624A4 /* ListaProyectos@3x.png */,
+				554C03F2203AB14C00A5DF1A /* MapaGeneral.png */,
+			);
+			path = Imagenes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-        554C03A2203A954100A5DF1A /* InCedetec */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = 554C03CB203A954100A5DF1A /* Build configuration list for PBXNativeTarget "InCedetec" */;
-            buildPhases = (
-                554C039F203A954100A5DF1A /* Sources */,
-                554C03A0203A954100A5DF1A /* Frameworks */,
-                554C03A1203A954100A5DF1A /* Resources */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-            );
-            name = InCedetec;
-            productName = InCedetec;
-            productReference = 554C03A3203A954100A5DF1A /* InCedetec.app */;
-            productType = "com.apple.product-type.application";
-        };
-        554C03B6203A954100A5DF1A /* InCedetecTests */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = 554C03CE203A954100A5DF1A /* Build configuration list for PBXNativeTarget "InCedetecTests" */;
-            buildPhases = (
-                554C03B3203A954100A5DF1A /* Sources */,
-                554C03B4203A954100A5DF1A /* Frameworks */,
-                554C03B5203A954100A5DF1A /* Resources */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-                554C03B9203A954100A5DF1A /* PBXTargetDependency */,
-            );
-            name = InCedetecTests;
-            productName = InCedetecTests;
-            productReference = 554C03B7203A954100A5DF1A /* InCedetecTests.xctest */;
-            productType = "com.apple.product-type.bundle.unit-test";
-        };
-        554C03C1203A954100A5DF1A /* InCedetecUITests */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = 554C03D1203A954100A5DF1A /* Build configuration list for PBXNativeTarget "InCedetecUITests" */;
-            buildPhases = (
-                554C03BE203A954100A5DF1A /* Sources */,
-                554C03BF203A954100A5DF1A /* Frameworks */,
-                554C03C0203A954100A5DF1A /* Resources */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-                554C03C4203A954100A5DF1A /* PBXTargetDependency */,
-            );
-            name = InCedetecUITests;
-            productName = InCedetecUITests;
-            productReference = 554C03C2203A954100A5DF1A /* InCedetecUITests.xctest */;
-            productType = "com.apple.product-type.bundle.ui-testing";
-        };
+		554C03A2203A954100A5DF1A /* InCedetec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554C03CB203A954100A5DF1A /* Build configuration list for PBXNativeTarget "InCedetec" */;
+			buildPhases = (
+				554C039F203A954100A5DF1A /* Sources */,
+				554C03A0203A954100A5DF1A /* Frameworks */,
+				554C03A1203A954100A5DF1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InCedetec;
+			productName = InCedetec;
+			productReference = 554C03A3203A954100A5DF1A /* InCedetec.app */;
+			productType = "com.apple.product-type.application";
+		};
+		554C03B6203A954100A5DF1A /* InCedetecTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554C03CE203A954100A5DF1A /* Build configuration list for PBXNativeTarget "InCedetecTests" */;
+			buildPhases = (
+				554C03B3203A954100A5DF1A /* Sources */,
+				554C03B4203A954100A5DF1A /* Frameworks */,
+				554C03B5203A954100A5DF1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				554C03B9203A954100A5DF1A /* PBXTargetDependency */,
+			);
+			name = InCedetecTests;
+			productName = InCedetecTests;
+			productReference = 554C03B7203A954100A5DF1A /* InCedetecTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		554C03C1203A954100A5DF1A /* InCedetecUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554C03D1203A954100A5DF1A /* Build configuration list for PBXNativeTarget "InCedetecUITests" */;
+			buildPhases = (
+				554C03BE203A954100A5DF1A /* Sources */,
+				554C03BF203A954100A5DF1A /* Frameworks */,
+				554C03C0203A954100A5DF1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				554C03C4203A954100A5DF1A /* PBXTargetDependency */,
+			);
+			name = InCedetecUITests;
+			productName = InCedetecUITests;
+			productReference = 554C03C2203A954100A5DF1A /* InCedetecUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-        554C039B203A954100A5DF1A /* Project object */ = {
-            isa = PBXProject;
-            attributes = {
-                LastSwiftUpdateCheck = 0920;
-                LastUpgradeCheck = 0920;
-                ORGANIZATIONNAME = "Elizabeth Rodríguez Fallas";
-                TargetAttributes = {
-                    554C03A2203A954100A5DF1A = {
-                        CreatedOnToolsVersion = 9.2;
-                        ProvisioningStyle = Automatic;
-                    };
-                    554C03B6203A954100A5DF1A = {
-                        CreatedOnToolsVersion = 9.2;
-                        ProvisioningStyle = Automatic;
-                        TestTargetID = 554C03A2203A954100A5DF1A;
-                    };
-                    554C03C1203A954100A5DF1A = {
-                        CreatedOnToolsVersion = 9.2;
-                        ProvisioningStyle = Automatic;
-                        TestTargetID = 554C03A2203A954100A5DF1A;
-                    };
-                };
-            };
-            buildConfigurationList = 554C039E203A954100A5DF1A /* Build configuration list for PBXProject "InCedetec" */;
-            compatibilityVersion = "Xcode 8.0";
-            developmentRegion = en;
-            hasScannedForEncodings = 0;
-            knownRegions = (
-                en,
-                Base,
-            );
-            mainGroup = 554C039A203A954100A5DF1A;
-            productRefGroup = 554C03A4203A954100A5DF1A /* Products */;
-            projectDirPath = "";
-            projectRoot = "";
-            targets = (
-                554C03A2203A954100A5DF1A /* InCedetec */,
-                554C03B6203A954100A5DF1A /* InCedetecTests */,
-                554C03C1203A954100A5DF1A /* InCedetecUITests */,
-            );
-        };
+		554C039B203A954100A5DF1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Elizabeth Rodríguez Fallas";
+				TargetAttributes = {
+					554C03A2203A954100A5DF1A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					554C03B6203A954100A5DF1A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 554C03A2203A954100A5DF1A;
+					};
+					554C03C1203A954100A5DF1A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 554C03A2203A954100A5DF1A;
+					};
+				};
+			};
+			buildConfigurationList = 554C039E203A954100A5DF1A /* Build configuration list for PBXProject "InCedetec" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 554C039A203A954100A5DF1A;
+			productRefGroup = 554C03A4203A954100A5DF1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				554C03A2203A954100A5DF1A /* InCedetec */,
+				554C03B6203A954100A5DF1A /* InCedetecTests */,
+				554C03C1203A954100A5DF1A /* InCedetecUITests */,
+			);
+		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-        554C03A1203A954100A5DF1A /* Resources */ = {
-            isa = PBXResourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                CA325604203ABD80004624A4 /* Proyecto2@3x.png in Resources */,
-                CA325600203ABCB3004624A4 /* Proyecto@3x.png in Resources */,
-                552BF8F6203B26F00056FF50 /* AgregarSalon@3x.png in Resources */,
-                CA3255F6203AB8CC004624A4 /* ListaProyectos@3x.png in Resources */,
-                CA3255FA203ABA65004624A4 /* AgregarProyectoNuevo@3x.png in Resources */,
-                552DEE7F203B6FD100019134 /* Salon3.png in Resources */,
-                552BF8F8203B27120056FF50 /* ListaProyecto2@3x.png in Resources */,
-                554C03B1203A954100A5DF1A /* LaunchScreen.storyboard in Resources */,
-                554C03AE203A954100A5DF1A /* Assets.xcassets in Resources */,
-                55A2D0F52073EFF0004FD74C /* art.scnassets in Resources */,
-                552DEE7D203B6FD100019134 /* Salon1.png in Resources */,
-                552DEE7E203B6FD100019134 /* Salon2.png in Resources */,
-                CA325602203ABD6B004624A4 /* AgregarSalon@3x.png in Resources */,
-                554C03AC203A954100A5DF1A /* Main.storyboard in Resources */,
-                CAE4FC71206E0EEA00F79421 /* Portal.scncassets in Resources */,
-                554C03F3203AB14C00A5DF1A /* MapaGeneral.png in Resources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        554C03B5203A954100A5DF1A /* Resources */ = {
-            isa = PBXResourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        554C03C0203A954100A5DF1A /* Resources */ = {
-            isa = PBXResourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		554C03A1203A954100A5DF1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA325604203ABD80004624A4 /* Proyecto2@3x.png in Resources */,
+				CA325600203ABCB3004624A4 /* Proyecto@3x.png in Resources */,
+				552BF8F6203B26F00056FF50 /* AgregarSalon@3x.png in Resources */,
+				CA3255F6203AB8CC004624A4 /* ListaProyectos@3x.png in Resources */,
+				CA3255FA203ABA65004624A4 /* AgregarProyectoNuevo@3x.png in Resources */,
+				552DEE7F203B6FD100019134 /* Salon3.png in Resources */,
+				552BF8F8203B27120056FF50 /* ListaProyecto2@3x.png in Resources */,
+				554C03B1203A954100A5DF1A /* LaunchScreen.storyboard in Resources */,
+				554C03AE203A954100A5DF1A /* Assets.xcassets in Resources */,
+				55A2D0F52073EFF0004FD74C /* art.scnassets in Resources */,
+				552DEE7D203B6FD100019134 /* Salon1.png in Resources */,
+				552DEE7E203B6FD100019134 /* Salon2.png in Resources */,
+				CA325602203ABD6B004624A4 /* AgregarSalon@3x.png in Resources */,
+				554C03AC203A954100A5DF1A /* Main.storyboard in Resources */,
+				CAE4FC71206E0EEA00F79421 /* Portal.scncassets in Resources */,
+				554C03F3203AB14C00A5DF1A /* MapaGeneral.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554C03B5203A954100A5DF1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554C03C0203A954100A5DF1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-        554C039F203A954100A5DF1A /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                CA7E63E9206B612300EAC7CD /* SalonesViewController.swift in Sources */,
-                CA80076820734F9200FFB8EC /* CedetecViewController.swift in Sources */,
-                CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */,
-                38BBEF9920749D910048DEFC /* Model.xcdatamodeld in Sources */,
-                554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */,
-                554C03A9203A954100A5DF1A /* ViewController.swift in Sources */,
-                CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */,
-                554C03A7203A954100A5DF1A /* AppDelegate.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        554C03B3203A954100A5DF1A /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                554C03BC203A954100A5DF1A /* InCedetecTests.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        554C03BE203A954100A5DF1A /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                554C03C7203A954100A5DF1A /* InCedetecUITests.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		554C039F203A954100A5DF1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA7E63E9206B612300EAC7CD /* SalonesViewController.swift in Sources */,
+				CA80076820734F9200FFB8EC /* CedetecViewController.swift in Sources */,
+				CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */,
+				38BBEF9920749D910048DEFC /* Model.xcdatamodeld in Sources */,
+				554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */,
+				554C03A9203A954100A5DF1A /* ViewController.swift in Sources */,
+				CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */,
+				554C03A7203A954100A5DF1A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554C03B3203A954100A5DF1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554C03BC203A954100A5DF1A /* InCedetecTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554C03BE203A954100A5DF1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554C03C7203A954100A5DF1A /* InCedetecUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-        554C03B9203A954100A5DF1A /* PBXTargetDependency */ = {
-            isa = PBXTargetDependency;
-            target = 554C03A2203A954100A5DF1A /* InCedetec */;
-            targetProxy = 554C03B8203A954100A5DF1A /* PBXContainerItemProxy */;
-        };
-        554C03C4203A954100A5DF1A /* PBXTargetDependency */ = {
-            isa = PBXTargetDependency;
-            target = 554C03A2203A954100A5DF1A /* InCedetec */;
-            targetProxy = 554C03C3203A954100A5DF1A /* PBXContainerItemProxy */;
-        };
+		554C03B9203A954100A5DF1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 554C03A2203A954100A5DF1A /* InCedetec */;
+			targetProxy = 554C03B8203A954100A5DF1A /* PBXContainerItemProxy */;
+		};
+		554C03C4203A954100A5DF1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 554C03A2203A954100A5DF1A /* InCedetec */;
+			targetProxy = 554C03C3203A954100A5DF1A /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-        554C03AA203A954100A5DF1A /* Main.storyboard */ = {
-            isa = PBXVariantGroup;
-            children = (
-                554C03AB203A954100A5DF1A /* Base */,
-            );
-            name = Main.storyboard;
-            sourceTree = "<group>";
-        };
-        554C03AF203A954100A5DF1A /* LaunchScreen.storyboard */ = {
-            isa = PBXVariantGroup;
-            children = (
-                554C03B0203A954100A5DF1A /* Base */,
-            );
-            name = LaunchScreen.storyboard;
-            sourceTree = "<group>";
-        };
+		554C03AA203A954100A5DF1A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				554C03AB203A954100A5DF1A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		554C03AF203A954100A5DF1A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				554C03B0203A954100A5DF1A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-        554C03C9203A954100A5DF1A /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
-                CLANG_ANALYZER_NONNULL = YES;
-                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-                CLANG_CXX_LIBRARY = "libc++";
-                CLANG_ENABLE_MODULES = YES;
-                CLANG_ENABLE_OBJC_ARC = YES;
-                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-                CLANG_WARN_BOOL_CONVERSION = YES;
-                CLANG_WARN_COMMA = YES;
-                CLANG_WARN_CONSTANT_CONVERSION = YES;
-                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-                CLANG_WARN_EMPTY_BODY = YES;
-                CLANG_WARN_ENUM_CONVERSION = YES;
-                CLANG_WARN_INFINITE_RECURSION = YES;
-                CLANG_WARN_INT_CONVERSION = YES;
-                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-                CLANG_WARN_STRICT_PROTOTYPES = YES;
-                CLANG_WARN_SUSPICIOUS_MOVE = YES;
-                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-                CLANG_WARN_UNREACHABLE_CODE = YES;
-                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-                CODE_SIGN_IDENTITY = "iPhone Developer";
-                COPY_PHASE_STRIP = NO;
-                DEBUG_INFORMATION_FORMAT = dwarf;
-                ENABLE_STRICT_OBJC_MSGSEND = YES;
-                ENABLE_TESTABILITY = YES;
-                GCC_C_LANGUAGE_STANDARD = gnu11;
-                GCC_DYNAMIC_NO_PIC = NO;
-                GCC_NO_COMMON_BLOCKS = YES;
-                GCC_OPTIMIZATION_LEVEL = 0;
-                GCC_PREPROCESSOR_DEFINITIONS = (
-                    "DEBUG=1",
-                    "$(inherited)",
-                );
-                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-                GCC_WARN_UNDECLARED_SELECTOR = YES;
-                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-                GCC_WARN_UNUSED_FUNCTION = YES;
-                GCC_WARN_UNUSED_VARIABLE = YES;
-                IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-                MTL_ENABLE_DEBUG_INFO = YES;
-                ONLY_ACTIVE_ARCH = YES;
-                SDKROOT = iphoneos;
-                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-            };
-            name = Debug;
-        };
-        554C03CA203A954100A5DF1A /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
-                CLANG_ANALYZER_NONNULL = YES;
-                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-                CLANG_CXX_LIBRARY = "libc++";
-                CLANG_ENABLE_MODULES = YES;
-                CLANG_ENABLE_OBJC_ARC = YES;
-                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-                CLANG_WARN_BOOL_CONVERSION = YES;
-                CLANG_WARN_COMMA = YES;
-                CLANG_WARN_CONSTANT_CONVERSION = YES;
-                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-                CLANG_WARN_EMPTY_BODY = YES;
-                CLANG_WARN_ENUM_CONVERSION = YES;
-                CLANG_WARN_INFINITE_RECURSION = YES;
-                CLANG_WARN_INT_CONVERSION = YES;
-                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-                CLANG_WARN_STRICT_PROTOTYPES = YES;
-                CLANG_WARN_SUSPICIOUS_MOVE = YES;
-                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-                CLANG_WARN_UNREACHABLE_CODE = YES;
-                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-                CODE_SIGN_IDENTITY = "iPhone Developer";
-                COPY_PHASE_STRIP = NO;
-                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-                ENABLE_NS_ASSERTIONS = NO;
-                ENABLE_STRICT_OBJC_MSGSEND = YES;
-                GCC_C_LANGUAGE_STANDARD = gnu11;
-                GCC_NO_COMMON_BLOCKS = YES;
-                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-                GCC_WARN_UNDECLARED_SELECTOR = YES;
-                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-                GCC_WARN_UNUSED_FUNCTION = YES;
-                GCC_WARN_UNUSED_VARIABLE = YES;
-                IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-                MTL_ENABLE_DEBUG_INFO = NO;
-                SDKROOT = iphoneos;
-                SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-                VALIDATE_PRODUCT = YES;
-            };
-            name = Release;
-        };
-        554C03CC203A954100A5DF1A /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-                "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 87AY468PL6;
-                INFOPLIST_FILE = InCedetec/Info.plist;
-                IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-                PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.cedeer;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                PROVISIONING_PROFILE_SPECIFIER = "";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = "1,2";
-            };
-            name = Debug;
-        };
-        554C03CD203A954100A5DF1A /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-                "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 87AY468PL6;
-                INFOPLIST_FILE = InCedetec/Info.plist;
-                IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-                PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.cedeer;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                PROVISIONING_PROFILE_SPECIFIER = "";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = "1,2";
-            };
-            name = Release;
-        };
-        554C03CF203A954100A5DF1A /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                BUNDLE_LOADER = "$(TEST_HOST)";
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 87AY468PL6;
-                INFOPLIST_FILE = InCedetecTests/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-                PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.InCedetecTests;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InCedetec.app/InCedetec";
-            };
-            name = Debug;
-        };
-        554C03D0203A954100A5DF1A /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                BUNDLE_LOADER = "$(TEST_HOST)";
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 87AY468PL6;
-                INFOPLIST_FILE = InCedetecTests/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-                PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.InCedetecTests;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InCedetec.app/InCedetec";
-            };
-            name = Release;
-        };
-        554C03D2203A954100A5DF1A /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 87AY468PL6;
-                INFOPLIST_FILE = InCedetecUITests/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-                PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.InCedetecUITests;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_TARGET_NAME = InCedetec;
-            };
-            name = Debug;
-        };
-        554C03D3203A954100A5DF1A /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 87AY468PL6;
-                INFOPLIST_FILE = InCedetecUITests/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-                PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.InCedetecUITests;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_TARGET_NAME = InCedetec;
-            };
-            name = Release;
-        };
+		554C03C9203A954100A5DF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		554C03CA203A954100A5DF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		554C03CC203A954100A5DF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = InCedetec/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.cedeere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		554C03CD203A954100A5DF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = InCedetec/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.cedeere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		554C03CF203A954100A5DF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87AY468PL6;
+				INFOPLIST_FILE = InCedetecTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.InCedetecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InCedetec.app/InCedetec";
+			};
+			name = Debug;
+		};
+		554C03D0203A954100A5DF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87AY468PL6;
+				INFOPLIST_FILE = InCedetecTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.InCedetecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InCedetec.app/InCedetec";
+			};
+			name = Release;
+		};
+		554C03D2203A954100A5DF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87AY468PL6;
+				INFOPLIST_FILE = InCedetecUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.InCedetecUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InCedetec;
+			};
+			name = Debug;
+		};
+		554C03D3203A954100A5DF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87AY468PL6;
+				INFOPLIST_FILE = InCedetecUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.InCedetecUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InCedetec;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-        554C039E203A954100A5DF1A /* Build configuration list for PBXProject "InCedetec" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                554C03C9203A954100A5DF1A /* Debug */,
-                554C03CA203A954100A5DF1A /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        554C03CB203A954100A5DF1A /* Build configuration list for PBXNativeTarget "InCedetec" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                554C03CC203A954100A5DF1A /* Debug */,
-                554C03CD203A954100A5DF1A /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        554C03CE203A954100A5DF1A /* Build configuration list for PBXNativeTarget "InCedetecTests" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                554C03CF203A954100A5DF1A /* Debug */,
-                554C03D0203A954100A5DF1A /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        554C03D1203A954100A5DF1A /* Build configuration list for PBXNativeTarget "InCedetecUITests" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                554C03D2203A954100A5DF1A /* Debug */,
-                554C03D3203A954100A5DF1A /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
+		554C039E203A954100A5DF1A /* Build configuration list for PBXProject "InCedetec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554C03C9203A954100A5DF1A /* Debug */,
+				554C03CA203A954100A5DF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		554C03CB203A954100A5DF1A /* Build configuration list for PBXNativeTarget "InCedetec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554C03CC203A954100A5DF1A /* Debug */,
+				554C03CD203A954100A5DF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		554C03CE203A954100A5DF1A /* Build configuration list for PBXNativeTarget "InCedetecTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554C03CF203A954100A5DF1A /* Debug */,
+				554C03D0203A954100A5DF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		554C03D1203A954100A5DF1A /* Build configuration list for PBXNativeTarget "InCedetecUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554C03D2203A954100A5DF1A /* Debug */,
+				554C03D3203A954100A5DF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-        38BBEF9720749D910048DEFC /* Model.xcdatamodeld */ = {
-            isa = XCVersionGroup;
-            children = (
-                38BBEF9820749D910048DEFC /* Model.xcdatamodel */,
-            );
-            currentVersion = 38BBEF9820749D910048DEFC /* Model.xcdatamodel */;
-            path = Model.xcdatamodeld;
-            sourceTree = "<group>";
-            versionGroupType = wrapper.xcdatamodel;
-        };
+		38BBEF9720749D910048DEFC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				38BBEF9820749D910048DEFC /* Model.xcdatamodel */,
+			);
+			currentVersion = 38BBEF9820749D910048DEFC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 /* End XCVersionGroup section */
-    };
-    rootObject = 554C039B203A954100A5DF1A /* Project object */;
+	};
+	rootObject = 554C039B203A954100A5DF1A /* Project object */;
 }

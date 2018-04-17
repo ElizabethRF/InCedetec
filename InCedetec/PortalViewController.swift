@@ -224,4 +224,45 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
         self.present(actividad,animated: true,completion: nil)
     }
     
+    @IBAction func ButtonMostrarVideo(_ sender: UIButton) {
+        guard let currentFrame = self.sceneView.session.currentFrame else {return}
+        
+        let moviePath = "http://ebookfrenzy.com/ios_book/movie/movie.mov"
+        let url = URL(string: moviePath)
+        let player = AVPlayer(url: url!)
+        player.volume = 0.5
+        print(player.isMuted)
+        
+        // crear un nodo capaz de reporducir un video
+        let videoNodo = SKVideoNode(url: url!)
+        videoNodo.play() //ejecutar play al momento de presentarse
+        
+        //crear una escena sprite kit, los parametros estan en pixeles
+        let spriteKitEscene =  SKScene(size: CGSize(width: 640, height: 480))
+        spriteKitEscene.addChild(videoNodo)
+        
+        //colocar el videoNodo en el centro de la escena tipo SpriteKit
+        videoNodo.position = CGPoint(x: spriteKitEscene.size.width/2, y: spriteKitEscene.size.height/2)
+        videoNodo.size = spriteKitEscene.size
+        
+        //crear una pantalla 4/3, los parametros son metros
+        let pantalla = SCNPlane(width: 1.0, height: 0.75)
+        
+        //modificar el material del plano
+        pantalla.firstMaterial?.diffuse.contents = spriteKitEscene
+        //permitir ver el video por ambos lados
+        pantalla.firstMaterial?.isDoubleSided = true
+        
+        let pantallaPlanaNodo = SCNNode(geometry: pantalla)
+        //identificar en donde se ha tocado el currentFrame
+        var traduccion = matrix_identity_float4x4
+        //definir un metro alejado del dispositivo
+        traduccion.columns.3.z = -1.0
+        pantallaPlanaNodo.simdTransform = matrix_multiply(currentFrame.camera.transform, traduccion)
+        
+        pantallaPlanaNodo.eulerAngles = SCNVector3(Double.pi, 0, 0)
+        self.sceneView.scene.rootNode.addChildNode(pantallaPlanaNodo)
+    }
+   
+    
 }

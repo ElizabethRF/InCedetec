@@ -234,7 +234,8 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
         print(player.isMuted)
         
         // crear un nodo capaz de reporducir un video
-        let videoNodo = SKVideoNode(url: url!)
+        //let videoNodo = SKVideoNode(url: url!)
+        let videoNodo = SKVideoNode(fileNamed: "TutorialDrone.mov")
         videoNodo.play() //ejecutar play al momento de presentarse
         
         //crear una escena sprite kit, los parametros estan en pixeles

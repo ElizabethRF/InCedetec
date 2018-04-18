@@ -543,9 +543,9 @@ Abraham Armando Silva Apanco
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Las-za-QU1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Las-za-QU1">
                                 <rect key="frame" x="16" y="77" width="95" height="30"/>
-                                <state key="normal" title="Mostrar video"/>
+                                <state key="normal" title="Mostrar video" image="MostrarVideo"/>
                                 <connections>
                                     <action selector="ButtonMostrarVideo:" destination="tzz-R5-sLI" eventType="touchUpInside" id="yPP-A5-EG5"/>
                                 </connections>
@@ -659,6 +659,7 @@ Abraham Armando Silva Apanco
         <image name="LogoTec" width="278" height="73"/>
         <image name="MapaGeneral.png" width="373" height="602"/>
         <image name="MostrarInformacion" width="143" height="29"/>
+        <image name="MostrarVideo" width="143" height="29"/>
         <image name="Proyecto.png" width="375" height="667"/>
         <image name="Proyecto2.png" width="375" height="667"/>
         <image name="ProyectosIcono" width="146" height="136"/>

@@ -543,9 +543,8 @@ Abraham Armando Silva Apanco
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Las-za-QU1">
-                                <rect key="frame" x="257" y="447" width="95" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Las-za-QU1">
+                                <rect key="frame" x="16" y="77" width="95" height="30"/>
                                 <state key="normal" title="Mostrar video"/>
                                 <connections>
                                     <action selector="ButtonMostrarVideo:" destination="tzz-R5-sLI" eventType="touchUpInside" id="yPP-A5-EG5"/>
@@ -559,6 +558,7 @@ Abraham Armando Silva Apanco
                             <constraint firstItem="akS-Bo-mwe" firstAttribute="top" secondItem="0TD-16-zRo" secondAttribute="bottom" constant="-28" id="65x-HK-86Z"/>
                             <constraint firstItem="1Ls-tJ-fhP" firstAttribute="centerY" secondItem="ys9-5O-ucA" secondAttribute="centerY" id="GwC-gE-SeM"/>
                             <constraint firstItem="1Ls-tJ-fhP" firstAttribute="trailing" secondItem="chH-gL-4nH" secondAttribute="trailingMargin" id="Jvy-UE-Dgb"/>
+                            <constraint firstItem="Las-za-QU1" firstAttribute="top" secondItem="sk3-9m-CGq" secondAttribute="top" constant="13" id="LDL-1E-bAO"/>
                             <constraint firstItem="bvY-5H-rLi" firstAttribute="centerY" secondItem="ys9-5O-ucA" secondAttribute="centerY" id="PdY-tj-RCM"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="bottom" secondItem="sk3-9m-CGq" secondAttribute="bottom" id="RRt-IW-QZN"/>
                             <constraint firstItem="akS-Bo-mwe" firstAttribute="leading" secondItem="ys9-5O-ucA" secondAttribute="leading" constant="104" id="X0f-xD-4M9"/>
@@ -567,8 +567,11 @@ Abraham Armando Silva Apanco
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="centerX" secondItem="0TD-16-zRo" secondAttribute="centerX" id="Zq3-le-0yg"/>
                             <constraint firstItem="ys9-5O-ucA" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" constant="33" id="cD7-KN-4Bs"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="leading" secondItem="chH-gL-4nH" secondAttribute="leading" id="cdU-6I-ThA"/>
+                            <constraint firstItem="Las-za-QU1" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" constant="16" id="li4-Ot-bQz"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="top" secondItem="chH-gL-4nH" secondAttribute="top" id="mnC-tO-EAT"/>
                             <constraint firstAttribute="trailing" secondItem="Gkt-TV-Ucb" secondAttribute="trailing" id="qwa-Bi-Q4x"/>
+                            <constraint firstItem="sk3-9m-CGq" firstAttribute="trailing" secondItem="Las-za-QU1" secondAttribute="trailing" constant="264" id="tXf-eo-N6C"/>
+                            <constraint firstItem="bvY-5H-rLi" firstAttribute="top" secondItem="Las-za-QU1" secondAttribute="bottom" constant="501" id="vuq-e8-Gwy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sk3-9m-CGq"/>
                     </view>

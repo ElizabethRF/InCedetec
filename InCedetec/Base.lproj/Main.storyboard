@@ -146,37 +146,31 @@
             </objects>
             <point key="canvasLocation" x="873" y="979"/>
         </scene>
-        <!--Cedetec View Controller-->
+        <!--Mapa View Controller-->
         <scene sceneID="FTd-bo-Jbo">
             <objects>
-                <viewController id="mUE-D2-NNF" customClass="CedetecViewController" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mUE-D2-NNF" customClass="MapaViewController" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MGs-Z7-jkw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MapaGeneral.png" highlightedImage="MapaGeneral.png" translatesAutoresizingMaskIntoConstraints="NO" id="zCs-ou-DCT">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="65c-Nv-QaO">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATH-7j-Fdw">
-                                <rect key="frame" x="208" y="403" width="103" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="next:" destination="mUE-D2-NNF" eventType="touchUpInside" id="eE3-CI-85o"/>
-                                </connections>
-                            </button>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="zCs-ou-DCT" firstAttribute="leading" secondItem="MGs-Z7-jkw" secondAttribute="leading" id="4xt-Q9-8GD"/>
-                            <constraint firstItem="zCs-ou-DCT" firstAttribute="top" secondItem="Fnf-xN-ORv" secondAttribute="top" id="Cw4-2u-MZb"/>
-                            <constraint firstAttribute="trailing" secondItem="zCs-ou-DCT" secondAttribute="trailing" id="guV-MT-brk"/>
-                            <constraint firstItem="zCs-ou-DCT" firstAttribute="bottom" secondItem="Fnf-xN-ORv" secondAttribute="bottom" id="hHd-3U-BtR"/>
+                            <constraint firstItem="65c-Nv-QaO" firstAttribute="bottom" secondItem="Fnf-xN-ORv" secondAttribute="bottom" id="SZA-fc-J7u"/>
+                            <constraint firstItem="65c-Nv-QaO" firstAttribute="top" secondItem="Fnf-xN-ORv" secondAttribute="top" id="Ug8-vD-KT4"/>
+                            <constraint firstItem="65c-Nv-QaO" firstAttribute="leading" secondItem="Fnf-xN-ORv" secondAttribute="leading" id="buW-LT-5Ae"/>
+                            <constraint firstItem="65c-Nv-QaO" firstAttribute="trailing" secondItem="Fnf-xN-ORv" secondAttribute="trailing" id="r0W-eG-CUO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fnf-xN-ORv"/>
                     </view>
                     <connections>
+                        <outlet property="Mapa" destination="65c-Nv-QaO" id="ylS-DU-Hyg"/>
+                        <outlet property="mapa" destination="65c-Nv-QaO" id="UF6-Ny-tL8"/>
                         <outlet property="searchDisplayController" destination="Trc-2v-aou" id="FbU-B5-Mte"/>
-                        <segue destination="tzz-R5-sLI" kind="show" identifier="next" id="KOz-zp-3QX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlR-8o-ACr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -688,7 +682,6 @@ Abraham Armando Silva Apanco
         <image name="FondoInicio" width="375" height="667"/>
         <image name="ListaProyecto2.png" width="375" height="667"/>
         <image name="LogoTec" width="278" height="73"/>
-        <image name="MapaGeneral.png" width="373" height="602"/>
         <image name="MostrarInformacion" width="143" height="29"/>
         <image name="MostrarVideo" width="143" height="29"/>
         <image name="Proyecto.png" width="375" height="667"/>
@@ -697,7 +690,4 @@ Abraham Armando Silva Apanco
         <image name="SalonesIcono" width="146" height="136"/>
         <image name="redessociales" width="134" height="40"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="ERJ-nA-g2x"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -224,8 +224,13 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
         self.present(actividad,animated: true,completion: nil)
     }
     
+    var pantallaPlanaNodo = SCNNode()
+     var videoNodo = SKVideoNode()
+    
+    @IBOutlet weak var MostrarVideoObj: UIButton!
     @IBAction func ButtonMostrarVideo(_ sender: UIButton) {
         guard let currentFrame = self.sceneView.session.currentFrame else {return}
+        
         
         let moviePath = "http://ebookfrenzy.com/ios_book/movie/movie.mov"
         let url = URL(string: moviePath)
@@ -235,8 +240,9 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
         
         // crear un nodo capaz de reporducir un video
         //let videoNodo = SKVideoNode(url: url!)
-        let videoNodo = SKVideoNode(fileNamed: "TutorialDrone.mov")
+        videoNodo = SKVideoNode(fileNamed: "TutorialDrone.mov")
         videoNodo.play() //ejecutar play al momento de presentarse
+       
         
         //crear una escena sprite kit, los parametros estan en pixeles
         let spriteKitEscene =  SKScene(size: CGSize(width: 640, height: 480))
@@ -254,7 +260,7 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
         //permitir ver el video por ambos lados
         pantalla.firstMaterial?.isDoubleSided = true
         
-        let pantallaPlanaNodo = SCNNode(geometry: pantalla)
+         pantallaPlanaNodo = SCNNode(geometry: pantalla)
         //identificar en donde se ha tocado el currentFrame
         var traduccion = matrix_identity_float4x4
         //definir un metro alejado del dispositivo
@@ -263,7 +269,38 @@ class PortalViewController: UIViewController, ARSCNViewDelegate {
         
         pantallaPlanaNodo.eulerAngles = SCNVector3(Double.pi, 0, 0)
         self.sceneView.scene.rootNode.addChildNode(pantallaPlanaNodo)
+        
+        MostrarVideoObj.isHidden = true
+        PauseBut.isHidden = false
+        QuitBut.isHidden = false
     }
+    
+    @IBOutlet weak var PauseBut: UIButton!
+    @IBOutlet weak var PlayBut: UIButton!
+    @IBOutlet weak var QuitBut: UIButton!
+    
+    @IBAction func QuitVideoButton(_ sender: UIButton) {
+        pantallaPlanaNodo.isHidden = true
+        videoNodo.pause()
+        MostrarVideoObj.isHidden = false
+        QuitBut.isHidden = true
+        PlayBut.isHidden = true
+        PauseBut.isHidden = true
+    }
+    
+    @IBAction func PlayVideoButton(_ sender: UIButton) {
+        PlayBut.isHidden = true
+        PauseBut.isHidden = false
+        videoNodo.play()
+    }
+    
+    @IBAction func PauseVideoButton(_ sender: UIButton) {
+        PlayBut.isHidden = false
+        PauseBut.isHidden = true
+        videoNodo.pause()
+    }
+    
+    
    
     
 }

@@ -550,32 +550,63 @@ Abraham Armando Silva Apanco
                                     <action selector="ButtonMostrarVideo:" destination="tzz-R5-sLI" eventType="touchUpInside" id="yPP-A5-EG5"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ek2-Pa-sSx">
+                                <rect key="frame" x="48" y="115" width="30" height="30"/>
+                                <state key="normal" title="⏸"/>
+                                <connections>
+                                    <action selector="PauseVideoButton:" destination="tzz-R5-sLI" eventType="touchUpInside" id="RgI-Qb-tbB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6u-fS-ewl">
+                                <rect key="frame" x="81" y="115" width="30" height="30"/>
+                                <state key="normal" title="🆗"/>
+                                <connections>
+                                    <action selector="QuitVideoButton:" destination="tzz-R5-sLI" eventType="touchUpInside" id="PIh-RZ-uMV"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbC-qI-Tif">
+                                <rect key="frame" x="48" y="115" width="30" height="30"/>
+                                <state key="normal" title="▶️"/>
+                                <connections>
+                                    <action selector="PlayVideoButton:" destination="tzz-R5-sLI" eventType="touchUpInside" id="Ynd-Az-H6F"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bvY-5H-rLi" firstAttribute="leading" secondItem="ys9-5O-ucA" secondAttribute="leading" id="0fx-nf-EWi"/>
+                            <constraint firstItem="L6u-fS-ewl" firstAttribute="trailing" secondItem="Las-za-QU1" secondAttribute="trailing" id="2jJ-QQ-fBX"/>
                             <constraint firstItem="bvY-5H-rLi" firstAttribute="bottom" secondItem="ys9-5O-ucA" secondAttribute="bottom" id="4cR-hB-Ytw"/>
                             <constraint firstItem="akS-Bo-mwe" firstAttribute="top" secondItem="0TD-16-zRo" secondAttribute="bottom" constant="-28" id="65x-HK-86Z"/>
                             <constraint firstItem="1Ls-tJ-fhP" firstAttribute="centerY" secondItem="ys9-5O-ucA" secondAttribute="centerY" id="GwC-gE-SeM"/>
                             <constraint firstItem="1Ls-tJ-fhP" firstAttribute="trailing" secondItem="chH-gL-4nH" secondAttribute="trailingMargin" id="Jvy-UE-Dgb"/>
+                            <constraint firstItem="cbC-qI-Tif" firstAttribute="leading" secondItem="Ek2-Pa-sSx" secondAttribute="leading" id="L3t-IE-Cji"/>
                             <constraint firstItem="Las-za-QU1" firstAttribute="top" secondItem="sk3-9m-CGq" secondAttribute="top" constant="13" id="LDL-1E-bAO"/>
                             <constraint firstItem="bvY-5H-rLi" firstAttribute="centerY" secondItem="ys9-5O-ucA" secondAttribute="centerY" id="PdY-tj-RCM"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="bottom" secondItem="sk3-9m-CGq" secondAttribute="bottom" id="RRt-IW-QZN"/>
                             <constraint firstItem="akS-Bo-mwe" firstAttribute="leading" secondItem="ys9-5O-ucA" secondAttribute="leading" constant="104" id="X0f-xD-4M9"/>
+                            <constraint firstItem="L6u-fS-ewl" firstAttribute="baseline" secondItem="cbC-qI-Tif" secondAttribute="baseline" id="YF3-fN-Lv4"/>
                             <constraint firstItem="0TD-16-zRo" firstAttribute="top" secondItem="sk3-9m-CGq" secondAttribute="top" constant="40" id="YPP-sc-Vj2"/>
                             <constraint firstItem="sk3-9m-CGq" firstAttribute="bottom" secondItem="1Ls-tJ-fhP" secondAttribute="bottom" constant="23" id="YQK-RT-2eV"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="centerX" secondItem="0TD-16-zRo" secondAttribute="centerX" id="Zq3-le-0yg"/>
                             <constraint firstItem="ys9-5O-ucA" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" constant="33" id="cD7-KN-4Bs"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="leading" secondItem="chH-gL-4nH" secondAttribute="leading" id="cdU-6I-ThA"/>
+                            <constraint firstItem="cbC-qI-Tif" firstAttribute="baseline" secondItem="Ek2-Pa-sSx" secondAttribute="baseline" id="d5r-pF-6dL"/>
                             <constraint firstItem="Las-za-QU1" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" constant="16" id="li4-Ot-bQz"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="top" secondItem="chH-gL-4nH" secondAttribute="top" id="mnC-tO-EAT"/>
                             <constraint firstAttribute="trailing" secondItem="Gkt-TV-Ucb" secondAttribute="trailing" id="qwa-Bi-Q4x"/>
+                            <constraint firstItem="cbC-qI-Tif" firstAttribute="centerX" secondItem="Las-za-QU1" secondAttribute="centerX" id="tCK-66-fDJ"/>
                             <constraint firstItem="sk3-9m-CGq" firstAttribute="trailing" secondItem="Las-za-QU1" secondAttribute="trailing" constant="264" id="tXf-eo-N6C"/>
                             <constraint firstItem="bvY-5H-rLi" firstAttribute="top" secondItem="Las-za-QU1" secondAttribute="bottom" constant="501" id="vuq-e8-Gwy"/>
+                            <constraint firstItem="cbC-qI-Tif" firstAttribute="top" secondItem="Las-za-QU1" secondAttribute="bottom" constant="8" symbolic="YES" id="zH5-jk-bsv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sk3-9m-CGq"/>
                     </view>
                     <connections>
+                        <outlet property="MostrarVideoObj" destination="Las-za-QU1" id="yJJ-AA-veC"/>
+                        <outlet property="PauseBut" destination="Ek2-Pa-sSx" id="mBB-Oo-yad"/>
+                        <outlet property="PlayBut" destination="cbC-qI-Tif" id="kRF-Nl-U3k"/>
+                        <outlet property="QuitBut" destination="L6u-fS-ewl" id="Zpw-HG-JuF"/>
                         <outlet property="TextoInformativo" destination="akS-Bo-mwe" id="tWW-dS-cot"/>
                         <outlet property="buttonMostrar" destination="ys9-5O-ucA" id="pYa-RZ-Dx8"/>
                         <outlet property="buttonMostrarInfo" destination="bvY-5H-rLi" id="e6I-ms-P5a"/>

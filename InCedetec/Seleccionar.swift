@@ -52,7 +52,7 @@ class Seleccionar: UIViewController, UITableViewDelegate, UITableViewDataSource,
         tableView.dataSource = self
         
         searchController = UISearchController(searchResultsController: resultController)
-        tableView.tableHeaderView = searchController.searchBar
+      
         searchController.searchResultsUpdater = self
         resultController.tableView.delegate = self
         resultController.tableView.dataSource = self
@@ -163,8 +163,14 @@ class Seleccionar: UIViewController, UITableViewDelegate, UITableViewDataSource,
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
+        if (tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCellAccessoryType.checkmark) {
+            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.none
+        }
+        else{
+            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
+        }
     }
+  
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         

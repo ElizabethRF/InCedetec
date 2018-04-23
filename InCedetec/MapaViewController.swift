@@ -20,6 +20,14 @@ UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+       //Activity indicator
+        
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+        //termina activity indicator
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.distanceFilter = 1000.0
@@ -69,4 +77,15 @@ UIViewController, CLLocationManagerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func mapViewDidFinishLoadingMap(_ mapView: MKMapView){
+         activityIndicator.stopAnimating()
+    
+    }
+    
+    
+   
+    
+    var activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView()
+    
 }

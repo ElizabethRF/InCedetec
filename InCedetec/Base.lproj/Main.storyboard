@@ -136,6 +136,9 @@
                                 <rect key="frame" x="16" y="34" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancelar"/>
+                                <connections>
+                                    <action selector="cancelar:" destination="06X-wc-xLB" eventType="touchUpInside" id="4Dm-KU-Ptg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFe-ds-bM1">
                                 <rect key="frame" x="305" y="34" width="54" height="30"/>

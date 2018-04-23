@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		38BBEF9920749D910048DEFC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38BBEF9720749D910048DEFC /* Model.xcdatamodeld */; };
+		38E77B63208D5B6C00B59563 /* Seleccionar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E77B62208D5B6B00B59563 /* Seleccionar.swift */; };
 		552BF8F6203B26F00056FF50 /* AgregarSalon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */; };
 		552BF8F8203B27120056FF50 /* ListaProyecto2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */; };
 		552DEE7D203B6FD100019134 /* Salon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 552DEE7A203B6FCA00019134 /* Salon1.png */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		38BBEF9820749D910048DEFC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		38E77B62208D5B6B00B59563 /* Seleccionar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seleccionar.swift; sourceTree = "<group>"; };
 		552BF8F5203B26F00056FF50 /* AgregarSalon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AgregarSalon@3x.png"; sourceTree = "<group>"; };
 		552BF8F7203B27100056FF50 /* ListaProyecto2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListaProyecto2@3x.png"; sourceTree = "<group>"; };
 		552DEE7A203B6FCA00019134 /* Salon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon1.png; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				55A2D0F42073EFF0004FD74C /* art.scnassets */,
 				38BBEF9720749D910048DEFC /* Model.xcdatamodeld */,
 				5574BB45208BA303004EF153 /* MapaViewController.swift */,
+				38E77B62208D5B6B00B59563 /* Seleccionar.swift */,
 			);
 			path = InCedetec;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */,
 				554C03A9203A954100A5DF1A /* ViewController.swift in Sources */,
 				CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */,
+				38E77B63208D5B6C00B59563 /* Seleccionar.swift in Sources */,
 				554C03A7203A954100A5DF1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

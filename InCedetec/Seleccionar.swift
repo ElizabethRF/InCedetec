@@ -171,6 +171,9 @@ class Seleccionar: UIViewController, UITableViewDelegate, UITableViewDataSource,
         }
     }
   
+    @IBAction func cancelar(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         

@@ -4,8 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Autorizar localización para hacer uso de mapas</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -24,6 +22,8 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>You need camera to display cool ARKit content. </string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Autorizar localización para hacer uso de mapas</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

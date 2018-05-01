@@ -37,6 +37,9 @@
 		CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */; };
 		CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6C206DF60800F79421 /* PortalViewController.swift */; };
 		CAE4FC71206E0EEA00F79421 /* Portal.scncassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE4FC70206E0EEA00F79421 /* Portal.scncassets */; };
+		F5E43C202097F7A200221365 /* MaterialesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E43C1F2097F7A200221365 /* MaterialesViewController.swift */; };
+		F5E43C222097FBB400221365 /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E43C212097FBB400221365 /* itemCell.swift */; };
+		F5E43C2420981BA600221365 /* scene.gltf in Resources */ = {isa = PBXBuildFile; fileRef = F5E43C2320981BA500221365 /* scene.gltf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,9 @@
 		CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesSalon.swift; sourceTree = "<group>"; };
 		CAE4FC6C206DF60800F79421 /* PortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
 		CAE4FC70206E0EEA00F79421 /* Portal.scncassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Portal.scncassets; sourceTree = "<group>"; };
+		F5E43C1F2097F7A200221365 /* MaterialesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialesViewController.swift; sourceTree = "<group>"; };
+		F5E43C212097FBB400221365 /* itemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCell.swift; sourceTree = "<group>"; };
+		F5E43C2320981BA500221365 /* scene.gltf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scene.gltf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,8 @@
 				38BBEF9720749D910048DEFC /* Model.xcdatamodeld */,
 				5574BB45208BA303004EF153 /* MapaViewController.swift */,
 				38E77B62208D5B6B00B59563 /* Seleccionar.swift */,
+				F5E43C1F2097F7A200221365 /* MaterialesViewController.swift */,
+				F5E43C212097FBB400221365 /* itemCell.swift */,
 			);
 			path = InCedetec;
 			sourceTree = "<group>";
@@ -187,6 +195,7 @@
 		554C03D7203A96D400A5DF1A /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				F5E43C2320981BA500221365 /* scene.gltf */,
 				552DEE7A203B6FCA00019134 /* Salon1.png */,
 				552DEE7B203B6FCD00019134 /* Salon2.png */,
 				552DEE7C203B6FD000019134 /* Salon3.png */,
@@ -327,6 +336,7 @@
 				554C03AC203A954100A5DF1A /* Main.storyboard in Resources */,
 				CAE4FC71206E0EEA00F79421 /* Portal.scncassets in Resources */,
 				554C03F3203AB14C00A5DF1A /* MapaGeneral.png in Resources */,
+				F5E43C2420981BA600221365 /* scene.gltf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +363,9 @@
 			files = (
 				CA7E63E9206B612300EAC7CD /* SalonesViewController.swift in Sources */,
 				CA80076820734F9200FFB8EC /* CedetecViewController.swift in Sources */,
+				F5E43C202097F7A200221365 /* MaterialesViewController.swift in Sources */,
 				CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */,
+				F5E43C222097FBB400221365 /* itemCell.swift in Sources */,
 				38BBEF9920749D910048DEFC /* Model.xcdatamodeld in Sources */,
 				5574BB46208BA303004EF153 /* MapaViewController.swift in Sources */,
 				554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */,
@@ -528,11 +540,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87AY468PL6;
+				DEVELOPMENT_TEAM = P4HLNSEQYR;
 				INFOPLIST_FILE = InCedetec/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.cedf;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.cedf.charlie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -546,11 +558,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87AY468PL6;
+				DEVELOPMENT_TEAM = P4HLNSEQYR;
 				INFOPLIST_FILE = InCedetec/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.cedf;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.cedf.charlie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

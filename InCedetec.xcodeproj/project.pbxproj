@@ -37,6 +37,8 @@
 		CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */; };
 		CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6C206DF60800F79421 /* PortalViewController.swift */; };
 		CAE4FC71206E0EEA00F79421 /* Portal.scncassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE4FC70206E0EEA00F79421 /* Portal.scncassets */; };
+		F5483CE620982ED500F6FB99 /* Textures in Resources */ = {isa = PBXBuildFile; fileRef = F5483CE520982ED400F6FB99 /* Textures */; };
+		F5483CE82098334B00F6FB99 /* COLLADA in Resources */ = {isa = PBXBuildFile; fileRef = F5483CE72098334B00F6FB99 /* COLLADA */; };
 		F5E43C202097F7A200221365 /* MaterialesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E43C1F2097F7A200221365 /* MaterialesViewController.swift */; };
 		F5E43C222097FBB400221365 /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E43C212097FBB400221365 /* itemCell.swift */; };
 		F5E43C2420981BA600221365 /* scene.gltf in Resources */ = {isa = PBXBuildFile; fileRef = F5E43C2320981BA500221365 /* scene.gltf */; };
@@ -96,6 +98,8 @@
 		CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesSalon.swift; sourceTree = "<group>"; };
 		CAE4FC6C206DF60800F79421 /* PortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
 		CAE4FC70206E0EEA00F79421 /* Portal.scncassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Portal.scncassets; sourceTree = "<group>"; };
+		F5483CE520982ED400F6FB99 /* Textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Textures; sourceTree = "<group>"; };
+		F5483CE72098334B00F6FB99 /* COLLADA */ = {isa = PBXFileReference; lastKnownFileType = folder; path = COLLADA; sourceTree = "<group>"; };
 		F5E43C1F2097F7A200221365 /* MaterialesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialesViewController.swift; sourceTree = "<group>"; };
 		F5E43C212097FBB400221365 /* itemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCell.swift; sourceTree = "<group>"; };
 		F5E43C2320981BA500221365 /* scene.gltf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scene.gltf; sourceTree = "<group>"; };
@@ -164,6 +168,8 @@
 				CAE4FC6C206DF60800F79421 /* PortalViewController.swift */,
 				CAE4FC70206E0EEA00F79421 /* Portal.scncassets */,
 				CA80076720734F9200FFB8EC /* CedetecViewController.swift */,
+				F5483CE72098334B00F6FB99 /* COLLADA */,
+				F5483CE520982ED400F6FB99 /* Textures */,
 				55A2D0F42073EFF0004FD74C /* art.scnassets */,
 				38BBEF9720749D910048DEFC /* Model.xcdatamodeld */,
 				5574BB45208BA303004EF153 /* MapaViewController.swift */,
@@ -321,8 +327,10 @@
 				CA325604203ABD80004624A4 /* Proyecto2@3x.png in Resources */,
 				CA325600203ABCB3004624A4 /* Proyecto@3x.png in Resources */,
 				552BF8F6203B26F00056FF50 /* AgregarSalon@3x.png in Resources */,
+				F5483CE620982ED500F6FB99 /* Textures in Resources */,
 				556F65162086598600AF3D06 /* TutorialDrone.mov in Resources */,
 				CA3255F6203AB8CC004624A4 /* ListaProyectos@3x.png in Resources */,
+				F5483CE82098334B00F6FB99 /* COLLADA in Resources */,
 				CA3255FA203ABA65004624A4 /* AgregarProyectoNuevo@3x.png in Resources */,
 				552DEE7F203B6FD100019134 /* Salon3.png in Resources */,
 				552BF8F8203B27120056FF50 /* ListaProyecto2@3x.png in Resources */,

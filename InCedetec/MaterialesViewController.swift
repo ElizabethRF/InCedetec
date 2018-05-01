@@ -11,7 +11,7 @@ import ARKit
 
 class MaterialesViewController: UIViewController, UICollectionViewDataSource , UICollectionViewDelegate, ARSCNViewDelegate{
     
-    let itemsArray: [String] = ["cup", "vase", "boxing", "table"]
+    let itemsArray: [String] = ["microfono", "USB", "desarmador", "LlaveMecanica"]
 
     @IBOutlet weak var itemsCollectionView: UICollectionView!
     @IBOutlet weak var sceneView: ARSCNView!
@@ -73,6 +73,8 @@ class MaterialesViewController: UIViewController, UICollectionViewDataSource , U
     }
     
     func addItem(hitTestResult: ARHitTestResult) {
+        
+        
         if let selectedItem = self.selectedItem {
             let scene = SCNScene(named: "art.scnassets/\(selectedItem).scn")
             let node = (scene?.rootNode.childNode(withName: selectedItem, recursively: false))!

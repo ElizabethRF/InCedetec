@@ -195,15 +195,6 @@
         <!--Mapa View Controller-->
         <scene sceneID="FTd-bo-Jbo">
             <objects>
-                <searchDisplayController id="Trc-2v-aou">
-                    <connections>
-                        <outlet property="delegate" destination="mUE-D2-NNF" id="Rkc-La-s2u"/>
-                        <outlet property="searchContentsController" destination="mUE-D2-NNF" id="5ah-qm-jPC"/>
-                        <outlet property="searchResultsDataSource" destination="mUE-D2-NNF" id="CeA-RZ-rQY"/>
-                        <outlet property="searchResultsDelegate" destination="mUE-D2-NNF" id="Uyy-aI-DeU"/>
-                    </connections>
-                </searchDisplayController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DlR-8o-ACr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="mUE-D2-NNF" customClass="MapaViewController" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MGs-Z7-jkw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -228,6 +219,15 @@
                         <outlet property="searchDisplayController" destination="Trc-2v-aou" id="FbU-B5-Mte"/>
                     </connections>
                 </viewController>
+                <searchDisplayController id="Trc-2v-aou">
+                    <connections>
+                        <outlet property="delegate" destination="mUE-D2-NNF" id="Rkc-La-s2u"/>
+                        <outlet property="searchContentsController" destination="mUE-D2-NNF" id="5ah-qm-jPC"/>
+                        <outlet property="searchResultsDataSource" destination="mUE-D2-NNF" id="CeA-RZ-rQY"/>
+                        <outlet property="searchResultsDelegate" destination="mUE-D2-NNF" id="Uyy-aI-DeU"/>
+                    </connections>
+                </searchDisplayController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DlR-8o-ACr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1157.5999999999999" y="54.422788605697157"/>
         </scene>
@@ -611,13 +611,56 @@ Abraham Armando Silva Apanco
                                     <action selector="PlayVideoButton:" destination="tzz-R5-sLI" eventType="touchUpInside" id="Ynd-Az-H6F"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SLA-LE-SlG">
+                                <rect key="frame" x="0.0" y="508" width="375" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="qcU-Q1-1mP"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="30" id="Q13-MP-WHH">
+                                    <size key="itemSize" width="120" height="62"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="item" id="dhk-Oy-EK7" customClass="itemCell" customModule="InCedetec" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="6.5" width="120" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="62"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANc-sD-vm2">
+                                                    <rect key="frame" x="44" y="20.5" width="33" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.088932015000000003" green="0.106463708" blue="0.2310031354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ANc-sD-vm2" firstAttribute="centerY" secondItem="dhk-Oy-EK7" secondAttribute="centerY" id="OCu-z1-TWu"/>
+                                            <constraint firstItem="ANc-sD-vm2" firstAttribute="centerX" secondItem="dhk-Oy-EK7" secondAttribute="centerX" id="n7B-A8-6YP"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="itemLabel" destination="ANc-sD-vm2" id="oBh-rD-8Gn"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="SLA-LE-SlG" firstAttribute="top" secondItem="Ek2-Pa-sSx" secondAttribute="bottom" constant="363" id="0BE-HS-dYs"/>
                             <constraint firstItem="bvY-5H-rLi" firstAttribute="leading" secondItem="ys9-5O-ucA" secondAttribute="leading" id="0fx-nf-EWi"/>
+                            <constraint firstItem="SLA-LE-SlG" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" id="0iX-OC-a31"/>
                             <constraint firstItem="L6u-fS-ewl" firstAttribute="trailing" secondItem="Las-za-QU1" secondAttribute="trailing" id="2jJ-QQ-fBX"/>
                             <constraint firstItem="bvY-5H-rLi" firstAttribute="bottom" secondItem="ys9-5O-ucA" secondAttribute="bottom" id="4cR-hB-Ytw"/>
                             <constraint firstItem="akS-Bo-mwe" firstAttribute="top" secondItem="0TD-16-zRo" secondAttribute="bottom" constant="-28" id="65x-HK-86Z"/>
+                            <constraint firstItem="1Ls-tJ-fhP" firstAttribute="top" secondItem="SLA-LE-SlG" secondAttribute="bottom" constant="21" id="9lv-Gn-nU3"/>
+                            <constraint firstItem="SLA-LE-SlG" firstAttribute="trailing" secondItem="sk3-9m-CGq" secondAttribute="trailing" id="Fer-4O-kOK"/>
                             <constraint firstItem="1Ls-tJ-fhP" firstAttribute="centerY" secondItem="ys9-5O-ucA" secondAttribute="centerY" id="GwC-gE-SeM"/>
                             <constraint firstItem="1Ls-tJ-fhP" firstAttribute="trailing" secondItem="chH-gL-4nH" secondAttribute="trailingMargin" id="Jvy-UE-Dgb"/>
                             <constraint firstItem="cbC-qI-Tif" firstAttribute="leading" secondItem="Ek2-Pa-sSx" secondAttribute="leading" id="L3t-IE-Cji"/>
@@ -650,6 +693,7 @@ Abraham Armando Silva Apanco
                         <outlet property="TextoInformativo" destination="akS-Bo-mwe" id="tWW-dS-cot"/>
                         <outlet property="buttonMostrar" destination="ys9-5O-ucA" id="pYa-RZ-Dx8"/>
                         <outlet property="buttonMostrarInfo" destination="bvY-5H-rLi" id="e6I-ms-P5a"/>
+                        <outlet property="itemsCollectionView" destination="SLA-LE-SlG" id="Oxh-f0-vco"/>
                         <outlet property="planeDetected" destination="0TD-16-zRo" id="bbg-4v-H4c"/>
                         <outlet property="sceneView" destination="Gkt-TV-Ucb" id="aa5-Br-fLR"/>
                     </connections>
@@ -666,7 +710,7 @@ Abraham Armando Silva Apanco
                     </connections>
                 </rotationGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1728.8" y="-826.23688155922048"/>
+            <point key="canvasLocation" x="1728.5" y="-826.5"/>
         </scene>
         <!--Materiales View Controller-->
         <scene sceneID="zOe-YO-7rq">

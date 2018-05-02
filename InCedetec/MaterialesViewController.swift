@@ -15,7 +15,7 @@ class MaterialesViewController: UIViewController, UICollectionViewDataSource , U
 
     @IBOutlet weak var itemsCollectionView: UICollectionView!
     @IBOutlet weak var sceneView: ARSCNView!
-    let configuration = ARWorldTrackingConfiguration()
+    let configuration = ARWorldTrackingConfiguration() //Ya está en PVC
     var selectedItem: String?
     
     override func viewDidLoad() {
@@ -120,8 +120,5 @@ class MaterialesViewController: UIViewController, UICollectionViewDataSource , U
 
 }
 
-extension Int {
-    
-    var degreesToRadians: Double { return Double(self) * .pi/180}
-}
+
 

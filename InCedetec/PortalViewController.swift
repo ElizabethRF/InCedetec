@@ -168,21 +168,18 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
                 
              //   droneNode.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
             //}else{
-                self.addPortal(hitTestResult: hitTestResult.first!)
+                //self.addPortal(hitTestResult: hitTestResult.first!)
             //}
         }else{
             
         }
     }
     
-    func addPortal(hitTestResult:ARHitTestResult){
+    func addPortal(){
         let portalScene = SCNScene(named: "Portal.scncassets/Portal.scn")
         let portalNode = portalScene!.rootNode.childNode(withName: "Portal", recursively: false)!
-        let transform = hitTestResult.worldTransform
-        let planeXposition = transform.columns.3.x
-        let planeYposition = transform.columns.3.y
-        let planeZposition = transform.columns.3.z
-        portalNode.position = SCNVector3(planeXposition,planeYposition,planeZposition)
+        
+        portalNode.position = SCNVector3(0,-1,2)
         self.sceneView.scene.rootNode.addChildNode(portalNode)
         self.addPlane(nodeName: "roof", portalNode: portalNode, data: dataarriba!)
         self.addPlane(nodeName: "floor", portalNode: portalNode, data: dataabajo!)
@@ -382,6 +379,9 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
     }
     
    
+    @IBAction func portalbutton(_ sender: UIButton) {
+        addPortal()
+    }
     
 }
 
@@ -390,4 +390,6 @@ extension Int {
     
     var degreesToRadians: Double { return Double(self) * .pi/180}
 }
+
+
 

@@ -34,6 +34,7 @@
 		CA325604203ABD80004624A4 /* Proyecto2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA325603203ABD7F004624A4 /* Proyecto2@3x.png */; };
 		CA7E63E9206B612300EAC7CD /* SalonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E63E8206B612300EAC7CD /* SalonesViewController.swift */; };
 		CA80076820734F9200FFB8EC /* CedetecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80076720734F9200FFB8EC /* CedetecViewController.swift */; };
+		CAA7A04C209A5A5A005FBA93 /* PisosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7A04B209A5A5A005FBA93 /* PisosViewController.swift */; };
 		CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */; };
 		CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6C206DF60800F79421 /* PortalViewController.swift */; };
 		CAE4FC71206E0EEA00F79421 /* Portal.scncassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE4FC70206E0EEA00F79421 /* Portal.scncassets */; };
@@ -94,6 +95,7 @@
 		CA325603203ABD7F004624A4 /* Proyecto2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proyecto2@3x.png"; sourceTree = "<group>"; };
 		CA7E63E8206B612300EAC7CD /* SalonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonesViewController.swift; sourceTree = "<group>"; };
 		CA80076720734F9200FFB8EC /* CedetecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CedetecViewController.swift; sourceTree = "<group>"; };
+		CAA7A04B209A5A5A005FBA93 /* PisosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PisosViewController.swift; sourceTree = "<group>"; };
 		CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesSalon.swift; sourceTree = "<group>"; };
 		CAE4FC6C206DF60800F79421 /* PortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
 		CAE4FC70206E0EEA00F79421 /* Portal.scncassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Portal.scncassets; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				554C03D7203A96D400A5DF1A /* Imagenes */,
 				554C03A6203A954100A5DF1A /* AppDelegate.swift */,
 				554C03A8203A954100A5DF1A /* ViewController.swift */,
+				CAA7A04B209A5A5A005FBA93 /* PisosViewController.swift */,
 				CA7E63E8206B612300EAC7CD /* SalonesViewController.swift */,
 				554C03AA203A954100A5DF1A /* Main.storyboard */,
 				554C03AD203A954100A5DF1A /* Assets.xcassets */,
@@ -370,6 +373,7 @@
 				F5E43C202097F7A200221365 /* MaterialesViewController.swift in Sources */,
 				CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */,
 				F5E43C222097FBB400221365 /* itemCell.swift in Sources */,
+				CAA7A04C209A5A5A005FBA93 /* PisosViewController.swift in Sources */,
 				38BBEF9920749D910048DEFC /* Model.xcdatamodeld in Sources */,
 				5574BB46208BA303004EF153 /* MapaViewController.swift in Sources */,
 				554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */,

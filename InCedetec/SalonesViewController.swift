@@ -16,10 +16,10 @@ import UIKit
 }*/
 
 
-class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating {
+class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 
     //Loading data
-
+    var piso :String = "" 
     
     var salones = [Salon]()
     
@@ -32,8 +32,7 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     var salonessegundo : [Salon] = []
     var salonestercer : [Salon] = []
     var salonescuarto : [Salon] = []
-    
-    let sections : [String] = ["Primer piso","Segundo piso", "Tercer piso", "Cuarto piso"]
+    var salonesFinales : [Salon] = []
     
     var sectionData : [Int:[Salon]] = [:]
     
@@ -51,48 +50,75 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         
-        searchController = UISearchController(searchResultsController: resultController)
-        tableView.tableHeaderView = searchController.searchBar
-        searchController.searchResultsUpdater = self
-        resultController.tableView.delegate = self
-        resultController.tableView.dataSource = self
         
         
-        let url = URL(string: "http://199.233.252.86/201811/incedetec/salones.json")
-        URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            if error == nil{
-                do{
-                    self.salones = try JSONDecoder().decode([Salon].self, from: data!)
-                }catch{
-                    print("Parse error")
+        downloadJSON {
+            print("si se pudo perro")
+            
+            for  salon in self.salones {
+                if(salon.piso == "1"){
+                    self.primerpiso += 1;
+                    self.salonesprimer.append(salon)
+                    self.totalResults.append(salon.nombre)
+                }else if(salon.piso == "2"){
+                    self.segundopiso += 1;
+                    self.salonessegundo.append(salon)
+                    self.totalResults.append(salon.nombre)
+                }else if(salon.piso == "3"){
+                    self.tercerpiso += 1;
+                    self.salonestercer.append(salon)
+                    self.totalResults.append(salon.nombre)
+                }else if(salon.piso == "4"){
+                    self.cuartopiso += 1;
+                    self.salonescuarto.append(salon)
+                    self.totalResults.append(salon.nombre)
                 }
-                DispatchQueue.main.async {
-                    print(self.salones.count)
-                    self.tableView.reloadData()
-                    self.loadData()
-                    
-                }
-                
             }
             
-        }.resume()
-        
+            if(self.piso == "Primer piso"){
+                print("Primer piso")
+                self.salonesFinales = self.salonesprimer
+                print(self.salonesFinales)
+            }else if(self.piso == "Segundo piso"){
+                print("Segundo piso")
+                self.salonesFinales = self.salonessegundo
+                print(self.salonesFinales)
+            }else if(self.piso == "Tercer piso"){
+                print("Tercer piso")
+                self.salonesFinales = self.salonestercer
+                print(self.salonesFinales)
+            }else if(self.piso == "Cuarto piso"){
+                print("Cuarto piso")
+                self.salonesFinales = self.salonescuarto
+                print(self.salonesFinales)
+            }
+            
+            self.tableView.reloadData()
+        }
+   
         
         
     }
     
-    func updateSearchResults(for searchController: UISearchController) {
-        filteredArray = totalResults.filter({ (totalResults:String) -> Bool in
-            if totalResults.contains(searchController.searchBar.text!){
-                return true
-            }else{
-                return false
+    func downloadJSON(completed: @escaping () -> ()){
+        let url = URL(string:"http://199.233.252.86/201811/incedetec/salones.json")
+        URLSession.shared.dataTask(with: url!){ (data, response, error) in
+            if error == nil{
+                do{
+                    self.salones = try JSONDecoder().decode([Salon].self, from: data!)
+                    DispatchQueue.main.async {
+                        completed()
+                        //self.loadData()
+                    }
+                }catch{
+                    print("JSON ERROR")
+                }
             }
             
-        })
-        
-        resultController.tableView.reloadData()
+        }.resume()
     }
+    
+  
     
     func loadData(){
         for  salon in self.salones {
@@ -121,59 +147,57 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
         print("Cuarto piso hay "+String(self.cuartopiso))
         
         self.sectionData = [0 : self.salonesprimer, 1 : self.salonessegundo, 2 : self.salonestercer, 3 : self.salonescuarto]
-        print(sectionData)
+        //print(sectionData)
+        
+        if(piso == "Primer piso"){
+            print("Primer piso")
+            self.salonesFinales = salonesprimer
+            print(salonesFinales)
+        }else if(piso == "Segundo piso"){
+            print("Segundo piso")
+            self.salonesFinales = salonessegundo
+            print(salonesFinales)
+        }else if(piso == "Tercer piso"){
+            print("Tercer piso")
+            self.salonesFinales = salonestercer
+            print(salonesFinales)
+        }else if(piso == "Cuarto piso"){
+            print("Cuarto piso")
+            self.salonesFinales = salonescuarto
+            print(salonesFinales)
+        }
         
     }
     
-   
+    /*func updateSearchResults(for searchController: UISearchController) {
+        filteredArray = totalResults.filter({ (totalResults:String) -> Bool in
+            if totalResults.contains(searchController.searchBar.text!){
+                return true
+            }else{
+                return false
+            }
+            
+        })
+        
+        resultController.tableView.reloadData()
+    }*/
+    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return salones.count
-        //print(self.salonesprimer)
-        if tableView == resultController.tableView{
-            return filteredArray.count
-            //return self.sectionData[filteredArray.count]!.count
-        }else{
-            let s = Salon(nombre: "", img: "", piso: "")
-            
-            sectionData = [0 : [s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s], 1: [s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s], 2 : [s,s,s,s,s,s,s,s,s,s,s,s,s,s], 3 : [s,s,s,s,s,s,s,s]]
-            
-            //print(sectionData)
-            return(self.sectionData[section]!.count)
-        }
+       
+        
+        
+        return self.salonesFinales.count
         
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if tableView == resultController.tableView{
-            return "Resultados Busqueda"
-        }else{
-            return sections[section]
-        }
-        
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        if tableView == resultController.tableView{
-            return 1
-        }else{
-            return sections.count
-        }
-        
-    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         
-        if tableView == resultController.tableView{
-           cell.textLabel?.text = filteredArray[indexPath.row]
+        cell.textLabel?.text = self.salonesFinales[indexPath.row].nombre.capitalized
         
-        }else{
-            cell.textLabel?.text = sectionData[indexPath.section]![indexPath.row].nombre.capitalized
-            //cell.textLabel?.text = salones[indexPath.row].nombre.capitalized
-            //var cell = tableView.dequeueReusableCell(w2ithIdentifier: "cell")
-        }
         return cell
             
     }

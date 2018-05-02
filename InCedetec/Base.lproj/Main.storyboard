@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3jR-p3-1dU">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,11 +17,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FondoInicio" translatesAutoresizingMaskIntoConstraints="NO" id="6dA-9f-8PH">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" red="0.0" green="0.046081370742859645" blue="0.2926721463690356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIr-5Q-ws5" userLabel="CEDETECButton">
@@ -51,11 +51,11 @@
                                 <rect key="frame" x="8" y="185" width="146" height="136"/>
                                 <state key="normal" image="SalonesIcono"/>
                                 <connections>
-                                    <segue destination="iIL-rr-YDi" kind="show" id="ybs-S2-Rg6"/>
+                                    <segue destination="O7i-ml-3IB" kind="show" id="Fwh-YB-gN2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajE-E6-dRB" userLabel="TwitterButton">
-                                <rect key="frame" x="232" y="617" width="134" height="40"/>
+                                <rect key="frame" x="177" y="518" width="134" height="40"/>
                                 <state key="normal" image="redessociales"/>
                                 <connections>
                                     <action selector="fbButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jrZ-g9-M97"/>
@@ -93,15 +93,15 @@
             <objects>
                 <tableViewController id="oCQ-Zp-XYq" customClass="ProyectosTableViewController" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vwi-SS-cuz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="vIu-Hb-Lzc">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vIu-Hb-Lzc" id="fIu-PN-1KT">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -125,11 +125,11 @@
             <objects>
                 <viewController title="Seleccionar salones" id="06X-wc-xLB" customClass="Seleccionar" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0pM-Ux-0hS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="07T-wc-WES">
-                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                                <rect key="frame" x="0.0" y="72" width="320" height="496"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOy-hu-cdn">
@@ -143,7 +143,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOr-XN-zgg">
-                                <rect key="frame" x="108" y="39" width="159" height="21"/>
+                                <rect key="frame" x="108" y="39" width="104" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -183,7 +183,7 @@
             <objects>
                 <viewController id="wO3-Vd-t8B" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rJK-Ak-Oyx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Fk7-Sm-Yqx"/>
@@ -198,11 +198,11 @@
             <objects>
                 <viewController id="mUE-D2-NNF" customClass="MapaViewController" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MGs-Z7-jkw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="65c-Nv-QaO">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -237,11 +237,11 @@
             <objects>
                 <viewController id="Jge-gP-BzF" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VaJ-ny-aXO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGs-uV-fGR">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="-99" width="320" height="667"/>
                                 <state key="normal" title="Button" image="AgregarProyectoNuevo.png"/>
                                 <connections>
                                     <segue destination="kfJ-IH-haz" kind="show" id="VKv-qk-XfO"/>
@@ -266,14 +266,14 @@
             <objects>
                 <viewController id="kfJ-IH-haz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OGN-R0-etS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ListaProyecto2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xy9-HC-cMN">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he7-GG-tpO">
-                                <rect key="frame" x="0.0" y="19" width="375" height="328"/>
+                                <rect key="frame" x="0.0" y="19" width="320" height="229"/>
                                 <connections>
                                     <segue destination="FvQ-Ib-RyE" kind="show" id="5OW-EW-BiK"/>
                                 </connections>
@@ -304,14 +304,14 @@
             <objects>
                 <viewController id="FvQ-Ib-RyE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vLs-Xe-VX5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Proyecto.png" translatesAutoresizingMaskIntoConstraints="NO" id="ndy-Fe-yZB">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lny-W8-Zgz">
-                                <rect key="frame" x="301" y="596" width="58" height="51"/>
+                                <rect key="frame" x="301" y="497" width="3" height="51"/>
                                 <state key="normal" title="Button" image="AgregarIcono"/>
                                 <connections>
                                     <segue destination="TnF-2R-UUu" kind="show" id="rAY-s6-DXZ"/>
@@ -342,11 +342,11 @@
             <objects>
                 <viewController id="TnF-2R-UUu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ncs-KF-fLg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sV5-uW-bjJ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="-99" width="375" height="667"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AgregarSalon.png" translatesAutoresizingMaskIntoConstraints="NO" id="etq-c2-rh0">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -360,10 +360,10 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMr-OY-6Gr">
-                                <rect key="frame" x="16" y="556" width="162" height="91"/>
+                                <rect key="frame" x="16" y="556" width="107" height="30"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uks-Mh-uC2">
-                                <rect key="frame" x="221" y="556" width="138" height="98"/>
+                                <rect key="frame" x="166" y="556" width="138" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="138" id="5K4-g8-X5p"/>
                                 </constraints>
@@ -398,11 +398,11 @@
             <objects>
                 <viewController id="mTe-3s-jYI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OLi-WN-kE4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Proyecto2.png" translatesAutoresizingMaskIntoConstraints="NO" id="iUv-ht-fD4">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -426,29 +426,29 @@
             <objects>
                 <viewController id="0tK-Bx-tww" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dIx-GF-55O">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoTec" translatesAutoresizingMaskIntoConstraints="NO" id="qu7-1d-G0H">
-                                <rect key="frame" x="31" y="119" width="313" height="99"/>
+                                <rect key="frame" x="31" y="119" width="258" height="99"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99" id="Hwd-Kl-QRJ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" José Martín Molina Espinosa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Uj-dB-uTl">
-                                <rect key="frame" x="76.5" y="503.5" width="223" height="21"/>
+                                <rect key="frame" x="49" y="524" width="223" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vj1-5W-rlD">
-                                <rect key="frame" x="156.5" y="318" width="60" height="21"/>
+                                <rect key="frame" x="129" y="318" width="60" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIT-hk-aju">
-                                <rect key="frame" x="52" y="347" width="270" height="101.5"/>
+                                <rect key="frame" x="52" y="347" width="215" height="122"/>
                                 <string key="text">Carlos Eduardo Muñoz González 
 Elizabeth Rodríguez Fallas              
 Brandon Reyes Minero                    
@@ -459,25 +459,25 @@ Abraham Armando Silva Apanco
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profesor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gn3-LW-wYi">
-                                <rect key="frame" x="154.5" y="474.5" width="65" height="21"/>
+                                <rect key="frame" x="127" y="495" width="65" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad de México, México" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eao-ll-bJ4">
-                                <rect key="frame" x="86.5" y="571.5" width="202" height="21"/>
+                                <rect key="frame" x="59" y="592" width="202" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfk-Fj-T6g">
-                                <rect key="frame" x="167.5" y="600.5" width="39" height="21"/>
+                                <rect key="frame" x="140" y="621" width="39" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proyectos de desarrollo para dispositivos móviles " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjg-qc-yoQ">
-                                <rect key="frame" x="38" y="226" width="297" height="64"/>
+                                <rect key="frame" x="38" y="226" width="242" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="HtU-hM-aPg"/>
                                 </constraints>
@@ -486,7 +486,7 @@ Abraham Armando Silva Apanco
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEd-5s-1IL">
-                                <rect key="frame" x="88.5" y="76" width="199" height="21"/>
+                                <rect key="frame" x="61" y="76" width="199" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="cVK-DG-Q8i"/>
                                 </constraints>
@@ -537,11 +537,11 @@ Abraham Armando Silva Apanco
             <objects>
                 <viewController id="tzz-R5-sLI" customClass="PortalViewController" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="chH-gL-4nH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gkt-TV-Ucb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="pS9-Hf-Q1g" appends="YES" id="7xI-oI-7iv"/>
@@ -549,13 +549,13 @@ Abraham Armando Silva Apanco
                                 </connections>
                             </arscnView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane detected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TD-16-zRo">
-                                <rect key="frame" x="106" y="104" width="163" height="28"/>
+                                <rect key="frame" x="78.5" y="104" width="163" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ys9-5O-ucA">
-                                <rect key="frame" x="33" y="609" width="143" height="29"/>
+                                <rect key="frame" x="33" y="510" width="143" height="29"/>
                                 <state key="normal" backgroundImage="BotonMaterial">
                                     <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -564,21 +564,21 @@ Abraham Armando Silva Apanco
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ls-tJ-fhP">
-                                <rect key="frame" x="225" y="604" width="134" height="40"/>
+                                <rect key="frame" x="170" y="505" width="134" height="40"/>
                                 <state key="normal" backgroundImage="redessociales"/>
                                 <connections>
                                     <action selector="RedesSociales:" destination="tzz-R5-sLI" eventType="touchUpInside" id="4YG-Dg-TlP"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvY-5H-rLi">
-                                <rect key="frame" x="33" y="608" width="143" height="30"/>
+                                <rect key="frame" x="33" y="509" width="143" height="30"/>
                                 <state key="normal" backgroundImage="MostrarInformacion"/>
                                 <connections>
                                     <action selector="MostrarInformacionMaterial:" destination="tzz-R5-sLI" eventType="touchUpInside" id="Bon-gG-WDA"/>
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soy un drone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akS-Bo-mwe">
-                                <rect key="frame" x="137" y="104" width="101" height="21"/>
+                                <rect key="frame" x="109.5" y="104" width="101" height="21"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="gau-AT-BRB"/>
@@ -588,7 +588,7 @@ Abraham Armando Silva Apanco
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Las-za-QU1">
-                                <rect key="frame" x="16" y="77" width="95" height="30"/>
+                                <rect key="frame" x="16" y="77" width="67.5" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="vuB-BR-nUC"/>
                                 </constraints>
@@ -598,28 +598,28 @@ Abraham Armando Silva Apanco
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ek2-Pa-sSx">
-                                <rect key="frame" x="49" y="115" width="30" height="30"/>
+                                <rect key="frame" x="35.5" y="115" width="30" height="30"/>
                                 <state key="normal" title="⏸"/>
                                 <connections>
                                     <action selector="PauseVideoButton:" destination="tzz-R5-sLI" eventType="touchUpInside" id="RgI-Qb-tbB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6u-fS-ewl">
-                                <rect key="frame" x="81" y="115" width="30" height="30"/>
+                                <rect key="frame" x="53.5" y="115" width="30" height="30"/>
                                 <state key="normal" title="🆗"/>
                                 <connections>
                                     <action selector="QuitVideoButton:" destination="tzz-R5-sLI" eventType="touchUpInside" id="PIh-RZ-uMV"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbC-qI-Tif">
-                                <rect key="frame" x="49" y="115" width="30" height="30"/>
+                                <rect key="frame" x="35.5" y="115" width="30" height="30"/>
                                 <state key="normal" title="▶️"/>
                                 <connections>
                                     <action selector="PlayVideoButton:" destination="tzz-R5-sLI" eventType="touchUpInside" id="Ynd-Az-H6F"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SLA-LE-SlG">
-                                <rect key="frame" x="0.0" y="508" width="375" height="75"/>
+                                <rect key="frame" x="0.0" y="409" width="320" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="oOo-37-LmY"/>
@@ -657,8 +657,8 @@ Abraham Armando Silva Apanco
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFw-5O-3Jn">
-                                <rect key="frame" x="312" y="77" width="47" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFw-5O-3Jn">
+                                <rect key="frame" x="266" y="77" width="39" height="38"/>
                                 <state key="normal" image="portal"/>
                                 <connections>
                                     <action selector="portalbutton:" destination="tzz-R5-sLI" eventType="touchUpInside" id="YFQ-mf-dLK"/>
@@ -670,14 +670,10 @@ Abraham Armando Silva Apanco
                             <constraint firstItem="1Ls-tJ-fhP" firstAttribute="top" secondItem="SLA-LE-SlG" secondAttribute="bottom" constant="21" id="0AL-qM-ZRn"/>
                             <constraint firstItem="bvY-5H-rLi" firstAttribute="leading" secondItem="ys9-5O-ucA" secondAttribute="leading" id="0fY-0d-p2h"/>
                             <constraint firstItem="Ek2-Pa-sSx" firstAttribute="baseline" secondItem="L6u-fS-ewl" secondAttribute="baseline" id="2UA-AN-R04"/>
-                            <constraint firstItem="kFw-5O-3Jn" firstAttribute="trailing" secondItem="chH-gL-4nH" secondAttribute="trailingMargin" id="35O-VU-G6d"/>
                             <constraint firstItem="bvY-5H-rLi" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" constant="33" id="3AY-4E-WYC"/>
-                            <constraint firstItem="kFw-5O-3Jn" firstAttribute="leading" secondItem="0TD-16-zRo" secondAttribute="trailing" constant="43" id="3ip-v7-riI"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="leading" secondItem="chH-gL-4nH" secondAttribute="leading" id="6Fg-pz-ANb"/>
-                            <constraint firstItem="kFw-5O-3Jn" firstAttribute="trailing" secondItem="1Ls-tJ-fhP" secondAttribute="trailing" id="AKI-hN-bPd"/>
                             <constraint firstItem="ys9-5O-ucA" firstAttribute="centerY" secondItem="bvY-5H-rLi" secondAttribute="centerY" id="DAy-7x-wff"/>
                             <constraint firstItem="bvY-5H-rLi" firstAttribute="bottom" secondItem="ys9-5O-ucA" secondAttribute="bottom" id="DjD-3R-W4K"/>
-                            <constraint firstItem="akS-Bo-mwe" firstAttribute="bottom" secondItem="kFw-5O-3Jn" secondAttribute="bottom" id="EqP-0m-pcj"/>
                             <constraint firstItem="Las-za-QU1" firstAttribute="trailing" secondItem="L6u-fS-ewl" secondAttribute="trailing" id="F5q-oX-DxX"/>
                             <constraint firstItem="Las-za-QU1" firstAttribute="centerX" secondItem="Ek2-Pa-sSx" secondAttribute="centerX" id="IQV-RL-kcs"/>
                             <constraint firstItem="cbC-qI-Tif" firstAttribute="leading" secondItem="Ek2-Pa-sSx" secondAttribute="leading" id="JMy-hG-H1G"/>
@@ -691,11 +687,13 @@ Abraham Armando Silva Apanco
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="bottom" secondItem="sk3-9m-CGq" secondAttribute="bottom" id="eem-HG-BnD"/>
                             <constraint firstItem="0TD-16-zRo" firstAttribute="centerX" secondItem="akS-Bo-mwe" secondAttribute="centerX" id="fOh-TY-6QR"/>
                             <constraint firstItem="Las-za-QU1" firstAttribute="leading" secondItem="chH-gL-4nH" secondAttribute="leadingMargin" id="gLP-u3-nym"/>
+                            <constraint firstItem="sk3-9m-CGq" firstAttribute="trailing" secondItem="kFw-5O-3Jn" secondAttribute="trailing" constant="15" id="jS3-wH-21M"/>
+                            <constraint firstItem="kFw-5O-3Jn" firstAttribute="top" secondItem="sk3-9m-CGq" secondAttribute="top" constant="13" id="krR-0P-niv"/>
                             <constraint firstItem="akS-Bo-mwe" firstAttribute="leading" secondItem="L6u-fS-ewl" secondAttribute="trailing" constant="26" id="mb4-Yd-hk9"/>
-                            <constraint firstItem="Las-za-QU1" firstAttribute="top" secondItem="kFw-5O-3Jn" secondAttribute="top" id="mxA-MB-T0q"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="leading" secondItem="SLA-LE-SlG" secondAttribute="leading" id="nkg-i9-wLS"/>
                             <constraint firstItem="sk3-9m-CGq" firstAttribute="bottom" secondItem="1Ls-tJ-fhP" secondAttribute="bottom" constant="23" id="s0C-1c-OeY"/>
                             <constraint firstItem="Las-za-QU1" firstAttribute="top" secondItem="sk3-9m-CGq" secondAttribute="top" constant="13" id="sVi-X8-yC3"/>
+                            <constraint firstItem="sk3-9m-CGq" firstAttribute="trailing" secondItem="1Ls-tJ-fhP" secondAttribute="trailing" constant="16" id="vPs-Um-iKs"/>
                             <constraint firstItem="ys9-5O-ucA" firstAttribute="centerY" secondItem="1Ls-tJ-fhP" secondAttribute="centerY" id="vXg-DL-o7T"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="trailing" secondItem="SLA-LE-SlG" secondAttribute="trailing" id="y0q-YR-Zjx"/>
                         </constraints>
@@ -726,18 +724,18 @@ Abraham Armando Silva Apanco
                     </connections>
                 </rotationGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1727.2" y="-827.13643178410803"/>
+            <point key="canvasLocation" x="1725" y="-829.22535211267609"/>
         </scene>
         <!--Materiales View Controller-->
         <scene sceneID="zOe-YO-7rq">
             <objects>
                 <viewController id="gdJ-AS-RJr" customClass="MaterialesViewController" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5hW-Of-l8b">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9uR-1c-Hoy">
-                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
+                                <rect key="frame" x="0.0" y="493" width="320" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="gpS-wQ-kQf"/>
@@ -776,7 +774,7 @@ Abraham Armando Silva Apanco
                                 </cells>
                             </collectionView>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJf-kh-zV6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="592"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="493"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -800,16 +798,47 @@ Abraham Armando Silva Apanco
             </objects>
             <point key="canvasLocation" x="1805.5999999999999" y="-95.802098950524751"/>
         </scene>
+        <!--Pisos View Controller-->
+        <scene sceneID="x10-nO-B88">
+            <objects>
+                <tableViewController id="O7i-ml-3IB" customClass="PisosViewController" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fX7-xS-2XQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Identificador" id="mu1-19-YFx">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mu1-19-YFx" id="5Dw-I1-s41">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="O7i-ml-3IB" id="wTL-SG-kAg"/>
+                            <outlet property="delegate" destination="O7i-ml-3IB" id="dvn-uG-mXK"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="iIL-rr-YDi" kind="show" identifier="nextSalones" id="QDd-RG-KS6"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gwl-ga-JEp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="-1521"/>
+        </scene>
         <!--Salones View Controller-->
         <scene sceneID="bqz-up-usT">
             <objects>
                 <viewController id="iIL-rr-YDi" customClass="SalonesViewController" customModule="InCedetec" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oYM-xd-ysF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ET2-0v-UcC">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -837,7 +866,7 @@ Abraham Armando Silva Apanco
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3jR-p3-1dU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4IG-oc-3rR">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

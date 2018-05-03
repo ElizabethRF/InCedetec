@@ -89,9 +89,9 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
     var salon:Salon?
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         //PARA JALAR LA IMAGEN DEL JSON
         let urlStringabajo = "http://199.233.252.86/201811/incedetec/fotos/"+(salon?.img)!+"/abajo.png"

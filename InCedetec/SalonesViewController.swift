@@ -16,10 +16,12 @@ import UIKit
 }*/
 
 
-class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating  {
 
     //Loading data
-    var piso :String = "" 
+    var piso :String = ""
+    
+    //Search
     
     var salones = [Salon]()
     
@@ -41,7 +43,9 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     var searchController = UISearchController()
     var resultController = UITableViewController()
     var totalResults = [String]()
-    var filteredArray = [String]()
+    var filteredArray = [Salon]()
+    
+
 
     
     override func viewDidLoad() {
@@ -49,6 +53,12 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        searchController = UISearchController(searchResultsController: resultController)
+        tableView.tableHeaderView = searchController.searchBar
+        searchController.searchResultsUpdater = self
+        resultController.tableView.delegate = self
+        resultController.tableView.dataSource = self
         
         
         
@@ -96,8 +106,10 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
             self.tableView.reloadData()
         }
    
-        
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
     
     func downloadJSON(completed: @escaping () -> ()){
@@ -118,76 +130,13 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
         }.resume()
     }
     
-  
-    
-    func loadData(){
-        for  salon in self.salones {
-            if(salon.piso == "1"){
-                self.primerpiso += 1;
-                self.salonesprimer.append(salon)
-                self.totalResults.append(salon.nombre)
-            }else if(salon.piso == "2"){
-                self.segundopiso += 1;
-                self.salonessegundo.append(salon)
-                self.totalResults.append(salon.nombre)
-            }else if(salon.piso == "3"){
-                self.tercerpiso += 1;
-                self.salonestercer.append(salon)
-                self.totalResults.append(salon.nombre)
-            }else if(salon.piso == "4"){
-                self.cuartopiso += 1;
-                self.salonescuarto.append(salon)
-                self.totalResults.append(salon.nombre)
-            }
-        }
-        
-        print("Primer piso hay "+String(self.primerpiso))
-        print("Segundo piso hay "+String(self.segundopiso))
-        print("Tercer piso hay "+String(self.tercerpiso))
-        print("Cuarto piso hay "+String(self.cuartopiso))
-        
-        self.sectionData = [0 : self.salonesprimer, 1 : self.salonessegundo, 2 : self.salonestercer, 3 : self.salonescuarto]
-        //print(sectionData)
-        
-        if(piso == "Primer piso"){
-            print("Primer piso")
-            self.salonesFinales = salonesprimer
-            print(salonesFinales)
-        }else if(piso == "Segundo piso"){
-            print("Segundo piso")
-            self.salonesFinales = salonessegundo
-            print(salonesFinales)
-        }else if(piso == "Tercer piso"){
-            print("Tercer piso")
-            self.salonesFinales = salonestercer
-            print(salonesFinales)
-        }else if(piso == "Cuarto piso"){
-            print("Cuarto piso")
-            self.salonesFinales = salonescuarto
-            print(salonesFinales)
-        }
-        
-    }
-    
-    /*func updateSearchResults(for searchController: UISearchController) {
-        filteredArray = totalResults.filter({ (totalResults:String) -> Bool in
-            if totalResults.contains(searchController.searchBar.text!){
-                return true
-            }else{
-                return false
-            }
-            
-        })
-        
-        resultController.tableView.reloadData()
-    }*/
-    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       
-        
-        
-        return self.salonesFinales.count
+        if tableView == resultController.tableView{
+            return filteredArray.count
+        }else{
+            return self.salonesFinales.count
+        }
         
     }
     
@@ -196,10 +145,28 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         
-        cell.textLabel?.text = self.salonesFinales[indexPath.row].nombre.capitalized
+        if tableView == resultController.tableView{
+            cell.textLabel?.text = self.filteredArray[indexPath.row].nombre.capitalized
+        }else{
+            cell.textLabel?.text = self.salonesFinales[indexPath.row].nombre.capitalized
+        }
+        
         
         return cell
             
+    }
+    
+    
+    //SEARCH
+    func updateSearchResults(for searchController: UISearchController) {
+        filteredArray = salonesFinales.filter({ (salonesFinales:Salon) -> Bool in
+            if salonesFinales.nombre.contains(searchController.searchBar.text!){
+                return true
+            }else{
+                return false
+            }
+        })
+        resultController.tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -208,21 +175,39 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if((salones[(tableView.indexPathForSelectedRow?.row)!].img == "cabinacontrol") || (salones[(tableView.indexPathForSelectedRow?.row)!].img == "estudiodetv")
-            ){
-            if let destination = segue.destination as? PortalViewController{
-                //destination.salon = sectionData[(tableView.indexPathForSelectedRow?.row)]
+        if tableView == resultController.tableView{
+            if(self.filteredArray[(tableView.indexPathForSelectedRow?.row)!].img == "cabinacontrol" ||
+                self.filteredArray[(tableView.indexPathForSelectedRow?.row)!].img == "estudiodetv"){
                 
-                destination.salon = salones[(tableView.indexPathForSelectedRow?.row)!]
+                if let destination = segue.destination as? PortalViewController{
+                    //destination.salon = sectionData[(tableView.indexPathForSelectedRow?.row)]
+                    
+                    destination.salon = filteredArray[(tableView.indexPathForSelectedRow?.row)!]
+                }
+            }else{
+                let alert = UIAlertController(title: "Lo sentimos, salon en construcción", message: "", preferredStyle: .alert)
+                let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alert.addAction(action)
+                present(alert, animated: true)
+                tableView.reloadData()
             }
         }else{
-            let alert = UIAlertController(title: "Lo sentimos, salon en construcción", message: "", preferredStyle: .alert)
-            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alert.addAction(action)
-            present(alert, animated: true)
+            if(self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "cabinacontrol" ||
+                self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "estudiodetv"){
+                
+                if let destination = segue.destination as? PortalViewController{
+                    //destination.salon = sectionData[(tableView.indexPathForSelectedRow?.row)]
+                    
+                    destination.salon = salonesFinales[(tableView.indexPathForSelectedRow?.row)!]
+                }
+            }else{
+                let alert = UIAlertController(title: "Lo sentimos, salon en construcción", message: "", preferredStyle: .alert)
+                let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alert.addAction(action)
+                present(alert, animated: true)
+                tableView.reloadData()
+            }
         }
-    
       
     }
     

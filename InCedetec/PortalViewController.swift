@@ -39,6 +39,8 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
     private var resnetModel = Resnet50()
     private var visionRequests = [VNRequest]()
     
+    private var bandera : Bool = false
+    
      let itemsArray: [String] = ["microfono", "USB", "desarmador", "LlaveMecanica"]
 
     @IBOutlet weak var itemsCollectionView: UICollectionView!
@@ -207,7 +209,7 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
         self.addWalls(nodeName: "sideWallA", portalNode: portalNode, data: dataIzquierda!)
         self.addWalls(nodeName: "sideWallB", portalNode: portalNode, data: dataDerecha!)
         self.addWalls(nodeName: "sideDoorA", portalNode: portalNode, data: dataFrente!)
-        self.addWalls(nodeName: "sideDoorB", portalNode: portalNode, data: dataFrente!)
+        //self.addWalls(nodeName: "sideDoorB", portalNode: portalNode, data: dataFrente!)
         
         
     }
@@ -400,7 +402,16 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
     
    
     @IBAction func portalbutton(_ sender: UIButton) {
-        addPortal()
+        if bandera == false{
+            addPortal()
+            bandera = true
+        }else{
+            let alert = UIAlertController(title: "No puedes colocar más de un portal", message: "", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true)
+        }
+        
     }
     
     @IBAction func tapEjecutado(_ sender: UITapGestureRecognizer) {

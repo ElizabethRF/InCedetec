@@ -175,25 +175,15 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if tableView == resultController.tableView{
-            if(self.filteredArray[(tableView.indexPathForSelectedRow?.row)!].img == "cabinacontrol" ||
-                self.filteredArray[(tableView.indexPathForSelectedRow?.row)!].img == "estudiodetv"){
-                
-                if let destination = segue.destination as? PortalViewController{
-                    //destination.salon = sectionData[(tableView.indexPathForSelectedRow?.row)]
-                    
-                    destination.salon = filteredArray[(tableView.indexPathForSelectedRow?.row)!]
-                }
-            }else{
-                let alert = UIAlertController(title: "Lo sentimos, salon en construcción", message: "", preferredStyle: .alert)
-                let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-                alert.addAction(action)
-                present(alert, animated: true)
-                tableView.reloadData()
-            }
-        }else{
+      
             if(self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "cabinacontrol" ||
-                self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "estudiodetv"){
+                self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "estudiodetv" ||
+                self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "salaproyec" ||
+                self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "serviciosacade" ||
+                self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "camaragessel" ||
+                self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "escuelaingenieria" ||
+                self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "plasticosmetal" ||
+                self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "maderas"){
                 
                 if let destination = segue.destination as? PortalViewController{
                     //destination.salon = sectionData[(tableView.indexPathForSelectedRow?.row)]
@@ -207,8 +197,6 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
                 present(alert, animated: true)
                 tableView.reloadData()
             }
-        }
-      
     }
     
     

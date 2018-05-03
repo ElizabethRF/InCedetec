@@ -264,15 +264,16 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
         guard let currentFrame = self.sceneView.session.currentFrame else {return}
         
         
-        let moviePath = "http://ebookfrenzy.com/ios_book/movie/movie.mov"
+        let moviePath = "http://199.233.252.86/201811/incedetec/video/drone.mov"
         let url = URL(string: moviePath)
         let player = AVPlayer(url: url!)
         player.volume = 0.5
         print(player.isMuted)
+        videoNodo = SKVideoNode(url: url!)
         
         // crear un nodo capaz de reporducir un video
         //let videoNodo = SKVideoNode(url: url!)
-        videoNodo = SKVideoNode(fileNamed: "TutorialDrone.mov")
+        //videoNodo = SKVideoNode(fileNamed: "drone.mov")
         videoNodo.play() //ejecutar play al momento de presentarse
        
         
@@ -327,9 +328,10 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
     }
     
     @IBAction func PauseVideoButton(_ sender: UIButton) {
+        videoNodo.pause()
         PlayBut.isHidden = false
         PauseBut.isHidden = true
-        videoNodo.pause()
+        
     }
     
     

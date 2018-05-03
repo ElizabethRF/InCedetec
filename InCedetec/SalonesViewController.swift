@@ -17,7 +17,7 @@ import UIKit
 
 
 class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating  {
-
+    var activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView()
     //Loading data
     var piso :String = ""
     
@@ -50,6 +50,12 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -110,6 +116,8 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
     }
     
     func downloadJSON(completed: @escaping () -> ()){

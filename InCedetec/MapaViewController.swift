@@ -44,6 +44,14 @@ UIViewController, CLLocationManagerDelegate {
          let region=MKCoordinateRegionMake(cl, span)
          mapa.setRegion(region, animated: true)
          */
+        
+        let options = [MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: mapa.region.center),
+                      MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: mapa.region.span)]
+        let placeMark = MKPlacemark(coordinate: cl)
+        let mapItem = MKMapItem(placemark: placeMark)
+        mapItem.name = "CEDETEC"
+        mapItem.openInMaps(launchOptions: options)
+        
         var punto = CLLocationCoordinate2D()
         punto.latitude = 19.283996
         punto.longitude = -99.136006
@@ -52,13 +60,18 @@ UIViewController, CLLocationManagerDelegate {
         pin.title = "CEDETEC"
         pin.subtitle = "ITESM CCM"
         mapa.addAnnotation(pin)
-        
+ 
         
         mapa.showsCompass=true
         mapa.showsScale=true
         mapa.showsTraffic=true
         mapa.isZoomEnabled=true
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
     }
     
     func locationManager(_ manager: CLLocationManager,

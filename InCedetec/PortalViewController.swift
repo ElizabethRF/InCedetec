@@ -36,7 +36,7 @@ extension UIImageView {
 class PortalViewController: UIViewController, UICollectionViewDataSource , UICollectionViewDelegate, ARSCNViewDelegate{
     
     private var hitTestResult: ARHitTestResult!
-    private var resnetModel = Resnet50()
+   // private var resnetModel = Resnet50()
     private var visionRequests = [VNRequest]()
     
     private var bandera : Bool = false
@@ -434,14 +434,14 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
         //obtener la imagen capturada en formato de buffer de pixeles
         let imagenPixeles = currentFrame.capturedImage
         self.hitTestResult = hitTestResult
-        performVisionRequest(pixelBuffer: imagenPixeles)
+        //performVisionRequest(pixelBuffer: imagenPixeles)
     }
     
-    private func performVisionRequest(pixelBuffer: CVPixelBuffer)
+   /* private func performVisionRequest(pixelBuffer: CVPixelBuffer)
     {
         //inicializar el modelo de ML al modelo usado, en este caso resnet
-        let visionModel = try! VNCoreMLModel(for: resnetModel.model)
-        let request = VNCoreMLRequest(model: visionModel) { request, error in
+       // let visionModel = try! VNCoreMLModel(for: resnetModel.model)
+       // let request = VNCoreMLRequest(model: visionModel) { request, error in
             
             if error != nil {
                 //hubo un error
@@ -468,7 +468,7 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
             
         }
         
-    }
+    }*/
     
     private func desplegarTexto(entrada: String)
     {

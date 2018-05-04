@@ -230,11 +230,37 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     var videoNodo :SKVideoNode = SKVideoNode()
     
     @IBOutlet weak var MostrarVideoObj: UIButton!
+    
     @IBAction func ButtonMostrarVideo(_ sender: UIButton) {
         guard let currentFrame = self.sceneView.session.currentFrame else {return}
         
         
-        let moviePath = "http://199.233.252.86/201811/incedetec/video/drone.mov"
+        var moviePath : String  = ""
+        print(salon?.nombre)
+        switch salon?.nombre {
+        case  "Cabina de control"?:
+            moviePath = "http://199.233.252.86/201811/incedetec/video/cabinacontrol.mov"
+        case  "Estudio de TV"? :
+            moviePath = "http://199.233.252.86/201811/incedetec/video/estudiotv.mov"
+        case  "Sala de proyección"?:
+            moviePath = "http://199.233.252.86/201811/incedetec/video/saladeproy.mov"
+        case "Servicios académicos"?:
+            moviePath = "http://199.233.252.86/201811/incedetec/video/servac.mov"
+        case  "Cámara de Gessel"?:
+            moviePath = "http://199.233.252.86/201811/incedetec/video/gesell.mov"
+        case "Escuela de ingeniería"?:
+            moviePath = "http://199.233.252.86/201811/incedetec/video/escueladeing.mov"
+        case  "Plásticos,metal, corte laser"?:
+            moviePath = "http://199.233.252.86/201811/incedetec/video/plasticometal.mov"
+        case  "Maderas"?:
+            moviePath = "http://199.233.252.86/201811/incedetec/video/maderas.mov"
+        default:
+            moviePath = "http://199.233.252.86/201811/incedetec/video/drone.mov"
+            
+            
+            
+        }
+        
         let url = URL(string: moviePath)
         let player = AVPlayer(url: url!)
         player.volume = 0.5

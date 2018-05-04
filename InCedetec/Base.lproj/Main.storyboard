@@ -298,9 +298,18 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="65c-Nv-QaO">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awv-MV-yYO">
+                                <rect key="frame" x="208" y="498" width="96" height="54"/>
+                                <state key="normal" image="ir"/>
+                                <connections>
+                                    <action selector="irButton:" destination="mUE-D2-NNF" eventType="touchUpInside" id="5CU-HN-iEa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Fnf-xN-ORv" firstAttribute="bottom" secondItem="awv-MV-yYO" secondAttribute="bottom" constant="16" id="26U-Rh-rcB"/>
+                            <constraint firstItem="Fnf-xN-ORv" firstAttribute="trailing" secondItem="awv-MV-yYO" secondAttribute="trailing" constant="16" id="QVU-9G-cJZ"/>
                             <constraint firstItem="65c-Nv-QaO" firstAttribute="bottom" secondItem="Fnf-xN-ORv" secondAttribute="bottom" id="SZA-fc-J7u"/>
                             <constraint firstItem="65c-Nv-QaO" firstAttribute="top" secondItem="Fnf-xN-ORv" secondAttribute="top" id="Ug8-vD-KT4"/>
                             <constraint firstItem="65c-Nv-QaO" firstAttribute="leading" secondItem="Fnf-xN-ORv" secondAttribute="leading" id="buW-LT-5Ae"/>
@@ -607,6 +616,7 @@
         <image name="about3" width="375" height="667"/>
         <image name="about4" width="375" height="667"/>
         <image name="desarmador" width="52" height="52"/>
+        <image name="ir" width="96" height="54"/>
         <image name="llave" width="52" height="52"/>
         <image name="mas" width="50" height="50"/>
         <image name="microfono" width="52" height="52"/>

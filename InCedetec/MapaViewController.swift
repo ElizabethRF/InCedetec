@@ -34,23 +34,19 @@ UIViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         
         
+     
         mapa.mapType=MKMapType.standard
         let cl=CLLocationCoordinate2DMake(19.283479, -99.135181)
         mapa.region=MKCoordinateRegionMakeWithDistance(cl, 2000, 2000)
-        /* //esta es otra forma de definir la región de un mapa
-         let origen=CLLocationCoordinate2DMake(0.0, 0.0)
-         let delta=CLLocationDegrees(0.01)
-         let span=MKCoordinateSpanMake(delta, delta)
-         let region=MKCoordinateRegionMake(cl, span)
-         mapa.setRegion(region, animated: true)
-         */
         
         let options = [MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: mapa.region.center),
-                      MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: mapa.region.span)]
+                       MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: mapa.region.span)]
         let placeMark = MKPlacemark(coordinate: cl)
         let mapItem = MKMapItem(placemark: placeMark)
         mapItem.name = "CEDETEC"
-        mapItem.openInMaps(launchOptions: options)
+        
+        
+        
         
         var punto = CLLocationCoordinate2D()
         punto.latitude = 19.283479
@@ -100,6 +96,18 @@ UIViewController, CLLocationManagerDelegate {
     
     
    
+    @IBAction func irButton(_ sender: UIButton) {
+        mapa.mapType=MKMapType.standard
+        let cl=CLLocationCoordinate2DMake(19.283479, -99.135181)
+        mapa.region=MKCoordinateRegionMakeWithDistance(cl, 2000, 2000)
+      
+        let options = [MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: mapa.region.center),
+                       MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: mapa.region.span)]
+        let placeMark = MKPlacemark(coordinate: cl)
+        let mapItem = MKMapItem(placemark: placeMark)
+        mapItem.name = "CEDETEC"
+        mapItem.openInMaps(launchOptions: options)
+    }
     
     var activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView()
     

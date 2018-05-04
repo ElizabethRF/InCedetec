@@ -91,7 +91,9 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     private var resnetModel = Resnet50()
     private var visionRequests = [VNRequest]()
     
+    //CARGANDO VISTA
     
+    @IBOutlet weak var cargando: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -109,8 +111,8 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         
         
        //cargarImagenesJSON()
+        indicator.isHidden = false
         indicator.color = UIColor.cyan
-        
         indicator.startAnimating()
         
         self.sceneView.delegate = self
@@ -125,6 +127,7 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     
     override func viewDidAppear(_ animated: Bool) {
         indicator.isHidden = true
+        cargando.isHidden = true
         indicator.stopAnimating()
         
         cargarImagenesJSON()
@@ -561,7 +564,12 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         self.sceneView.scene.rootNode.addChildNode(nodo)
         
     }
-
+    
+    
+    @IBAction func aboutButton(_ sender: UIButton) {
+        
+    }
+    
 }
 
 

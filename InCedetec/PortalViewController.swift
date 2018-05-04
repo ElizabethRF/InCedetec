@@ -33,7 +33,7 @@ extension UIImageView {
     }
 }
 
-class PortalViewController: UIViewController, UICollectionViewDataSource , UICollectionViewDelegate, ARSCNViewDelegate{
+class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNViewDelegate{
     
     private var hitTestResult: ARHitTestResult!
    // private var resnetModel = Resnet50()
@@ -41,9 +41,6 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
     
     private var bandera : Bool = false
     
-     let itemsArray: [String] = ["microfono", "USB", "desarmador", "LlaveMecanica"]
-
-    @IBOutlet weak var itemsCollectionView: UICollectionView!
     @IBOutlet weak var planeDetected: UILabel!
     
     @IBOutlet weak var sceneView: ARSCNView!
@@ -73,9 +70,6 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
         self.sceneView.scene.rootNode.addChildNode(droneNode)
     }
     
-    
-    
-    let configuration = ARWorldTrackingConfiguration()
     
     var selectedItem: String? //Material de salón
 
@@ -147,31 +141,17 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
         let urlizquierda = URL(string: urlStringizquierda)
         dataIzquierda = try? Data(contentsOf: urlizquierda!)
         
-        
-        
-        self.sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
-        self.configuration.planeDetection = .horizontal
-        self.sceneView.session.run(configuration)
-        
-        //itemsCollectionView
-        self.itemsCollectionView.dataSource = self
-        self.itemsCollectionView.delegate = self
+    
         
         self.sceneView.delegate = self
         
-        self.registerGestureRecognizers()
         self.sceneView.autoenablesDefaultLighting = true
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        self.sceneView.addGestureRecognizer(tapGestureRecognizer)
-        let pinchGestureRecognizer = UIPinchGestureRecognizer (target: self, action: #selector(escalado))
-        
-        self.sceneView.addGestureRecognizer(pinchGestureRecognizer)
         
         //MACHINE LEARNING
         let scene = SCNScene()
         sceneView.scene = scene
-        // Do any additional setup after loading the view.
+    
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -201,28 +181,8 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
             //material.diffuse.contents = UIColor.grayColor()
             
         }
-        
-        
     }
 
-    
-    @objc func handleTap(sender : UITapGestureRecognizer){
-        guard let sceneView = sender.view as? ARSCNView else{return}
-        let touchLocation = sender.location(in: sceneView)
-        let hitTestResult = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
-        //.existingPlaneUsingExtent
-        //let hitTestResult = sceneView.hitTest(touchLocation, options: [:])
-        if !hitTestResult.isEmpty{
-           // if(hitTestResult[0].node == droneNode){
-                
-             //   droneNode.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
-            //}else{
-                //self.addPortal(hitTestResult: hitTestResult.first!)
-            //}
-        }else{
-            
-        }
-    }
     
     func addPortal(){
         let portalScene = SCNScene(named: "Portal.scncassets/Portal.scn")
@@ -363,13 +323,7 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
     
     
     //Empieza mostrar Materiales
-    func registerGestureRecognizers() {
-        
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
-        let pinchGestureRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(pinch))
-        self.sceneView.addGestureRecognizer(pinchGestureRecognizer)
-        self.sceneView.addGestureRecognizer(tapGestureRecognizer)
-    }
+ 
     
     @objc func pinch(sender: UIPinchGestureRecognizer) {
         let sceneView = sender.view as! ARSCNView
@@ -389,45 +343,7 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
         
     }
     
-    @objc func tapped(sender: UITapGestureRecognizer) {
-        let sceneView = sender.view as! ARSCNView
-        let tapLocation = sender.location(in: sceneView)
-        let hitTest = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
-        if !hitTest.isEmpty {
-            self.addItem(hitTestResult: hitTest.first!)
-        }
-    }
-    
-    func addItem(hitTestResult: ARHitTestResult) {
-        
-        
-        if let selectedItem = self.selectedItem {
-            let scene = SCNScene(named: "art.scnassets/\(selectedItem).scn")
-            let node = (scene?.rootNode.childNode(withName: selectedItem, recursively: false))!
-            let transform = hitTestResult.worldTransform
-            let thirdColumn = transform.columns.3
-            node.position = SCNVector3(thirdColumn.x, thirdColumn.y, thirdColumn.z)
-            self.sceneView.scene.rootNode.addChildNode(node)
-        }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return itemsArray.count
-    }
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "item", for: indexPath) as! itemCell
-        cell.itemLabel.text = self.itemsArray[indexPath.row]
-        return cell
-    }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        self.selectedItem = itemsArray[indexPath.row]
-        cell?.backgroundColor = UIColor.green
-    }
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        cell?.backgroundColor = UIColor(red: 0.0902, green: 0.1098, blue: 0.2275, alpha: 1)
-    }
+  
     
    
     @IBAction func portalbutton(_ sender: UIButton) {
@@ -552,6 +468,45 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
         
     }
     
+    
+    
+    //COLOCAR OBJETOS EN ESCENA
+    func addItem(selectedItem: String) {
+        guard let currentFrame = self.sceneView.session.currentFrame else {return}
+        
+        let scene = SCNScene(named: "art.scnassets/\(selectedItem).scn")
+        let node = (scene?.rootNode.childNode(withName: selectedItem, recursively: false))!
+        node.position = SCNVector3(0,0,-1)
+        
+        
+        
+        //identificar en donde se ha tocado el currentFrame
+        var traduccion = matrix_identity_float4x4
+        //definir un metro alejado del dispositivo
+        traduccion.columns.3.z = -1.0
+        
+        node.simdTransform = matrix_multiply(currentFrame.camera.transform, traduccion)
+        node.simdScale = simd_float3(1)
+        node.simdRotation = float4(90)
+        
+        self.sceneView.scene.rootNode.addChildNode(node)
+    }
+    
+    @IBAction func usbButtonAction(_ sender: UIButton) {
+        addItem(selectedItem: "USB")
+    }
+    
+    @IBAction func desarmadorButtonAction(_ sender: UIButton) {
+        addItem(selectedItem: "desarmador")
+    }
+    
+    @IBAction func llaveButtonAction(_ sender: UIButton) {
+        addItem(selectedItem: "LlaveMecanica")
+    }
+    
+    @IBAction func microfonoButtonAction(_ sender: UIButton) {
+        addItem(selectedItem: "microfono")
+    }
     
 }
 

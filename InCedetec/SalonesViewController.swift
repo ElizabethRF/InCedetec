@@ -4,20 +4,11 @@
 //
 //  Created by Brandon Reyes on 27/03/18.
 //  Copyright © 2018 Elizabeth Rodríguez Fallas. All rights reserved.
-// Hola carlos 
+
 
 import UIKit
 
-
-/*struct Salon: Decodable{
-    let nombre : String
-    let img : String
-    let piso : String
-}*/
-
-
 class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating  {
-    var activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView()
     //Loading data
     var piso :String = ""
     
@@ -51,12 +42,6 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        activityIndicator.center = self.view.center
-        self.view.addSubview(activityIndicator) //probar 
-        activityIndicator.hidesWhenStopped = true
-        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
-        view.addSubview(activityIndicator)
-        activityIndicator.startAnimating()
         
         tableView.delegate = self
         tableView.dataSource = self

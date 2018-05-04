@@ -120,6 +120,8 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         let scene = SCNScene()
         
         sceneView.scene = scene
+        let pinchGestureRecognizer = UIPinchGestureRecognizer (target: self, action: #selector(escalado))
+        sceneView.addGestureRecognizer(pinchGestureRecognizer)
     
     }
     
@@ -190,15 +192,7 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         }
     }
     
-    @IBAction func rotar(_ sender: UIRotationGestureRecognizer) {
-        currentNode.eulerAngles = SCNVector3(0,sender.rotation,0)
-    }
-    
-    @objc func escalado(recognizer:UIPinchGestureRecognizer)
-    {
-        currentNode.scale = SCNVector3(recognizer.scale, recognizer.scale, recognizer.scale)
-    }
-    
+   
     
     
     
@@ -380,6 +374,22 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         
     }
     
+    @IBAction func rotar(_ sender: UIRotationGestureRecognizer) {
+        currentNode.eulerAngles = SCNVector3(0,sender.rotation,0)
+    }
+    
+    @objc func escalado(recognizer:UIPinchGestureRecognizer)
+    {
+        
+        currentNode.scale = SCNVector3(recognizer.scale, recognizer.scale, recognizer.scale)
+    }
+    
+    /*@objc func escalado(recognizer:UIPinchGestureRecognizer)
+    {
+        currentNode.scale = SCNVector3(recognizer.scale, recognizer.scale, recognizer.scale)
+    }*/
+    
+    
     //Controlar objetos
     var micBool : Bool = false
     var llaveBool : Bool = false
@@ -413,6 +423,8 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         self.sceneView.scene.rootNode.addChildNode(node)
         currentNode = node
     }
+    
+    
     
     @IBAction func usbButtonAction(_ sender: UIButton) {
         if(usbBool == false){

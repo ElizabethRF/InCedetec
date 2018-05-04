@@ -36,6 +36,7 @@
 		CA80076820734F9200FFB8EC /* CedetecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80076720734F9200FFB8EC /* CedetecViewController.swift */; };
 		CAA7A04C209A5A5A005FBA93 /* PisosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7A04B209A5A5A005FBA93 /* PisosViewController.swift */; };
 		CAA7A050209AA8E8005FBA93 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7A04F209AA8E8005FBA93 /* AboutViewController.swift */; };
+		CAD4A02F209CC2C30008DE99 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CAD4A02E209CC2C30008DE99 /* Resnet50.mlmodel */; };
 		CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */; };
 		CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6C206DF60800F79421 /* PortalViewController.swift */; };
 		CAE4FC71206E0EEA00F79421 /* Portal.scncassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE4FC70206E0EEA00F79421 /* Portal.scncassets */; };
@@ -98,6 +99,7 @@
 		CA80076720734F9200FFB8EC /* CedetecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CedetecViewController.swift; sourceTree = "<group>"; };
 		CAA7A04B209A5A5A005FBA93 /* PisosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PisosViewController.swift; sourceTree = "<group>"; };
 		CAA7A04F209AA8E8005FBA93 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		CAD4A02E209CC2C30008DE99 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = ../../../../Downloads/Resnet50.mlmodel; sourceTree = "<group>"; };
 		CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesSalon.swift; sourceTree = "<group>"; };
 		CAE4FC6C206DF60800F79421 /* PortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
 		CAE4FC70206E0EEA00F79421 /* Portal.scncassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Portal.scncassets; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				554C03AF203A954100A5DF1A /* LaunchScreen.storyboard */,
 				554C03B2203A954100A5DF1A /* Info.plist */,
 				554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */,
+				CAD4A02E209CC2C30008DE99 /* Resnet50.mlmodel */,
 				CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */,
 				CAE4FC6C206DF60800F79421 /* PortalViewController.swift */,
 				CAE4FC70206E0EEA00F79421 /* Portal.scncassets */,
@@ -381,6 +384,7 @@
 				38BBEF9920749D910048DEFC /* Model.xcdatamodeld in Sources */,
 				5574BB46208BA303004EF153 /* MapaViewController.swift in Sources */,
 				554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */,
+				CAD4A02F209CC2C30008DE99 /* Resnet50.mlmodel in Sources */,
 				554C03A9203A954100A5DF1A /* ViewController.swift in Sources */,
 				CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */,
 				38E77B63208D5B6C00B59563 /* Seleccionar.swift in Sources */,

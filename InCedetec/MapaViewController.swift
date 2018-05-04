@@ -107,6 +107,10 @@ UIViewController, CLLocationManagerDelegate {
         let mapItem = MKMapItem(placemark: placeMark)
         mapItem.name = "CEDETEC"
         mapItem.openInMaps(launchOptions: options)
+        
+        
+        //MACHINE LEARNING
+        
     }
     
     var activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView()

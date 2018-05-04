@@ -35,10 +35,6 @@ extension UIImageView {
 
 class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNViewDelegate{
     
-    private var hitTestResult: ARHitTestResult!
-   // private var resnetModel = Resnet50()
-    private var visionRequests = [VNRequest]()
-    
     private var bandera : Bool = false
     
     @IBOutlet weak var planeDetected: UILabel!
@@ -98,6 +94,11 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     var microfonoButtonCenter : CGPoint!
     
     
+    //MACHINE LEARNINIG
+    private var hitTestResult: ARHitTestResult!
+    private var resnetModel = Resnet50()
+    private var visionRequests = [VNRequest]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -124,9 +125,8 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         
         self.sceneView.autoenablesDefaultLighting = true
         
-        
-        //MACHINE LEARNING
         let scene = SCNScene()
+        
         sceneView.scene = scene
     
     }
@@ -141,9 +141,9 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         let configuration = ARWorldTrackingConfiguration()
         sceneView.session.run(configuration)
-        //cargarImagenesJSON()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -332,7 +332,7 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     
   
     
-   
+   //ACTIVAR PORTAL
     @IBAction func portalbutton(_ sender: UIButton) {
         if bandera == false{
             //cargarImagenesJSON()
@@ -347,78 +347,7 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         
     }
     
-    @IBAction func tapEjecutado(_ sender: UITapGestureRecognizer) {
-        //obtener la vista donde se va a trabajar
-        let vista = sender.view as! ARSCNView
-        //ubicar el toque en el centro de la vista
-        let ubicacionToque = self.sceneView.center
-        //obtener la imagen actual
-        guard let currentFrame = vista.session.currentFrame else {return}
-        //obtener los nodos que fueron tocados por el rayo
-        let hitTestResults = vista.hitTest(ubicacionToque, types: .featurePoint)
-        
-        if (hitTestResults .isEmpty){
-            //no se toco nada
-            return}
-        guard var hitTestResult = hitTestResults.first else{
-            return
-            
-        }
-        //obtener la imagen capturada en formato de buffer de pixeles
-        let imagenPixeles = currentFrame.capturedImage
-        self.hitTestResult = hitTestResult
-        //performVisionRequest(pixelBuffer: imagenPixeles)
-    }
-    
-   /* private func performVisionRequest(pixelBuffer: CVPixelBuffer)
-    {
-        //inicializar el modelo de ML al modelo usado, en este caso resnet
-       // let visionModel = try! VNCoreMLModel(for: resnetModel.model)
-       // let request = VNCoreMLRequest(model: visionModel) { request, error in
-            
-            if error != nil {
-                //hubo un error
-                return}
-            guard let observations = request.results else {
-                //no hubo resultados por parte del modelo
-                return
-                
-            }
-            //obtener el mejor resultado
-            let observation = observations.first as! VNClassificationObservation
-            
-            print("Nombre \(observation.identifier) confianza \(observation.confidence)")
-            self.desplegarTexto(entrada: observation.identifier)
-            
-        }
-        //la imagen que se pasará al modelo sera recortada para quedarse con el centro
-        request.imageCropAndScaleOption = .centerCrop
-        self.visionRequests = [request]
-        
-        let imageRequestHandler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, orientation: .upMirrored, options: [:])
-        DispatchQueue.global().async {
-            try! imageRequestHandler.perform(self.visionRequests)
-            
-        }
-        
-    }*/
-    
-    private func desplegarTexto(entrada: String)
-    {
-        
-        let letrero = SCNText(string: entrada
-            , extrusionDepth: 0)
-        letrero.alignmentMode = kCAAlignmentCenter
-        letrero.firstMaterial?.diffuse.contents = UIColor.blue
-        letrero.firstMaterial?.specular.contents = UIColor.white
-        letrero.firstMaterial?.isDoubleSided = true
-        letrero.font = UIFont(name: "Futura", size: 0.20)
-        let nodo = SCNNode(geometry: letrero)
-        nodo.position = SCNVector3(self.hitTestResult.worldTransform.columns.3.x,self.hitTestResult.worldTransform.columns.3.y-0.2,self.hitTestResult.worldTransform.columns.3.z )
-        nodo.scale = SCNVector3Make(0.2, 0.2, 0.2)
-        self.sceneView.scene.rootNode.addChildNode(nodo)
-    }
-    
+
     //ANIMACION BOTON
     @IBAction func moreClicked(_ sender: UIButton) {
         if banderaObjetos == false{
@@ -497,6 +426,7 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     }
     
     
+    //CARGAR IMAGENES DE JSON
     func cargarImagenesJSON(){
         //PARA JALAR LA IMAGEN DEL JSON
         let urlStringabajo = "http://199.233.252.86/201811/incedetec/fotos/"+(salon?.img)!+"/abajo.png"
@@ -526,6 +456,81 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         dataIzquierda = try? Data(contentsOf: urlizquierda!)
     }
     
+    //MACHINE LEARNING
+    
+    @IBAction func tapEjecutado(_ sender: UITapGestureRecognizer) {
+        //obtener la vista donde se va a trabajar
+        let vista = sender.view as! ARSCNView
+        //ubicar el toque en el centro de la vista
+        let ubicacionToque = self.sceneView.center
+        //obtener la imagen actual
+        guard let currentFrame = vista.session.currentFrame else {return}
+        //obtener los nodos que fueron tocados por el rayo
+        let hitTestResults = vista.hitTest(ubicacionToque, types: .featurePoint)
+        
+        if (hitTestResults .isEmpty){
+            //no se toco nada
+            return}
+        guard var hitTestResult = hitTestResults.first else{
+            return
+            
+        }
+        //obtener la imagen capturada en formato de buffer de pixeles
+        let imagenPixeles = currentFrame.capturedImage
+        self.hitTestResult = hitTestResult
+        performVisionRequest(pixelBuffer: imagenPixeles)
+    }
+    
+    private func performVisionRequest(pixelBuffer: CVPixelBuffer)
+    {
+        //inicializar el modelo de ML al modelo usado, en este caso resnet
+        let visionModel = try! VNCoreMLModel(for: resnetModel.model)
+        let request = VNCoreMLRequest(model: visionModel) { request, error in
+            
+            if error != nil {
+                //hubo un error
+                return}
+            guard let observations = request.results else {
+                //no hubo resultados por parte del modelo
+                return
+                
+            }
+            //obtener el mejor resultado
+            let observation = observations.first as! VNClassificationObservation
+            
+            print("Nombre \(observation.identifier) confianza \(observation.confidence)")
+            self.desplegarTexto(entrada: observation.identifier)
+            
+        }
+        //la imagen que se pasará al modelo sera recortada para quedarse con el centro
+        request.imageCropAndScaleOption = .centerCrop
+        self.visionRequests = [request]
+        
+        let imageRequestHandler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, orientation: .upMirrored, options: [:])
+        DispatchQueue.global().async {
+            try! imageRequestHandler.perform(self.visionRequests)
+            
+        }
+        
+    }
+    
+    private func desplegarTexto(entrada: String)
+    {
+        
+        let letrero = SCNText(string: entrada
+            , extrusionDepth: 0)
+        letrero.alignmentMode = kCAAlignmentCenter
+        letrero.firstMaterial?.diffuse.contents = UIColor.cyan
+        letrero.firstMaterial?.specular.contents = UIColor.white
+        letrero.firstMaterial?.isDoubleSided = true
+        letrero.font = UIFont(name: "Futura", size: 0.20)
+        let nodo = SCNNode(geometry: letrero)
+        nodo.position = SCNVector3(self.hitTestResult.worldTransform.columns.3.x,self.hitTestResult.worldTransform.columns.3.y-0.2,self.hitTestResult.worldTransform.columns.3.z )
+        nodo.scale = SCNVector3Make(0.2, 0.2, 0.2)
+        self.sceneView.scene.rootNode.addChildNode(nodo)
+        
+    }
+
 }
 
 

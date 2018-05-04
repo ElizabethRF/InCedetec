@@ -513,7 +513,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6S-JA-tkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Tsf-ER-Cg5">
                     <connections>
-                        <action selector="tapEjecutado:" destination="tzz-R5-sLI" id="G3k-bT-kNP"/>
+                        <action selector="tapEjecutado:" destination="tzz-R5-sLI" id="XlJ-QO-swT"/>
                     </connections>
                 </tapGestureRecognizer>
                 <rotationGestureRecognizer id="pS9-Hf-Q1g">

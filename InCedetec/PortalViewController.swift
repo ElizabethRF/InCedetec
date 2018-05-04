@@ -89,9 +89,36 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
     var salon:Salon?
     
     
+    @IBOutlet weak var more: UIButton!
+    @IBOutlet weak var usb: UIButton!
+    @IBOutlet weak var desarmador: UIButton!
+    
+    @IBOutlet weak var llave: UIButton!
+    @IBOutlet weak var microfono: UIButton!
+    var banderaObjetos : Bool = false
+    
+    var usbButtonCenter : CGPoint!
+    var desarmadorButtonCenter : CGPoint!
+    var llaveButtonCenter : CGPoint!
+    var microfonoButtonCenter : CGPoint!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //PARA OCULTAR BOTONES DE OBJETOS
+        
+        usbButtonCenter = usb.center
+        desarmadorButtonCenter = desarmador.center
+        llaveButtonCenter = llave.center
+        microfonoButtonCenter = microfono.center
+        
+        usb.center = more.center
+        desarmador.center = more.center
+        llave.center = more.center
+        microfono.center = more.center
+        
         
         //PARA JALAR LA IMAGEN DEL JSON
         let urlStringabajo = "http://199.233.252.86/201811/incedetec/fotos/"+(salon?.img)!+"/abajo.png"
@@ -486,6 +513,43 @@ class PortalViewController: UIViewController, UICollectionViewDataSource , UICol
         nodo.position = SCNVector3(self.hitTestResult.worldTransform.columns.3.x,self.hitTestResult.worldTransform.columns.3.y-0.2,self.hitTestResult.worldTransform.columns.3.z )
         nodo.scale = SCNVector3Make(0.2, 0.2, 0.2)
         self.sceneView.scene.rootNode.addChildNode(nodo)
+    }
+    
+    //ANIMACION BOTON
+    @IBAction func moreClicked(_ sender: UIButton) {
+        if banderaObjetos == false{
+            UIView.animate(withDuration: 0.3, animations: {
+                //animation here
+                self.usb.alpha = 1
+                self.desarmador.alpha = 1
+                self.llave.alpha = 1
+                self.microfono.alpha = 1
+                
+                
+                self.usb.center = self.usbButtonCenter
+                self.desarmador.center = self.desarmadorButtonCenter
+                self.llave.center = self.llaveButtonCenter
+                self.microfono.center = self.microfonoButtonCenter
+                
+            })
+            banderaObjetos = true
+        }else{
+           UIView.animate(withDuration: 0.3, animations: {
+            
+            self.usb.alpha = 0
+            self.desarmador.alpha = 0
+            self.llave.alpha = 0
+            self.microfono.alpha = 0
+            
+            
+            self.usb.center = self.more.center
+            self.desarmador.center = self.more.center
+            self.llave.center = self.more.center
+            self.microfono.center = self.more.center
+           })
+           banderaObjetos = false
+        }
+        
     }
     
     

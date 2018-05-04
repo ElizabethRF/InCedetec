@@ -50,8 +50,8 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         activityIndicator.center = self.view.center
+        self.view.addSubview(activityIndicator) //probar 
         activityIndicator.hidesWhenStopped = true
         activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
         view.addSubview(activityIndicator)

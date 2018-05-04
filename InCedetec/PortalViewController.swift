@@ -139,6 +139,10 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        indicator.isHidden = false
+        indicator.color = UIColor.cyan
+        indicator.startAnimating()
+        cargando.isHidden = false
         let configuration = ARWorldTrackingConfiguration()
         sceneView.session.run(configuration)
     }

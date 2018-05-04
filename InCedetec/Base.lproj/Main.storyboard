@@ -342,7 +342,7 @@
                                     <outletCollection property="gestureRecognizers" destination="Tsf-ER-Cg5" appends="YES" id="7SK-vM-jaM"/>
                                 </connections>
                             </arscnView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane detected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TD-16-zRo">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Plane detected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TD-16-zRo">
                                 <rect key="frame" x="79.5" y="104" width="162.5" height="27.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="textColor"/>
@@ -364,7 +364,7 @@
                                     <action selector="MostrarInformacionMaterial:" destination="tzz-R5-sLI" eventType="touchUpInside" id="Bon-gG-WDA"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soy un drone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akS-Bo-mwe">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Soy un drone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akS-Bo-mwe">
                                 <rect key="frame" x="110" y="104" width="101" height="21"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -382,45 +382,6 @@
                                     <action selector="PlayVideoButton:" destination="tzz-R5-sLI" eventType="touchUpInside" id="Ynd-Az-H6F"/>
                                 </connections>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SLA-LE-SlG">
-                                <rect key="frame" x="0.0" y="279" width="320" height="47"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="oOo-37-LmY"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="30" id="Q13-MP-WHH">
-                                    <size key="itemSize" width="70" height="43"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="item" id="dhk-Oy-EK7" customClass="itemCell" customModule="InCedetec" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="2" width="70" height="43"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="70" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANc-sD-vm2">
-                                                    <rect key="frame" x="19" y="11" width="33" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <color key="backgroundColor" red="0.088932015000000003" green="0.106463708" blue="0.2310031354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="ANc-sD-vm2" firstAttribute="centerX" secondItem="dhk-Oy-EK7" secondAttribute="centerX" id="5jp-Nx-W0l"/>
-                                            <constraint firstItem="ANc-sD-vm2" firstAttribute="centerY" secondItem="dhk-Oy-EK7" secondAttribute="centerY" id="HQk-fl-dWR"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="itemLabel" destination="ANc-sD-vm2" id="oBh-rD-8Gn"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6u-fS-ewl">
                                 <rect key="frame" x="20" y="465" width="30" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -486,21 +447,33 @@
                                 <rect key="frame" x="261" y="400" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="usb"/>
+                                <connections>
+                                    <action selector="usbButtonAction:" destination="tzz-R5-sLI" eventType="touchUpInside" id="pCg-4x-Ljk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smy-pd-Vn1">
                                 <rect key="frame" x="261" y="340" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="desarmador"/>
+                                <connections>
+                                    <action selector="desarmadorButtonAction:" destination="tzz-R5-sLI" eventType="touchUpInside" id="kSe-NM-34X"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAi-ZY-Oql">
                                 <rect key="frame" x="261" y="280" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="llave"/>
+                                <connections>
+                                    <action selector="llaveButtonAction:" destination="tzz-R5-sLI" eventType="touchUpInside" id="zPL-fE-XZc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n32-1Y-9SB">
                                 <rect key="frame" x="259" y="219" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="microfono"/>
+                                <connections>
+                                    <action selector="microfonoButtonAction:" destination="tzz-R5-sLI" eventType="touchUpInside" id="9lL-ZO-dFv"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ek2-Pa-sSx">
                                 <rect key="frame" x="19" y="434" width="30" height="42"/>
@@ -522,7 +495,6 @@
                             <constraint firstItem="ys9-5O-ucA" firstAttribute="centerY" secondItem="bvY-5H-rLi" secondAttribute="centerY" id="DAy-7x-wff"/>
                             <constraint firstItem="bvY-5H-rLi" firstAttribute="bottom" secondItem="ys9-5O-ucA" secondAttribute="bottom" id="DjD-3R-W4K"/>
                             <constraint firstItem="kFw-5O-3Jn" firstAttribute="centerX" secondItem="chH-gL-4nH" secondAttribute="centerX" id="Jl7-ya-nZP"/>
-                            <constraint firstItem="0TD-16-zRo" firstAttribute="centerX" secondItem="SLA-LE-SlG" secondAttribute="centerX" id="NDL-2F-qtu"/>
                             <constraint firstItem="sk3-9m-CGq" firstAttribute="bottom" secondItem="kFw-5O-3Jn" secondAttribute="bottom" constant="13" id="NNw-CP-7zF"/>
                             <constraint firstItem="sk3-9m-CGq" firstAttribute="bottom" secondItem="1Ls-tJ-fhP" secondAttribute="bottom" constant="9" id="PeS-TA-JPG"/>
                             <constraint firstItem="f7o-0l-CLx" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" id="Pr2-89-yzJ"/>
@@ -538,12 +510,10 @@
                             <constraint firstItem="0TD-16-zRo" firstAttribute="centerX" secondItem="akS-Bo-mwe" secondAttribute="centerX" id="fOh-TY-6QR"/>
                             <constraint firstItem="L6u-fS-ewl" firstAttribute="top" secondItem="cbC-qI-Tif" secondAttribute="bottom" constant="19" id="iLl-8G-kGa"/>
                             <constraint firstItem="Las-za-QU1" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" constant="20" id="iye-rt-hTb"/>
-                            <constraint firstItem="Gkt-TV-Ucb" firstAttribute="leading" secondItem="SLA-LE-SlG" secondAttribute="leading" id="nkg-i9-wLS"/>
                             <constraint firstItem="f7o-0l-CLx" firstAttribute="top" secondItem="L6u-fS-ewl" secondAttribute="bottom" constant="5" id="opg-8N-igf"/>
                             <constraint firstItem="f7o-0l-CLx" firstAttribute="top" secondItem="Ek2-Pa-sSx" secondAttribute="bottom" constant="38" id="rGp-W1-wdl"/>
                             <constraint firstItem="f7o-0l-CLx" firstAttribute="bottom" secondItem="sk3-9m-CGq" secondAttribute="bottom" id="sKb-ba-Ijp"/>
                             <constraint firstItem="sk3-9m-CGq" firstAttribute="trailing" secondItem="1Ls-tJ-fhP" secondAttribute="trailing" constant="20" id="vOW-RS-d7O"/>
-                            <constraint firstItem="Gkt-TV-Ucb" firstAttribute="trailing" secondItem="SLA-LE-SlG" secondAttribute="trailing" id="y0q-YR-Zjx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sk3-9m-CGq"/>
                     </view>
@@ -556,7 +526,6 @@
                         <outlet property="buttonMostrar" destination="ys9-5O-ucA" id="pYa-RZ-Dx8"/>
                         <outlet property="buttonMostrarInfo" destination="bvY-5H-rLi" id="e6I-ms-P5a"/>
                         <outlet property="desarmador" destination="Smy-pd-Vn1" id="Ngx-E7-edg"/>
-                        <outlet property="itemsCollectionView" destination="SLA-LE-SlG" id="Oxh-f0-vco"/>
                         <outlet property="llave" destination="eAi-ZY-Oql" id="LoI-Aj-qoU"/>
                         <outlet property="microfono" destination="n32-1Y-9SB" id="f1m-X6-8U2"/>
                         <outlet property="more" destination="0vc-i0-3rj" id="dD9-LJ-GuV"/>

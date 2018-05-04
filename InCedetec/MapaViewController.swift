@@ -35,7 +35,7 @@ UIViewController, CLLocationManagerDelegate {
         
         
         mapa.mapType=MKMapType.standard
-        let cl=CLLocationCoordinate2DMake(19.283996, -99.136006)
+        let cl=CLLocationCoordinate2DMake(19.283479, -99.135181)
         mapa.region=MKCoordinateRegionMakeWithDistance(cl, 2000, 2000)
         /* //esta es otra forma de definir la región de un mapa
          let origen=CLLocationCoordinate2DMake(0.0, 0.0)
@@ -53,8 +53,10 @@ UIViewController, CLLocationManagerDelegate {
         mapItem.openInMaps(launchOptions: options)
         
         var punto = CLLocationCoordinate2D()
-        punto.latitude = 19.283996
-        punto.longitude = -99.136006
+        punto.latitude = 19.283479
+        punto.longitude = -99.135181
+        
+        
         let pin = MKPointAnnotation()
         pin.coordinate = punto
         pin.title = "CEDETEC"

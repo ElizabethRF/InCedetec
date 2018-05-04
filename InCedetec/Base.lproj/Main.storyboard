@@ -351,22 +351,6 @@
                                     <outletCollection property="gestureRecognizers" destination="Tsf-ER-Cg5" appends="YES" id="7SK-vM-jaM"/>
                                 </connections>
                             </arscnView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbC-qI-Tif">
-                                <rect key="frame" x="19" y="404" width="30" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="▶️"/>
-                                <connections>
-                                    <action selector="PlayVideoButton:" destination="tzz-R5-sLI" eventType="touchUpInside" id="Ynd-Az-H6F"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6u-fS-ewl">
-                                <rect key="frame" x="20" y="465" width="30" height="44"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="🆗"/>
-                                <connections>
-                                    <action selector="QuitVideoButton:" destination="tzz-R5-sLI" eventType="touchUpInside" id="PIh-RZ-uMV"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangulo" translatesAutoresizingMaskIntoConstraints="NO" id="f7o-0l-CLx">
                                 <rect key="frame" x="0.0" y="514" width="320" height="54"/>
                             </imageView>
@@ -451,46 +435,59 @@
                                     <action selector="microfonoButtonAction:" destination="tzz-R5-sLI" eventType="touchUpInside" id="9lL-ZO-dFv"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ek2-Pa-sSx">
-                                <rect key="frame" x="19" y="434" width="30" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="⏸"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="CBP-HT-Ay6">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbC-qI-Tif">
+                                <rect key="frame" x="6" y="521" width="38" height="38"/>
+                                <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="PlayVideoButton:" destination="tzz-R5-sLI" eventType="touchUpInside" id="Ynd-Az-H6F"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ek2-Pa-sSx">
+                                <rect key="frame" x="6" y="521" width="38" height="38"/>
+                                <state key="normal" image="pause"/>
                                 <connections>
                                     <action selector="PauseVideoButton:" destination="tzz-R5-sLI" eventType="touchUpInside" id="RgI-Qb-tbB"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="CBP-HT-Ay6">
-                                <rect key="frame" x="150" y="274" width="20" height="20"/>
-                            </activityIndicatorView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6u-fS-ewl">
+                                <rect key="frame" x="62" y="521" width="38" height="38"/>
+                                <state key="normal" image="stop"/>
+                                <connections>
+                                    <action selector="QuitVideoButton:" destination="tzz-R5-sLI" eventType="touchUpInside" id="PIh-RZ-uMV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sk3-9m-CGq" firstAttribute="trailing" secondItem="0vc-i0-3rj" secondAttribute="trailing" constant="7" id="0Qg-Ld-P1d"/>
-                            <constraint firstItem="L6u-fS-ewl" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" constant="20" id="5ye-oI-Yqj"/>
-                            <constraint firstItem="cbC-qI-Tif" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" constant="19" id="60Q-N1-QvR"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="leading" secondItem="chH-gL-4nH" secondAttribute="leading" id="6Fg-pz-ANb"/>
+                            <constraint firstItem="cbC-qI-Tif" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" constant="6" id="9qn-3W-9Hx"/>
                             <constraint firstItem="kFw-5O-3Jn" firstAttribute="centerX" secondItem="chH-gL-4nH" secondAttribute="centerX" id="Jl7-ya-nZP"/>
                             <constraint firstItem="CBP-HT-Ay6" firstAttribute="centerY" secondItem="Gkt-TV-Ucb" secondAttribute="centerY" id="JmN-UY-IW5"/>
                             <constraint firstItem="CBP-HT-Ay6" firstAttribute="centerX" secondItem="chH-gL-4nH" secondAttribute="centerX" id="L14-NV-DUp"/>
+                            <constraint firstItem="sk3-9m-CGq" firstAttribute="bottom" secondItem="cbC-qI-Tif" secondAttribute="bottom" constant="9" id="Lcw-sf-TSt"/>
                             <constraint firstItem="sk3-9m-CGq" firstAttribute="bottom" secondItem="kFw-5O-3Jn" secondAttribute="bottom" constant="13" id="NNw-CP-7zF"/>
                             <constraint firstItem="sk3-9m-CGq" firstAttribute="bottom" secondItem="1Ls-tJ-fhP" secondAttribute="bottom" constant="9" id="PeS-TA-JPG"/>
                             <constraint firstItem="f7o-0l-CLx" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" id="Pr2-89-yzJ"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="top" secondItem="chH-gL-4nH" secondAttribute="top" id="QTi-5X-Y07"/>
                             <constraint firstAttribute="trailing" secondItem="Gkt-TV-Ucb" secondAttribute="trailing" id="R3P-1L-Ikg"/>
+                            <constraint firstItem="Ek2-Pa-sSx" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" constant="6" id="T8Y-kj-ERJ"/>
                             <constraint firstItem="eAi-ZY-Oql" firstAttribute="leading" secondItem="CBP-HT-Ay6" secondAttribute="trailing" constant="91" id="TAe-P6-T50"/>
+                            <constraint firstItem="sk3-9m-CGq" firstAttribute="bottom" secondItem="L6u-fS-ewl" secondAttribute="bottom" constant="9" id="U10-Ne-wDM"/>
                             <constraint firstItem="f7o-0l-CLx" firstAttribute="trailing" secondItem="sk3-9m-CGq" secondAttribute="trailing" id="V6l-Fo-7md"/>
                             <constraint firstItem="CBP-HT-Ay6" firstAttribute="centerX" secondItem="chH-gL-4nH" secondAttribute="centerX" id="Vs6-ij-Quk"/>
                             <constraint firstItem="f7o-0l-CLx" firstAttribute="top" secondItem="0vc-i0-3rj" secondAttribute="bottom" constant="4" id="ZaB-ef-FGG"/>
-                            <constraint firstItem="Ek2-Pa-sSx" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" constant="19" id="bd5-2b-VyN"/>
                             <constraint firstItem="CBP-HT-Ay6" firstAttribute="centerY" secondItem="chH-gL-4nH" secondAttribute="centerY" id="eEk-ri-Boo"/>
                             <constraint firstItem="CBP-HT-Ay6" firstAttribute="centerX" secondItem="kFw-5O-3Jn" secondAttribute="centerX" id="eO8-zk-uOx"/>
                             <constraint firstItem="Gkt-TV-Ucb" firstAttribute="bottom" secondItem="sk3-9m-CGq" secondAttribute="bottom" id="eem-HG-BnD"/>
                             <constraint firstItem="sk3-9m-CGq" firstAttribute="bottom" secondItem="Las-za-QU1" secondAttribute="bottom" constant="9" id="eti-jy-ee9"/>
                             <constraint firstItem="CBP-HT-Ay6" firstAttribute="centerY" secondItem="chH-gL-4nH" secondAttribute="centerY" id="fwi-YF-8Ij"/>
-                            <constraint firstItem="L6u-fS-ewl" firstAttribute="top" secondItem="cbC-qI-Tif" secondAttribute="bottom" constant="19" id="iLl-8G-kGa"/>
                             <constraint firstItem="Las-za-QU1" firstAttribute="leading" secondItem="sk3-9m-CGq" secondAttribute="leading" constant="20" id="iye-rt-hTb"/>
-                            <constraint firstItem="f7o-0l-CLx" firstAttribute="top" secondItem="L6u-fS-ewl" secondAttribute="bottom" constant="5" id="opg-8N-igf"/>
-                            <constraint firstItem="f7o-0l-CLx" firstAttribute="top" secondItem="Ek2-Pa-sSx" secondAttribute="bottom" constant="38" id="rGp-W1-wdl"/>
+                            <constraint firstItem="L6u-fS-ewl" firstAttribute="leading" secondItem="cbC-qI-Tif" secondAttribute="trailing" constant="18" id="lXg-xy-gmh"/>
+                            <constraint firstItem="sk3-9m-CGq" firstAttribute="bottom" secondItem="Ek2-Pa-sSx" secondAttribute="bottom" constant="9" id="mBY-A0-upb"/>
                             <constraint firstItem="f7o-0l-CLx" firstAttribute="bottom" secondItem="sk3-9m-CGq" secondAttribute="bottom" id="sKb-ba-Ijp"/>
                             <constraint firstItem="sk3-9m-CGq" firstAttribute="trailing" secondItem="1Ls-tJ-fhP" secondAttribute="trailing" constant="20" id="vOW-RS-d7O"/>
                         </constraints>
@@ -620,11 +617,14 @@
         <image name="llave" width="52" height="52"/>
         <image name="mas" width="50" height="50"/>
         <image name="microfono" width="52" height="52"/>
+        <image name="pause" width="38" height="38"/>
+        <image name="play" width="38" height="38"/>
         <image name="playnegro" width="36" height="36"/>
         <image name="portalnuevo" width="69" height="71"/>
         <image name="rectangulo" width="375" height="54"/>
         <image name="redessociales" width="134" height="40"/>
         <image name="share" width="35" height="35"/>
+        <image name="stop" width="38" height="38"/>
         <image name="usb" width="52" height="52"/>
     </resources>
 </document>

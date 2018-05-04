@@ -48,6 +48,7 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     @IBOutlet weak var buttonMostrar: UIButton!
     //  droneNode
     
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     @IBOutlet weak var TextoInformativo: UILabel!
     @IBAction func MostrarInformacionMaterial(_ sender: UIButton) {
@@ -114,34 +115,10 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         microfono.center = more.center
         
         
-        //PARA JALAR LA IMAGEN DEL JSON
-        let urlStringabajo = "http://199.233.252.86/201811/incedetec/fotos/"+(salon?.img)!+"/abajo.png"
-        print(urlStringabajo)
-        let urlabajo = URL(string: urlStringabajo)
-        dataabajo = try? Data(contentsOf: urlabajo!)
+       //cargarImagenesJSON()
+        indicator.color = UIColor.cyan
         
-        let urlStringarriba = "http://199.233.252.86/201811/incedetec/fotos/"+(salon?.img)!+"/arriba.png"
-        let urlarriba = URL(string: urlStringarriba)
-        dataarriba = try? Data(contentsOf: urlarriba!)
-        
-        let urlStringcentro = "http://199.233.252.86/201811/incedetec/fotos/"+(salon?.img)!+"/centro.png"
-        let urlcentro = URL(string: urlStringcentro)
-        datacentro = try? Data(contentsOf: urlcentro!)
-        
-        let urlStringderecha = "http://199.233.252.86/201811/incedetec/fotos/"+(salon?.img)!+"/derecha.png"
-        let urlderecha = URL(string: urlStringderecha)
-        dataDerecha = try? Data(contentsOf: urlderecha!)
-        
-        let urlStringfrente = "http://199.233.252.86/201811/incedetec/fotos/"+(salon?.img)!+"/frente.png"
-        let urlfrente = URL(string: urlStringfrente)
-        dataFrente = try? Data(contentsOf: urlfrente!)
-        
-        
-        let urlStringizquierda = "http://199.233.252.86/201811/incedetec/fotos/"+(salon?.img)!+"/izquierda.png"
-        let urlizquierda = URL(string: urlStringizquierda)
-        dataIzquierda = try? Data(contentsOf: urlizquierda!)
-        
-    
+        indicator.startAnimating()
         
         self.sceneView.delegate = self
         
@@ -154,9 +131,19 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        indicator.isHidden = true
+        indicator.stopAnimating()
+        
+        cargarImagenesJSON()
+    }
+    
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         let configuration = ARWorldTrackingConfiguration()
         sceneView.session.run(configuration)
+        //cargarImagenesJSON()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -348,6 +335,7 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
    
     @IBAction func portalbutton(_ sender: UIButton) {
         if bandera == false{
+            //cargarImagenesJSON()
             addPortal()
             bandera = true
         }else{
@@ -506,6 +494,36 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     
     @IBAction func microfonoButtonAction(_ sender: UIButton) {
         addItem(selectedItem: "microfono")
+    }
+    
+    
+    func cargarImagenesJSON(){
+        //PARA JALAR LA IMAGEN DEL JSON
+        let urlStringabajo = "http://199.233.252.86/201811/incedetec/fotos/"+(salon?.img)!+"/abajo.png"
+        print(urlStringabajo)
+        let urlabajo = URL(string: urlStringabajo)
+        dataabajo = try? Data(contentsOf: urlabajo!)
+        
+        let urlStringarriba = "http://199.233.252.86/201811/incedetec/fotos/"+(salon?.img)!+"/arriba.png"
+        let urlarriba = URL(string: urlStringarriba)
+        dataarriba = try? Data(contentsOf: urlarriba!)
+        
+        let urlStringcentro = "http://199.233.252.86/201811/incedetec/fotos/"+(salon?.img)!+"/centro.png"
+        let urlcentro = URL(string: urlStringcentro)
+        datacentro = try? Data(contentsOf: urlcentro!)
+        
+        let urlStringderecha = "http://199.233.252.86/201811/incedetec/fotos/"+(salon?.img)!+"/derecha.png"
+        let urlderecha = URL(string: urlStringderecha)
+        dataDerecha = try? Data(contentsOf: urlderecha!)
+        
+        let urlStringfrente = "http://199.233.252.86/201811/incedetec/fotos/"+(salon?.img)!+"/frente.png"
+        let urlfrente = URL(string: urlStringfrente)
+        dataFrente = try? Data(contentsOf: urlfrente!)
+        
+        
+        let urlStringizquierda = "http://199.233.252.86/201811/incedetec/fotos/"+(salon?.img)!+"/izquierda.png"
+        let urlizquierda = URL(string: urlStringizquierda)
+        dataIzquierda = try? Data(contentsOf: urlizquierda!)
     }
     
 }

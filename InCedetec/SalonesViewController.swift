@@ -46,16 +46,14 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     var filteredArray = [Salon]()
     
 
-
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        activityIndicator.center = self.view.center
-        activityIndicator.hidesWhenStopped = true
-        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
-        view.addSubview(activityIndicator)
-        activityIndicator.startAnimating()
+        
+        
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -114,10 +112,12 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
    
     }
     
+  
+  
+    
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
-        activityIndicator.stopAnimating()
-        activityIndicator.isHidden = true
+    
     }
     
     func downloadJSON(completed: @escaping () -> ()){
@@ -179,11 +179,12 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showDetails", sender: self)
+        
      
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      
+    
             if(self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "cabinacontrol" ||
                 self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "estudiodetv" ||
                 self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "salaproyec" ||

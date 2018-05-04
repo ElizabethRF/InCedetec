@@ -153,8 +153,7 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     
     @objc func escalado(recognizer:UIPinchGestureRecognizer)
     {
-        
-        droneNode.scale = SCNVector3(recognizer.scale, recognizer.scale, recognizer.scale)
+        currentNode.scale = SCNVector3(recognizer.scale, recognizer.scale, recognizer.scale)
     }
     
     @IBAction func mostrarDescripcion2(_ sender: UITapGestureRecognizer) {
@@ -204,8 +203,10 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     }
     
     @IBAction func rotar(_ sender: UIRotationGestureRecognizer) {
-        droneNode.eulerAngles = SCNVector3(0,sender.rotation,0)
+        currentNode.eulerAngles = SCNVector3(0,sender.rotation,0)
     }
+    
+    
     
     func addWalls(nodeName : String, portalNode: SCNNode, data: Data){
         let child = portalNode.childNode(withName: nodeName, recursively: true)
@@ -385,7 +386,16 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         
     }
     
-    
+    //Controlar objetos
+    var micBool : Bool
+    var llaveBool : Bool
+    var desarmadorBool : Bool
+    var usbBool : Bool
+    var currentNode  = SCNNode()
+   var micNode  = SCNNode()
+    var llaveNode  = SCNNode()
+    var desarmadorNode  = SCNNode()
+    var usbNode  = SCNNode()
     
     //COLOCAR OBJETOS EN ESCENA
     func addItem(selectedItem: String) {
@@ -407,22 +417,49 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         node.simdRotation = float4(90)
         
         self.sceneView.scene.rootNode.addChildNode(node)
+        currentNode = node
     }
     
     @IBAction func usbButtonAction(_ sender: UIButton) {
-        addItem(selectedItem: "USB")
+        if(usbBool == false){
+            addItem(selectedItem: "USB")
+            usbBool = true
+            usbNode = currentNode
+        }else{
+            currentNode = usbNode
+        }
     }
     
     @IBAction func desarmadorButtonAction(_ sender: UIButton) {
-        addItem(selectedItem: "desarmador")
+        if(desarmadorBool == false){
+            addItem(selectedItem: "desarmador")
+            desarmadorBool = true
+            desarmadorNode = currentNode
+        }else{
+            currentNode = desarmadorNode
+        }
     }
     
     @IBAction func llaveButtonAction(_ sender: UIButton) {
-        addItem(selectedItem: "LlaveMecanica")
+         if(llaveBool == false){
+            addItem(selectedItem: "LlaveMecanica")
+            llaveBool = true
+            llaveNode = currentNode
+         }else{
+            currentNode = llaveNode
+        }
     }
     
     @IBAction func microfonoButtonAction(_ sender: UIButton) {
-        addItem(selectedItem: "microfono")
+        if(micBool == false){
+            addItem(selectedItem: "microfono")
+            micBool = true
+            micNode = currentNode
+        }else{
+            currentNode = micNode
+        }
+        
+        
     }
     
     

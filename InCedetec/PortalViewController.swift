@@ -52,20 +52,12 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     }
     @IBOutlet weak var buttonMostrarInfo: UIButton!
     @IBAction func Add3dImage(_ sender: Any) {
-        self.addNode()
+       
         buttonMostrar.isHidden = true
         buttonMostrarInfo
             .isHidden = false
     }
     
-    var droneNode = SCNNode()
-    
-    func addNode(){
-        let droneScene = SCNScene(named: "art.scnassets/model.scn")
-        droneNode = (droneScene?.rootNode.childNode(withName: "Drone",recursively: false ))!
-        droneNode.position = SCNVector3(0,0,-1 )
-        self.sceneView.scene.rootNode.addChildNode(droneNode)
-    }
     
     
     var selectedItem: String? //Material de salón
@@ -151,11 +143,7 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         sceneView.session.pause()
     }
     
-    @objc func escalado(recognizer:UIPinchGestureRecognizer)
-    {
-        currentNode.scale = SCNVector3(recognizer.scale, recognizer.scale, recognizer.scale)
-    }
-    
+
     @IBAction func mostrarDescripcion2(_ sender: UITapGestureRecognizer) {
         let escena = sender.view as! SCNView
         let location = sender.location(in: escena)
@@ -206,6 +194,12 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         currentNode.eulerAngles = SCNVector3(0,sender.rotation,0)
     }
     
+    @objc func escalado(recognizer:UIPinchGestureRecognizer)
+    {
+        currentNode.scale = SCNVector3(recognizer.scale, recognizer.scale, recognizer.scale)
+    }
+    
+    
     
     
     func addWalls(nodeName : String, portalNode: SCNNode, data: Data){
@@ -231,8 +225,8 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         self.present(actividad,animated: true,completion: nil)
     }
     
-    var pantallaPlanaNodo = SCNNode()
-     var videoNodo = SKVideoNode()
+    var pantallaPlanaNodo :SCNNode = SCNNode()
+    var videoNodo :SKVideoNode = SKVideoNode()
     
     @IBOutlet weak var MostrarVideoObj: UIButton!
     @IBAction func ButtonMostrarVideo(_ sender: UIButton) {
@@ -387,15 +381,15 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     }
     
     //Controlar objetos
-    var micBool : Bool
-    var llaveBool : Bool
-    var desarmadorBool : Bool
-    var usbBool : Bool
-    var currentNode  = SCNNode()
-   var micNode  = SCNNode()
-    var llaveNode  = SCNNode()
-    var desarmadorNode  = SCNNode()
-    var usbNode  = SCNNode()
+    var micBool : Bool = false
+    var llaveBool : Bool = false
+    var desarmadorBool : Bool = false
+    var usbBool : Bool = false
+    var currentNode :SCNNode = SCNNode()
+    var micNode :SCNNode = SCNNode()
+    var llaveNode :SCNNode = SCNNode()
+    var desarmadorNode :SCNNode = SCNNode()
+    var usbNode :SCNNode = SCNNode()
     
     //COLOCAR OBJETOS EN ESCENA
     func addItem(selectedItem: String) {

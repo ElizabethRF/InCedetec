@@ -36,11 +36,11 @@
 		CA80076820734F9200FFB8EC /* CedetecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80076720734F9200FFB8EC /* CedetecViewController.swift */; };
 		CAA7A04C209A5A5A005FBA93 /* PisosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7A04B209A5A5A005FBA93 /* PisosViewController.swift */; };
 		CAA7A050209AA8E8005FBA93 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7A04F209AA8E8005FBA93 /* AboutViewController.swift */; };
-		CAD4A02F209CC2C30008DE99 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CAD4A02E209CC2C30008DE99 /* Resnet50.mlmodel */; };
 		CAD4A031209CDF6B0008DE99 /* HowToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4A030209CDF6B0008DE99 /* HowToViewController.swift */; };
 		CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */; };
 		CAE4FC6D206DF60800F79421 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4FC6C206DF60800F79421 /* PortalViewController.swift */; };
 		CAE4FC71206E0EEA00F79421 /* Portal.scncassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE4FC70206E0EEA00F79421 /* Portal.scncassets */; };
+		F507EC8C209E74B600874E9F /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F507EC8B209E74B600874E9F /* Resnet50.mlmodel */; };
 		F5483CE620982ED500F6FB99 /* Textures in Resources */ = {isa = PBXBuildFile; fileRef = F5483CE520982ED400F6FB99 /* Textures */; };
 		F5E43C202097F7A200221365 /* MaterialesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E43C1F2097F7A200221365 /* MaterialesViewController.swift */; };
 		F5E43C222097FBB400221365 /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E43C212097FBB400221365 /* itemCell.swift */; };
@@ -100,11 +100,11 @@
 		CA80076720734F9200FFB8EC /* CedetecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CedetecViewController.swift; sourceTree = "<group>"; };
 		CAA7A04B209A5A5A005FBA93 /* PisosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PisosViewController.swift; sourceTree = "<group>"; };
 		CAA7A04F209AA8E8005FBA93 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		CAD4A02E209CC2C30008DE99 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = ../../../../Downloads/Resnet50.mlmodel; sourceTree = "<group>"; };
 		CAD4A030209CDF6B0008DE99 /* HowToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToViewController.swift; sourceTree = "<group>"; };
 		CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesSalon.swift; sourceTree = "<group>"; };
 		CAE4FC6C206DF60800F79421 /* PortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
 		CAE4FC70206E0EEA00F79421 /* Portal.scncassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Portal.scncassets; sourceTree = "<group>"; };
+		F507EC8B209E74B600874E9F /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = ../../Resnet50.mlmodel; sourceTree = "<group>"; };
 		F5483CE520982ED400F6FB99 /* Textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Textures; sourceTree = "<group>"; };
 		F5E43C1F2097F7A200221365 /* MaterialesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialesViewController.swift; sourceTree = "<group>"; };
 		F5E43C212097FBB400221365 /* itemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCell.swift; sourceTree = "<group>"; };
@@ -171,9 +171,9 @@
 				554C03AF203A954100A5DF1A /* LaunchScreen.storyboard */,
 				554C03B2203A954100A5DF1A /* Info.plist */,
 				554C03F0203AACB500A5DF1A /* ProyectosTableViewController.swift */,
-				CAD4A02E209CC2C30008DE99 /* Resnet50.mlmodel */,
 				CAE4FC6A206DE0E400F79421 /* DetallesSalon.swift */,
 				CAE4FC6C206DF60800F79421 /* PortalViewController.swift */,
+				F507EC8B209E74B600874E9F /* Resnet50.mlmodel */,
 				CAE4FC70206E0EEA00F79421 /* Portal.scncassets */,
 				CA80076720734F9200FFB8EC /* CedetecViewController.swift */,
 				F5483CE520982ED400F6FB99 /* Textures */,
@@ -388,10 +388,10 @@
 				38BBEF9920749D910048DEFC /* Model.xcdatamodeld in Sources */,
 				5574BB46208BA303004EF153 /* MapaViewController.swift in Sources */,
 				554C03F1203AACB500A5DF1A /* ProyectosTableViewController.swift in Sources */,
-				CAD4A02F209CC2C30008DE99 /* Resnet50.mlmodel in Sources */,
 				554C03A9203A954100A5DF1A /* ViewController.swift in Sources */,
 				CAE4FC6B206DE0E400F79421 /* DetallesSalon.swift in Sources */,
 				38E77B63208D5B6C00B59563 /* Seleccionar.swift in Sources */,
+				F507EC8C209E74B600874E9F /* Resnet50.mlmodel in Sources */,
 				554C03A7203A954100A5DF1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,11 +560,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3472DEUR33;
+				DEVELOPMENT_TEAM = P4HLNSEQYR;
 				INFOPLIST_FILE = InCedetec/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.ceddd;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.ceddd.charlie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -578,11 +578,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3472DEUR33;
+				DEVELOPMENT_TEAM = P4HLNSEQYR;
 				INFOPLIST_FILE = InCedetec/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.ceddd;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.moviles.ceddd.charlie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

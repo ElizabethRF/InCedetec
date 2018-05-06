@@ -437,24 +437,27 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     //COLOCAR OBJETOS EN ESCENA
     func addItem(selectedItem: String) {
         guard let currentFrame = self.sceneView.session.currentFrame else {return}
+        do{
+            let urlSelectedItem = "http://199.233.252.86/201811/incedetec/art.scnassets/"+(selectedItem)+".scn"
+            let url = URL.init(string: urlSelectedItem)
+            
+            //let scene = SCNScene(named: "art.scnassets/\(selectedItem).scn")
+            let scene = try SCNScene(url: url!, options: nil)
+            let node = (scene.rootNode.childNode(withName: selectedItem, recursively: false))!
+            node.position = SCNVector3(0,0,-1)
+            //identificar en donde se ha tocado el currentFrame
+            var traduccion = matrix_identity_float4x4
+            //definir un metro alejado del dispositivo
+            traduccion.columns.3.z = -1.0
+            
+            node.simdTransform = matrix_multiply(currentFrame.camera.transform, traduccion)
+            node.simdScale = simd_float3(1)
+            node.simdRotation = float4(90)
+            
+            self.sceneView.scene.rootNode.addChildNode(node)
+            currentNode = node
+        }catch{print("nel perro")}
         
-        let scene = SCNScene(named: "art.scnassets/\(selectedItem).scn")
-        let node = (scene?.rootNode.childNode(withName: selectedItem, recursively: false))!
-        node.position = SCNVector3(0,0,-1)
-        
-        
-        
-        //identificar en donde se ha tocado el currentFrame
-        var traduccion = matrix_identity_float4x4
-        //definir un metro alejado del dispositivo
-        traduccion.columns.3.z = -1.0
-        
-        node.simdTransform = matrix_multiply(currentFrame.camera.transform, traduccion)
-        node.simdScale = simd_float3(1)
-        node.simdRotation = float4(90)
-        
-        self.sceneView.scene.rootNode.addChildNode(node)
-        currentNode = node
     }
     
     

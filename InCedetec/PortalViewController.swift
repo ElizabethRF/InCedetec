@@ -92,8 +92,9 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     private var visionRequests = [VNRequest]()
     
     //CARGANDO VISTA
-    
+
     @IBOutlet weak var cargando: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -124,6 +125,13 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         sceneView.scene = scene
         let pinchGestureRecognizer = UIPinchGestureRecognizer (target: self, action: #selector(escalado))
         sceneView.addGestureRecognizer(pinchGestureRecognizer)
+        
+        //PONER EL PORTAL AUTOMATICAMENTE
+        
+        
+     
+        
+         
     
     }
     
@@ -133,6 +141,7 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         indicator.stopAnimating()
         
         cargarImagenesJSON()
+        addPortal(banderaNueva: true)
     }
     
     
@@ -145,6 +154,7 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         cargando.isHidden = false
         let configuration = ARWorldTrackingConfiguration()
         sceneView.session.run(configuration)
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -167,10 +177,12 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     }
 
     
-    func addPortal(){
+    func addPortal(banderaNueva : Bool){
         let portalScene = SCNScene(named: "Portal.scncassets/Portal.scn")
         let portalNode = portalScene!.rootNode.childNode(withName: "Portal", recursively: false)!
         
+          
+            
         portalNode.position = SCNVector3(0,-1,2)
         self.sceneView.scene.rootNode.addChildNode(portalNode)
         self.addPlane(nodeName: "roof", portalNode: portalNode, data: dataarriba!)
@@ -179,7 +191,8 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
         self.addWalls(nodeName: "sideWallA", portalNode: portalNode, data: dataIzquierda!)
         self.addWalls(nodeName: "sideWallB", portalNode: portalNode, data: dataDerecha!)
         self.addWalls(nodeName: "sideDoorA", portalNode: portalNode, data: dataFrente!)
-        //self.addWalls(nodeName: "sideDoorB", portalNode: portalNode, data: dataFrente!)
+            //self.addWalls(nodeName: "sideDoorB", portalNode: portalNode, data: dataFrente!)
+       
         
         
     }
@@ -357,14 +370,13 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
    //ACTIVAR PORTAL
     @IBAction func portalbutton(_ sender: UIButton) {
         if bandera == false{
-            //cargarImagenesJSON()
-            addPortal()
+            sceneView.scene.rootNode.childNode(withName: "Portal", recursively: false)?.isHidden = true
             bandera = true
+            
         }else{
-            let alert = UIAlertController(title: "No puedes colocar más de un portal", message: "", preferredStyle: .alert)
-            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alert.addAction(action)
-            present(alert, animated: true)
+            sceneView.scene.rootNode.childNode(withName: "Portal", recursively: false)?.isHidden = false
+            bandera = false
+         
         }
         
     }
@@ -614,6 +626,12 @@ class PortalViewController: UIViewController , UICollectionViewDelegate, ARSCNVi
     @IBAction func aboutButton(_ sender: UIButton) {
         
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        videoNodo.pause()
+    }
+    
+    
     
 }
 

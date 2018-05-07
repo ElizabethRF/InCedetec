@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating  {
+class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating {
     //Loading data
     var piso :String = ""
     
@@ -26,6 +26,7 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     var salonestercer : [Salon] = []
     var salonescuarto : [Salon] = []
     var salonesFinales : [Salon] = []
+    
     
     var sectionData : [Int:[Salon]] = [:]
     
@@ -146,7 +147,7 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
         }else{
             cell.textLabel?.text = self.salonesFinales[indexPath.row].nombre.capitalized
         }
-        
+    
         
         return cell
             
@@ -172,7 +173,26 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    
+        print("activo \(  searchController.isActive)")
+        print("buscando \(String(describing:  searchController.searchBar.text?.isEmpty))" )
+        if searchController.isActive {
+            print("entré")
+            
+            /*let alert = UIAlertController(title: "Lo sentimos, salon en construcción", message: "", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true)
+            //tableView.reloadData()*/
+            var salonnuevo : Salon? = self.salonesFinales[0]
+            //let destination = segue.destination as? PortalViewController
+            
+            if let destination = segue.destination as? PortalViewController{
+                //destination.salon = sectionData[(tableView.indexPathForSelectedRow?.row)]
+                destination.salon = salonnuevo
+                
+            }
+        }else{
+            print("me vale")
             if(self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "cabinacontrol" ||
                 self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "estudiodetv" ||
                 self.salonesFinales[(tableView.indexPathForSelectedRow?.row)!].img == "salaproyec" ||
@@ -194,7 +214,12 @@ class SalonesViewController: UIViewController, UITableViewDelegate, UITableViewD
                 present(alert, animated: true)
                 tableView.reloadData()
             }
+        }
     }
+    
+    
+
+    
     
     
 
